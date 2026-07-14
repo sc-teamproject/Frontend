@@ -53,7 +53,7 @@
     </Transition>
 
     <!-- Posts Table -->
-    <PostTable :posts="posts" @open-detail="selectedPost = $event" @delete="deletePost" />
+    <PostTable :posts="posts" @open-detail="openPostDetail" @delete="deletePost" />
 
     <!-- Detail Modal -->
     <Transition name="fade">
@@ -74,7 +74,7 @@
           </div>
 
           <!-- Comments -->
-          <CommentSection :post-id="selectedPost.id" :comments="selectedPost.comments" />
+          <CommentSection :post-id="selectedPost.id" :comments="selectedPost.comments" @comment-added="handleCommentAdded" @comment-deleted="handleCommentDeleted" />
         </div>
       </div>
     </Transition>
@@ -82,78 +82,119 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { Plus } from 'lucide-vue-next'
 import PostForm from './PostForm.vue'
 import PostTable from './PostTable.vue'
 import CommentSection from './CommentSection.vue'
+import { getPosts, createPost, deletePost as deletePostApi, incrementViewCount } from '../../api/postApi'
 
 const showForm = ref(false)
 const selectedPost = ref(null)
-
-// Sample posts data
-const posts = ref([
-  {
-    id: 1,
-    title: '양동통닭 정말 맛있어요!',
-    category: '후기',
-    content: '가마솥에 튀긴 치킨이 정말 바삭하고 맛있어요. 양도 많고 가격도 합리적입니다. 강추합니다!',
-    author: '익명',
-    createdAt: '2024-01-15',
-    views: 124,
-    comments: [
-      { id: 1, content: '저도 먹어봤는데 정말 좋더라구요!', author: '익명', createdAt: '2024-01-15' }
-    ]
-  },
-  {
-    id: 2,
-    title: '궁전제과 어디가 맛있나요?',
-    category: '질문',
-    content: '궁전제과가 유명하다고 해서 가봤는데 뭘 먹어야 할지 모르겠어요. 추천 메뉴 있으신가요?',
-    author: '익명',
-    createdAt: '2024-01-14',
-    views: 89,
-    comments: [
-      { id: 1, content: '크림팥빵이 제일 유명합니다!', author: '익명', createdAt: '2024-01-14' }
-    ]
-  },
-  {
-    id: 3,
-    title: '새로운 맛집 발견',
-    category: '팁',
-    content: '양동 근처에 새로 생긴 카페가 있는데 정말 좋아요. 실내도 깔끔하고 커피도 맛있습니다.',
-    author: '익명',
-    createdAt: '2024-01-13',
-    views: 156,
-    comments: []
-  }
-])
+const posts = ref([])
+const loading = ref(false)
 
 const totalPosts = computed(() => posts.value.length)
-const todayPosts = computed(() => posts.value.filter(p => p.createdAt === '2024-01-15').length)
-const weekPosts = computed(
-  () => posts.value.length // Simplified for demo
-)
-const totalComments = computed(() =>
-  posts.value.reduce((sum, post) => sum + post.comments.length, 0)
-)
+const todayPosts = computed(() => 0)
+const weekPosts = computed(() => 0)
+const totalComments = computed(() => posts.value.reduce((sum, post) => sum + (post.commentCount || 0), 0))
 
-const addPost = (newPost) => {
-  posts.value.unshift({
-    id: posts.value.length + 1,
-    ...newPost,
-    createdAt: new Date().toISOString().split('T')[0],
-    views: 0,
-    comments: []
-  })
-  showForm.value = false
-}
-
-const deletePost = (postId) => {
-  if (confirm('정말 삭제하시겠습니까?')) {
-    posts.value = posts.value.filter(p => p.id !== postId)
+const loadPosts = async () => {
+  loading.value = true
+  try {
+    const data = await getPosts(1, 20)
+    posts.value = (data.items || []).map((post) => ({
+      id: post.id,
+      title: post.title,
+      category: '기타',
+      content: post.content,
+      author: post.nickname || '익명',
+      createdAt: post.created_at?.slice(0, 10) || '',
+      views: post.view_count || 0,
+      commentCount: post.comment_count || (post.comments?.length || 0),
+      comments: post.comments || []
+    }))
+  } catch (error) {
+    console.error('Failed to load posts', error)
+  } finally {
+    loading.value = false
   }
 }
+
+const addPost = async (newPost) => {
+  try {
+    await createPost({
+      location_id: 1,
+      title: newPost.title,
+      content: newPost.content,
+      nickname: '익명',
+      password: newPost.password || '1234'
+    })
+    await loadPosts()
+    showForm.value = false
+  } catch (error) {
+    console.error('Failed to create post', error)
+    alert('게시글 작성에 실패했습니다.')
+  }
+}
+
+const deletePost = async (postId) => {
+  if (!confirm('정말 삭제하시겠습니까?')) return
+  try {
+    await deletePostApi(postId, prompt('삭제를 위해 비밀번호를 입력하세요') || '1234')
+    await loadPosts()
+  } catch (error) {
+    console.error('Failed to delete post', error)
+    alert('게시글 삭제에 실패했습니다.')
+  }
+}
+
+const openPostDetail = async (post) => {
+  try {
+    const updated = await incrementViewCount(post.id)
+    selectedPost.value = {
+      ...post,
+      ...updated,
+      commentCount: updated.comment_count || (updated.comments?.length || 0),
+      comments: updated.comments || []
+    }
+
+    const index = posts.value.findIndex((item) => item.id === post.id)
+    if (index !== -1) {
+      posts.value[index].views = updated.view_count || 0
+      posts.value[index].commentCount = updated.comment_count || (updated.comments?.length || 0)
+    }
+  } catch (error) {
+    console.error('Failed to open post detail', error)
+    selectedPost.value = post
+  }
+}
+
+const handleCommentAdded = (comment) => {
+  if (!selectedPost.value) return
+  selectedPost.value.comments = [...selectedPost.value.comments, comment]
+  selectedPost.value.commentCount = (selectedPost.value.commentCount || 0) + 1
+
+  const index = posts.value.findIndex((item) => item.id === selectedPost.value.id)
+  if (index !== -1) {
+    posts.value[index].commentCount = (posts.value[index].commentCount || 0) + 1
+  }
+}
+
+const handleCommentDeleted = (commentId) => {
+  if (!selectedPost.value) return
+  selectedPost.value.comments = selectedPost.value.comments.filter((comment) => comment.id !== commentId)
+  selectedPost.value.commentCount = Math.max(0, (selectedPost.value.commentCount || 0) - 1)
+
+  const index = posts.value.findIndex((item) => item.id === selectedPost.value.id)
+  if (index !== -1) {
+    posts.value[index].commentCount = Math.max(0, (posts.value[index].commentCount || 0) - 1)
+  }
+}
+
+onMounted(() => {
+  loadPosts()
+})
 </script>
 
 <style scoped>
