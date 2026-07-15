@@ -30,49 +30,88 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, watch } from 'vue'
 import { MapPin } from 'lucide-vue-next'
+import L from 'leaflet'
+
+const props = defineProps({
+  selectedRestaurant: {
+    type: Object,
+    default: () => ({})
+  }
+})
 
 let map = null
+let marker = null
 
 const gpsDistance = ref(null)
 const mapx = ref('126.9125968520')
 const mapy = ref('35.1515409291')
 
-const initMap = () => {
-  if (typeof L === 'undefined') {
-    console.warn('Leaflet is not loaded yet')
-    return
+const getCoordinates = () => {
+  const lat = Number(props.selectedRestaurant?.mapy)
+  const lng = Number(props.selectedRestaurant?.mapx)
+
+  if (Number.isFinite(lat) && Number.isFinite(lng)) {
+    return [lat, lng]
   }
 
+  return [35.1515, 126.9125]
+}
+
+const updateMarker = () => {
+  if (!map) return
+
+  const coords = getCoordinates()
+  mapx.value = coords[1].toString()
+  mapy.value = coords[0].toString()
+
+  if (marker) {
+    map.removeLayer(marker)
+  }
+
+  marker = L.marker(coords).addTo(map).bindPopup(props.selectedRestaurant?.title || '맛집')
+  map.setView(coords, 15)
+
+  setTimeout(() => {
+    map.invalidateSize()
+  }, 100)
+}
+
+const initMap = () => {
   if (map) return
 
-  // Create map centered on Gwangju
   map = L.map('map-container', {
-    center: [35.1515, 126.9125],
+    center: getCoordinates(),
     zoom: 13,
     zoomControl: true
   })
 
-  // Add Google Maps tile layer
-  L.tileLayer('http://mt0.google.com/vt/lyrs=m&hl=kr&x={x}&y={y}&z={z}', {
-    attribution: 'Map data ©2026 Google'
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors',
+    maxZoom: 19
   }).addTo(map)
 
-  // Add initial marker
-  L.marker([35.1515, 126.9125]).addTo(map).bindPopup('양동통닭')
+  updateMarker()
 }
 
 onMounted(() => {
-  // Wait for Leaflet to be loaded
   if (typeof L !== 'undefined') {
     initMap()
   } else {
-    // Try again after a delay
     setTimeout(initMap, 1000)
   }
+})
+
+watch(() => props.selectedRestaurant?.contentid, () => {
+  updateMarker()
 })
 </script>
 
 <style scoped>
+#map-container {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+}
 </style>

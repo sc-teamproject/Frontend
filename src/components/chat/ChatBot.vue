@@ -94,24 +94,32 @@ const messagesEndRef = ref(null)
 const sendMessage = async () => {
   if (!inputMessage.value.trim()) return
 
-  // Add user message
+  const userMessage = inputMessage.value
   messages.value.push({
     role: 'user',
-    content: inputMessage.value
+    content: userMessage
   })
 
-  const userMessage = inputMessage.value
   inputMessage.value = ''
   isLoading.value = true
 
   try {
-    // TODO: Call FastAPI backend
-    // For now, simulate response
-    await new Promise(resolve => setTimeout(resolve, 1000))
+    const response = await fetch('/api/chat', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ message: userMessage })
+    })
 
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`)
+    }
+
+    const data = await response.json()
     messages.value.push({
       role: 'assistant',
-      content: `"${userMessage}"에 대한 답변입니다. FastAPI 서버가 내일 연결될 예정입니다.`
+      content: data.reply || '응답을 받지 못했습니다.'
     })
   } catch (error) {
     console.error('Chat error:', error)
@@ -127,10 +135,7 @@ const sendMessage = async () => {
 }
 
 onMounted(() => {
-  // Simulate connection delay
-  setTimeout(() => {
-    isConnected.value = true
-  }, 500)
+  isConnected.value = true
 })
 </script>
 

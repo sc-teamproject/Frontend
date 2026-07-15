@@ -51,8 +51,8 @@
 
             <!-- Comments -->
             <td class="px-4 py-3 text-center">
-              <span v-if="post.comments.length > 0" class="bg-rose-100 text-rose-700 px-2 py-0.5 rounded-full text-[10px] font-bold">
-                {{ post.comments.length }}
+              <span v-if="(post.commentCount || post.comments?.length || 0) > 0" class="bg-rose-100 text-rose-700 px-2 py-0.5 rounded-full text-[10px] font-bold">
+                {{ post.commentCount || post.comments?.length || 0 }}
               </span>
               <span v-else class="text-slate-400">0</span>
             </td>

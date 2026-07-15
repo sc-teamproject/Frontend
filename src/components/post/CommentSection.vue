@@ -9,8 +9,17 @@
     <div class="space-y-3 mb-4">
       <div v-for="comment in comments" :key="comment.id" class="bg-slate-50 border border-slate-100 rounded-lg p-3">
         <div class="flex items-center justify-between mb-1">
-          <span class="text-xs font-semibold text-slate-700">{{ comment.author }} (익명)</span>
-          <span class="text-[10px] text-slate-500">{{ comment.createdAt }}</span>
+          <span class="text-xs font-semibold text-slate-700">{{ comment.nickname || '익명' }} (익명)</span>
+          <div class="flex items-center gap-2">
+            <span class="text-[10px] text-slate-500">{{ comment.created_at?.slice(0, 10) || '' }}</span>
+            <button
+              type="button"
+              @click="deleteComment(comment.id)"
+              class="text-[10px] text-rose-600 hover:text-rose-800 font-semibold"
+            >
+              삭제
+            </button>
+          </div>
         </div>
         <p class="text-sm text-slate-800">{{ comment.content }}</p>
       </div>
@@ -49,6 +58,7 @@
 <script setup>
 import { ref } from 'vue'
 import { MessageCircle, Send } from 'lucide-vue-next'
+import axios from 'axios'
 
 const props = defineProps({
   postId: {
@@ -62,14 +72,38 @@ const props = defineProps({
 })
 
 const newComment = ref('')
+const emit = defineEmits(['comment-added', 'comment-deleted'])
 
-const submitComment = () => {
+const submitComment = async () => {
   if (!newComment.value.trim()) return
 
-  // TODO: Emit event to parent or add to store
-  console.log('New comment:', newComment.value)
+  try {
+    const { data } = await axios.post(`/api/posts/${props.postId}/comments`, {
+      author: '익명',
+      content: newComment.value.trim(),
+      password: '1234'
+    })
 
-  newComment.value = ''
+    emit('comment-added', data)
+    newComment.value = ''
+  } catch (error) {
+    console.error('Failed to create comment', error)
+    alert('댓글 등록에 실패했습니다.')
+  }
+}
+
+const deleteComment = async (commentId) => {
+  if (!confirm('정말 삭제하시겠습니까?')) return
+
+  try {
+    await axios.delete(`/api/comments/${commentId}`, {
+      params: { password: '1234' }
+    })
+    emit('comment-deleted', commentId)
+  } catch (error) {
+    console.error('Failed to delete comment', error)
+    alert('댓글 삭제에 실패했습니다.')
+  }
 }
 </script>
 
