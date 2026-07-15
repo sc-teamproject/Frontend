@@ -4,12 +4,12 @@
       <table class="w-full text-xs">
         <thead class="bg-slate-50 border-b border-slate-200">
           <tr>
-            <th class="px-4 py-3 text-left font-semibold text-slate-700">카테고리</th>
-            <th class="px-4 py-3 text-left font-semibold text-slate-700">제목</th>
-            <th class="px-4 py-3 text-center font-semibold text-slate-700 w-16">조회수</th>
-            <th class="px-4 py-3 text-center font-semibold text-slate-700 w-16">댓글</th>
-            <th class="px-4 py-3 text-center font-semibold text-slate-700 w-20">작성일</th>
-            <th class="px-4 py-3 text-center font-semibold text-slate-700 w-16">액션</th>
+            <th class="px-4 py-3 text-left font-semibold text-slate-700">{{ uiText.category }}</th>
+            <th class="px-4 py-3 text-left font-semibold text-slate-700">{{ uiText.title }}</th>
+            <th class="px-4 py-3 text-center font-semibold text-slate-700 w-16">{{ uiText.views }}</th>
+            <th class="px-4 py-3 text-center font-semibold text-slate-700 w-16">{{ uiText.comments }}</th>
+            <th class="px-4 py-3 text-center font-semibold text-slate-700 w-20">{{ uiText.date }}</th>
+            <th class="px-4 py-3 text-center font-semibold text-slate-700 w-16">{{ uiText.action }}</th>
           </tr>
         </thead>
         <tbody>
@@ -23,11 +23,11 @@
               <span
                 :class="[
                   'px-2 py-0.5 rounded-full text-[10px] font-semibold',
-                  post.category === '후기'
+                  post.category === uiText.review
                     ? 'bg-emerald-100 text-emerald-700'
-                    : post.category === '팁'
+                    : post.category === uiText.tip
                       ? 'bg-blue-100 text-blue-700'
-                      : post.category === '질문'
+                      : post.category === uiText.question
                         ? 'bg-amber-100 text-amber-700'
                         : 'bg-slate-100 text-slate-700'
                 ]"
@@ -66,7 +66,7 @@
                 @click.stop="$emit('delete', post.id)"
                 class="text-rose-600 hover:text-rose-800 font-semibold text-[10px] hover:underline"
               >
-                삭제
+                {{ uiText.delete }}
               </button>
             </td>
           </tr>
@@ -77,13 +77,15 @@
     <!-- Empty State -->
     <div v-if="posts.length === 0" class="text-center py-12 text-slate-400">
       <MessageSquare class="w-12 h-12 mx-auto stroke-1 mb-2" />
-      <p>아직 게시글이 없습니다. 첫 번째 게시글을 작성해보세요!</p>
+      <p>{{ uiText.empty }}</p>
     </div>
   </div>
 </template>
 
 <script setup>
+import { computed } from 'vue'
 import { MessageSquare } from 'lucide-vue-next'
+import { isKorean } from '../../composables/useUiPreferences'
 
 defineProps({
   posts: {
@@ -93,6 +95,38 @@ defineProps({
 })
 
 defineEmits(['open-detail', 'delete'])
+
+const uiText = computed(() => {
+  if (isKorean.value) {
+    return {
+      category: '카테고리',
+      title: '제목',
+      views: '조회수',
+      comments: '댓글',
+      date: '작성일',
+      action: '액션',
+      delete: '삭제',
+      empty: '아직 게시글이 없습니다. 첫 번째 게시글을 작성해보세요!',
+      review: '후기',
+      tip: '팁',
+      question: '질문'
+    }
+  }
+
+  return {
+    category: 'Category',
+    title: 'Title',
+    views: 'Views',
+    comments: 'Comments',
+    date: 'Date',
+    action: 'Action',
+    delete: 'Delete',
+    empty: 'No posts yet. Be the first to write one!',
+    review: 'Review',
+    tip: 'Tip',
+    question: 'Question'
+  }
+})
 </script>
 
 <style scoped>

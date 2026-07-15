@@ -99,7 +99,7 @@ const uiText = computed(() => {
     addressLabel: 'Address',
     contactLabel: 'Contact',
     descriptionLabel: 'Description',
-    noContact: 'No contact information',
+    noContact: 'Not Information',
     categoryValue: {
       한식: 'Korean',
       양식: 'Western',

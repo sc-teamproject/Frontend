@@ -239,7 +239,7 @@ const loadRestaurants = async () => {
           addr2: item.addr2 || '',
           displayAddr1: isKorean.value ? item.addr1 : (item.addr1En || item.addr1),
           displayAddr2: isKorean.value ? (item.addr2 || '') : (item.addr2En || item.addr2 || ''),
-          tel: item.tel || '정보 없음',
+          tel: item.tel || (isKorean.value ? '정보 없음' : 'Not Information'),
           mapx: item.mapx,
           mapy: item.mapy,
           image: realImage,
