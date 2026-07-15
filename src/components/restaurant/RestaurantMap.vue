@@ -81,12 +81,13 @@ const uiText = computed(() => {
 
   return {
     mapTitle: 'Google Maps Style Integration',
-    mapBadge: 'Google Map connected',
+    mapBadge: 'Google Maps connected',
     distancePrefix: 'From my location',
     longitudeLabel: 'Longitude',
     latitudeLabel: 'Latitude',
     expandMap: 'Expand full screen map',
-    collapseMap: 'Collapse map'
+    collapseMap: 'Collapse map',
+    popupTitle: 'Restaurant'
   }
 })
 
@@ -112,7 +113,7 @@ const updateMarker = () => {
     map.removeLayer(marker)
   }
 
-  marker = L.marker(coords).addTo(map).bindPopup(props.selectedRestaurant?.title || '맛집')
+  marker = L.marker(coords).addTo(map).bindPopup(props.selectedRestaurant?.title || uiText.value.popupTitle)
   map.setView(coords, 15)
 
   setTimeout(() => {

@@ -1,21 +1,21 @@
 <template>
-  <div class="bg-white rounded-xl shadow-sm border border-slate-200 flex flex-col h-full min-h-[500px] relative">
+  <div class="bg-white rounded-xl shadow-sm border border-slate-200 flex flex-col h-full min-h-[500px] relative transition-colors">
     <!-- Header -->
-    <div class="bg-gradient-to-r from-purple-50 to-pink-50 border-b border-slate-100 px-4 py-2.5 flex items-center justify-between rounded-t-xl">
+    <div class="bg-white border-b border-slate-100 px-4 py-2.5 flex items-center justify-between rounded-t-xl transition-colors">
       <div class="flex items-center gap-2">
         <MessageCircle class="text-purple-600 w-5 h-5" />
         <div>
           <p class="font-bold text-sm text-slate-800">Gwangju AI Gourmet Guide</p>
-          <p class="text-[10px] text-slate-500">FastAPI 챗봇 (내일 연결됨)</p>
+          <p class="text-[10px] text-slate-500">{{ uiText.subtitle }}</p>
         </div>
       </div>
       <div v-if="isConnected" class="flex items-center gap-1 text-[10px] text-emerald-600 font-medium">
         <div class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></div>
-        연결됨
+        {{ uiText.connected }}
       </div>
       <div v-else class="flex items-center gap-1 text-[10px] text-slate-400 font-medium">
         <div class="w-1.5 h-1.5 rounded-full bg-slate-300"></div>
-        대기 중
+        {{ uiText.waiting }}
       </div>
     </div>
 
@@ -23,9 +23,9 @@
     <div class="flex-grow overflow-y-auto p-3 space-y-3 bg-slate-50">
       <!-- Welcome Message -->
       <div class="flex justify-center">
-        <div class="bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs text-slate-600 text-center max-w-xs">
-          <p class="font-semibold text-purple-700">안녕하세요! 🎉</p>
-          <p class="mt-1">광주의 맛집에 대해 궁금한 점을 물어봐주세요.</p>
+        <div class="bg-white border border-slate-200 rounded-lg px-3 py-2 text-xs text-slate-600 text-center max-w-xs transition-colors">
+          <p class="font-semibold text-purple-700">{{ uiText.greeting }}</p>
+          <p class="mt-1">{{ uiText.welcome }}</p>
         </div>
       </div>
 
@@ -37,7 +37,7 @@
           </div>
         </div>
         <div v-else class="flex justify-start">
-          <div class="bg-white border border-slate-200 text-slate-800 rounded-lg px-3 py-2 text-xs max-w-xs break-words">
+          <div class="bg-white border border-slate-200 text-slate-800 rounded-lg px-3 py-2 text-xs max-w-xs break-words transition-colors">
             {{ msg.content }}
           </div>
         </div>
@@ -45,7 +45,7 @@
 
       <!-- Loading Indicator -->
       <div v-if="isLoading" class="flex justify-start">
-        <div class="bg-white border border-slate-200 rounded-lg px-3 py-2">
+        <div class="bg-white border border-slate-200 rounded-lg px-3 py-2 transition-colors">
           <div class="flex gap-1">
             <span class="inline-block w-2 h-2 bg-slate-300 rounded-full animate-bounce" style="animation-delay: 0ms"></span>
             <span class="inline-block w-2 h-2 bg-slate-300 rounded-full animate-bounce" style="animation-delay: 150ms"></span>
@@ -59,14 +59,14 @@
     </div>
 
     <!-- Input Area -->
-    <div class="border-t border-slate-100 p-3 bg-white rounded-b-xl">
+    <div class="border-t border-slate-100 p-3 bg-white rounded-b-xl transition-colors">
       <form @submit.prevent="sendMessage" class="flex gap-2">
         <input
           v-model="inputMessage"
           type="text"
-          placeholder="광주 맛집에 대해 물어보세요..."
+          :placeholder="uiText.placeholder"
           :disabled="isLoading"
-          class="flex-grow bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-xs focus:ring-1 focus:ring-purple-500 focus:outline-none disabled:bg-slate-100"
+          class="flex-grow bg-slate-50 border border-slate-200 rounded-lg px-3 py-2 text-xs focus:ring-1 focus:ring-purple-500 focus:outline-none disabled:bg-slate-100 transition-colors"
         />
         <button
           type="submit"
@@ -74,7 +74,7 @@
           class="bg-purple-600 hover:bg-purple-700 disabled:bg-slate-300 text-white font-semibold px-3 py-2 rounded-lg transition text-xs flex items-center gap-1"
         >
           <Send class="w-3 h-3" />
-          <span class="hidden sm:inline">전송</span>
+          <span class="hidden sm:inline">{{ uiText.sendButton }}</span>
         </button>
       </form>
     </div>
@@ -82,14 +82,39 @@
 </template>
 
 <script setup>
-import { ref, nextTick, onMounted } from 'vue'
+import { ref, nextTick, onMounted, computed } from 'vue'
 import { MessageCircle, Send } from 'lucide-vue-next'
+import { isKorean } from '../../composables/useUiPreferences'
 
 const messages = ref([])
 const inputMessage = ref('')
 const isLoading = ref(false)
 const isConnected = ref(false)
 const messagesEndRef = ref(null)
+
+const uiText = computed(() => {
+  if (isKorean.value) {
+    return {
+      subtitle: 'FastAPI 챗봇',
+      greeting: '안녕하세요! 🎉',
+      connected: '연결됨',
+      waiting: '대기 중',
+      placeholder: '광주 맛집에 대해 물어보세요...',
+      sendButton: '전송',
+      welcome: '광주의 맛집에 대해 궁금한 점을 물어봐주세요.'
+    }
+  }
+
+  return {
+    subtitle: 'FastAPI Chatbot',
+    greeting: 'Hello! 🎉',
+    connected: 'Connected',
+    waiting: 'Waiting',
+    placeholder: 'Ask about restaurants in Gwangju...',
+    sendButton: 'Send',
+    welcome: 'Ask anything about restaurants in Gwangju.'
+  }
+})
 
 const sendMessage = async () => {
   if (!inputMessage.value.trim()) return
@@ -125,7 +150,7 @@ const sendMessage = async () => {
     console.error('Chat error:', error)
     messages.value.push({
       role: 'assistant',
-      content: '죄송합니다. 현재 서버에 연결할 수 없습니다.'
+      content: isKorean.value ? '죄송합니다. 현재 서버에 연결할 수 없습니다.' : 'Sorry, the server is unavailable right now.'
     })
   } finally {
     isLoading.value = false

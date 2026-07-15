@@ -74,16 +74,12 @@
         <!-- Details -->
         <div class="flex-grow min-w-0">
           <h3 class="font-bold text-slate-900 truncate">{{ item.title }}</h3>
-          <p class="text-xs text-slate-500 truncate mt-0.5">{{ item.displayAddr1 }} {{ item.displayAddr2 }}</p>
-          <div class="flex items-center gap-3 mt-1.5">
-            <span class="text-xs font-semibold px-2 py-0.5 bg-slate-100 rounded text-slate-600">
+          <p class="mt-0.5 flex items-center gap-2 text-xs text-slate-500 truncate">
+            <span class="shrink-0 text-xs font-semibold px-2 py-0.5 bg-slate-100 rounded text-slate-600">
               {{ uiText.typeLabels[item.category] || item.category }}
             </span>
-            <span class="text-xs text-amber-500 flex items-center gap-0.5 font-medium">
-              <Star class="w-3.5 h-3.5 fill-amber-500" />
-              {{ item.rating || '4.5' }}
-            </span>
-          </div>
+            <span class="truncate">{{ item.displayAddr1 }} {{ item.displayAddr2 }}</span>
+          </p>
           <!-- Action Buttons -->
           <div class="flex items-center gap-2 mt-2.5">
             <button
@@ -126,7 +122,6 @@ import {
   UtensilsCrossed,
   Cake,
   Store,
-  Star,
   Navigation2,
   SearchCode,
   Search,
