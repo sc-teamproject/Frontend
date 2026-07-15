@@ -70,6 +70,9 @@
               <span>익명 작성자 • {{ selectedPost.createdAt }}</span>
               <span class="bg-slate-100 px-2 py-1 rounded">{{ selectedPost.category }}</span>
             </div>
+            <div v-if="selectedPost.restaurantName" class="mt-3 inline-flex items-center rounded-full bg-blue-50 px-2.5 py-1 text-xs font-medium text-blue-700">
+              식당: {{ selectedPost.restaurantName }}
+            </div>
             <div class="mt-4 text-sm text-slate-700 whitespace-pre-wrap">{{ selectedPost.content }}</div>
           </div>
 
@@ -107,6 +110,7 @@ const loadPosts = async () => {
       id: post.id,
       title: post.title,
       category: '기타',
+      restaurantName: post.restaurant_name || post.restaurantName || '',
       content: post.content,
       author: post.nickname || '익명',
       createdAt: post.created_at?.slice(0, 10) || '',
@@ -127,6 +131,7 @@ const addPost = async (newPost) => {
       location_id: 1,
       title: newPost.title,
       content: newPost.content,
+      restaurant_name: newPost.restaurantName || '',
       nickname: '익명',
       password: newPost.password || '1234'
     })

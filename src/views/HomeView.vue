@@ -1,36 +1,43 @@
 <template>
   <div class="max-w-7xl mx-auto w-full p-4 flex-grow flex flex-col gap-4">
-    <!-- HOME & MAIN SPLIT LAYOUT -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 flex-grow">
-      
-      <!-- LEFT PANEL: Restaurant List (1/3 Width) -->
-      <RestaurantList />
+      <RestaurantList @select-restaurant="handleSelectRestaurant" />
 
-      <!-- RIGHT PANEL: Details, Map, Chatbot (2/3 Width) -->
       <section class="lg:col-span-2 flex flex-col gap-4">
-        
-        <!-- TOP: Restaurant Detail Card -->
-        <RestaurantDetail />
+        <RestaurantDetail :current-details="selectedRestaurant" />
 
-        <!-- BOTTOM: Map + Chatbot (1:1 Ratio) -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 flex-grow min-h-[340px]">
-          <!-- Map Container -->
-          <RestaurantMap />
-          
-          <!-- Chatbot Container -->
+          <RestaurantMap :selected-restaurant="selectedRestaurant" />
           <ChatBot />
         </div>
       </section>
-
     </div>
   </div>
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import RestaurantList from '../components/restaurant/RestaurantList.vue'
 import RestaurantDetail from '../components/restaurant/RestaurantDetail.vue'
 import RestaurantMap from '../components/restaurant/RestaurantMap.vue'
 import ChatBot from '../components/chat/ChatBot.vue'
+
+const selectedRestaurant = ref({
+  title: '양동통닭',
+  category: '한식',
+  addr1: '전남광주통합특별시 동구 구성로 174',
+  addr2: '(양동시장 근처)',
+  tel: '062-364-5410',
+  mapx: '126.9125968520',
+  mapy: '35.1515409291',
+  description: '가마솥에 바삭하게 튀겨내어 고소한 시장식 후라이드 치킨의 완벽한 표본입니다.',
+  image: 'https://images.unsplash.com/photo-1562967914-608f82629710?w=500&auto=format&fit=crop&q=60',
+  cpyrhtDivCd: 'Google Places Photo'
+})
+
+const handleSelectRestaurant = (restaurant) => {
+  selectedRestaurant.value = restaurant
+}
 </script>
 
 <style scoped>

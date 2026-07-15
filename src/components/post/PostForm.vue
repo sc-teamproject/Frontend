@@ -24,6 +24,18 @@
         </div>
       </div>
 
+      <!-- Restaurant Name -->
+      <div>
+        <label class="block text-sm font-semibold text-slate-700 mb-1">식당 이름</label>
+        <input
+          v-model="formData.restaurantName"
+          type="text"
+          placeholder="예: 양동통닭, 김밥천국"
+          maxlength="50"
+          class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-sm focus:ring-1 focus:ring-blue-500 focus:outline-none"
+        />
+      </div>
+
       <!-- Title -->
       <div>
         <label class="block text-sm font-semibold text-slate-700 mb-1">제목</label>
@@ -91,6 +103,7 @@ const formData = ref({
   title: '',
   content: '',
   category: '후기',
+  restaurantName: '',
   password: ''
 })
 
@@ -101,9 +114,10 @@ const submitForm = () => {
     title: formData.value.title,
     content: formData.value.content,
     category: formData.value.category,
+    restaurantName: formData.value.restaurantName,
     password: formData.value.password
   })
-  formData.value = { title: '', content: '', category: '후기', password: '' }
+  formData.value = { title: '', content: '', category: '후기', restaurantName: '', password: '' }
 }
 </script>
 

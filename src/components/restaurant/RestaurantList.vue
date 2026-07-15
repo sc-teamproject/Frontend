@@ -24,6 +24,20 @@
       </div>
     </div>
 
+    <div class="p-3 border-b border-slate-100 bg-white">
+      <div class="relative">
+        <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-400">
+          <Search class="w-4 h-4" />
+        </span>
+        <input
+          v-model="searchQuery"
+          type="text"
+          placeholder="식당명 또는 동네 검색"
+          class="w-full bg-slate-50 border border-slate-200 rounded-full py-2 pl-9 pr-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/30"
+        />
+      </div>
+    </div>
+
     <!-- Restaurant List -->
     <div class="flex-grow overflow-y-auto p-3 space-y-3">
       <!-- Loading State -->
@@ -77,7 +91,7 @@
               class="flex-1 bg-white hover:bg-slate-100 border border-slate-300 text-slate-700 text-xs font-medium py-1.5 rounded transition flex items-center justify-center gap-1"
             >
               <Navigation2 class="w-3 h-3 text-blue-600" />
-              구글 길찾기
+              길찾기
             </button>
           </div>
         </div>
@@ -101,15 +115,26 @@ import {
   Store,
   Star,
   Navigation2,
-  SearchCode
+  SearchCode,
+  Search
 } from 'lucide-vue-next'
+
+const emit = defineEmits(['select-restaurant'])
 
 const selectedId = ref('132880')
 const searchQuery = ref('')
 const filterCategory = ref('전체')
-const categories = ['전체', '한식', '일식/중식/양식']
+const categories = ['전체', '한식', '일식', '중식', '양식']
 const restaurants = ref([])
 const isLoading = ref(true)
+
+const fallbackImages = [
+  'https://images.unsplash.com/photo-1529042410759-befb1204b468?w=500&auto=format&fit=crop&q=60',
+  'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500&auto=format&fit=crop&q=60',
+  'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=500&auto=format&fit=crop&q=60',
+  'https://images.unsplash.com/photo-1547592180-85f173990554?w=500&auto=format&fit=crop&q=60',
+  'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=500&auto=format&fit=crop&q=60'
+]
 
 // 카테고리 매핑
 const getCategoryName = (cat2) => {
@@ -117,9 +142,9 @@ const getCategoryName = (cat2) => {
     'A0501': '한식',
     'A0502': '한식',
     'A0503': '한식',
-    'A0504': '일식/중식/양식',
-    'A0505': '일식/중식/양식',
-    'A0506': '일식/중식/양식',
+    'A0504': '일식',
+    'A0505': '중식',
+    'A0506': '양식',
     'A0507': '카페',
     'A0508': '기타'
   }
@@ -134,7 +159,7 @@ const loadRestaurants = async () => {
     
     // API 데이터를 컴포넌트에 맞게 변환
     restaurants.value = data.items
-      .map(item => ({
+      .map((item, index) => ({
         contentid: item.contentid,
         title: item.title,
         category: getCategoryName(item.cat2),
@@ -143,12 +168,18 @@ const loadRestaurants = async () => {
         tel: item.tel || '정보 없음',
         mapx: item.mapx,
         mapy: item.mapy,
-        image: item.firstimage || 'https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=500&auto=format&fit=crop&q=60',
-        description: `${item.title} - 광주광역시 ${item.addr1.split(' ')[2] || ''}`,
+        image: item.firstimage || item.firstimage2 || fallbackImages[index % fallbackImages.length],
+        description: `${item.title} - 광주광역시 ${item.addr1?.split(' ')[2] || ''}`,
         cpyrhtDivCd: item.cpyrhtDivCd || 'Google Places',
         createdtime: item.createdtime
       }))
       .slice(0, 100) // 성능을 위해 처음 100개만 로드
+
+    if (restaurants.value.length > 0) {
+      const firstRestaurant = restaurants.value[0]
+      selectedId.value = firstRestaurant.contentid
+      emit('select-restaurant', firstRestaurant)
+    }
     
     isLoading.value = false
     console.log(`✅ ${restaurants.value.length}개의 음식점 데이터 로드 완료`)
@@ -167,8 +198,12 @@ const filteredRestaurants = computed(() => {
     let matchesCategory = true
     if (filterCategory.value === '한식') {
       matchesCategory = item.category === '한식'
-    } else if (filterCategory.value === '일식/중식/양식') {
-      matchesCategory = item.category === '일식/중식/양식'
+    } else if (filterCategory.value === '일식') {
+      matchesCategory = item.category === '일식'
+    } else if (filterCategory.value === '중식') {
+      matchesCategory = item.category === '중식'
+    } else if (filterCategory.value === '양식') {
+      matchesCategory = item.category === '양식'
     }
     return matchesSearch && matchesCategory
   })
@@ -176,12 +211,15 @@ const filteredRestaurants = computed(() => {
 
 const selectRestaurant = (item) => {
   selectedId.value = item.contentid
-  // Emit event to parent
+  emit('select-restaurant', item)
 }
 
 const calculateRoute = (item) => {
-  console.log('Calculate route for:', item.title)
-  // TODO: Implement route calculation
+  const destination = item.mapy && item.mapx
+    ? `${item.mapy},${item.mapx}`
+    : `${item.addr1} ${item.addr2 || ''}`.trim()
+  const url = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(destination)}`
+  window.open(url, '_blank', 'noopener,noreferrer')
 }
 
 onMounted(() => {

@@ -8,7 +8,6 @@
         </div>
         <div>
           <h1 class="text-xl font-bold tracking-tight">광주 맛집 파인더</h1>
-          <p class="text-[9px] text-blue-200 tracking-wider">LOCAL DATA + GOOGLE API + FASTAPI CHATBOT</p>
         </div>
       </div>
 
@@ -43,9 +42,8 @@
         </button>
       </nav>
 
-      <!-- Right Side: Search & Settings -->
+      <!-- Right Side: Search -->
       <div class="flex items-center gap-2 w-full md:w-auto">
-        <!-- Search Bar -->
         <div class="relative flex-grow md:w-60">
           <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-400">
             <Search class="w-4 h-4" />
@@ -57,40 +55,26 @@
             class="w-full bg-blue-950/40 border border-blue-400/30 text-white rounded-full py-1.5 pl-9 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-white/50 placeholder-blue-200/60"
           />
         </div>
-        <!-- Settings Button -->
-        <button
-          @click="toggleSettings"
-          class="p-2 bg-blue-950/40 hover:bg-blue-800 rounded-full transition text-blue-100"
-          title="API 설정 고도화"
-        >
-          <Settings class="w-5 h-5" />
-        </button>
       </div>
     </div>
-
-    <!-- Settings Panel -->
-    <SettingsPanel v-if="isSettingsOpen" />
   </header>
 </template>
 
 <script setup>
 import { ref, computed } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
-import { Utensils, Search, Settings } from 'lucide-vue-next'
-import SettingsPanel from './SettingsPanel.vue'
+import { Utensils, Search } from 'lucide-vue-next'
 
 const router = useRouter()
 const route = useRoute()
 
 const searchQuery = ref('')
-const isSettingsOpen = ref(false)
 
 const isHome = computed(() => route.path === '/')
 const isCommunity = computed(() => route.path === '/community')
 
 const goHome = () => router.push('/')
 const goCommunity = () => router.push('/community')
-const toggleSettings = () => (isSettingsOpen.value = !isSettingsOpen.value)
 
 const focusOnMap = () => {
   router.push('/')
