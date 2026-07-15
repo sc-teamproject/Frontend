@@ -4,6 +4,9 @@ import router from './router'
 import App from './App.vue'
 import './assets/styles/main.css'
 import 'leaflet/dist/leaflet.css'
+import { initUiPreferences } from './composables/useUiPreferences'
+
+initUiPreferences()
 
 const app = createApp(App)
 

@@ -27,3 +27,70 @@
   width: 100%;
   z-index: 10;
 }
+
+html.dark-theme body {
+  background: #020617;
+  color: #f8fafc;
+}
+
+html.dark-theme #app {
+  background: #020617;
+  color: #f8fafc;
+  color-scheme: dark;
+}
+
+html.dark-theme :is(
+  .text-black,
+  .text-slate-900,
+  .text-slate-800,
+  .text-slate-700,
+  .text-slate-600,
+  .text-slate-500,
+  .text-slate-400,
+  .text-gray-900,
+  .text-gray-800,
+  .text-gray-700,
+  .text-gray-600,
+  .text-gray-500,
+  .text-neutral-900,
+  .text-neutral-800,
+  .text-neutral-700,
+  .text-neutral-600,
+  .text-neutral-500
+) {
+  color: #f8fafc !important;
+}
+
+html.dark-theme :is(
+  .bg-white,
+  .bg-slate-50,
+  .bg-slate-100,
+  .bg-slate-200,
+  .bg-slate-300,
+  .bg-white\/95,
+  .bg-white\/90,
+  .bg-slate-50\/50,
+  .bg-slate-50\/80
+) {
+  background-color: #020617 !important;
+}
+
+html.dark-theme :is(
+  .border-slate-100,
+  .border-slate-200,
+  .border-slate-300,
+  .border-blue-200,
+  .border-blue-300
+) {
+  border-color: #334155 !important;
+}
+
+html.dark-theme :is(input, textarea, select) {
+  background-color: #020617;
+  color: #f8fafc;
+  border-color: #334155;
+}
+
+html.dark-theme :is(input, textarea, select)::placeholder {
+  color: #94a3b8;
+}

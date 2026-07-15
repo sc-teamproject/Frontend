@@ -17,19 +17,31 @@
           @click="goHome"
           :class="['px-3 py-1.5 rounded-md transition', isHome ? 'bg-[#172554] text-white' : 'hover:bg-blue-800 text-blue-100']"
         >
-          홈
+          {{ labels.home }}
         </button>
         <button
           @click="goHome"
           :class="['px-3 py-1.5 rounded-md transition', isHome ? 'bg-[#172554] text-white' : 'hover:bg-blue-800 text-blue-100']"
         >
-          맛집 목록
+          {{ labels.restaurants }}
         </button>
         <button
           @click="goCommunity"
           :class="['px-3 py-1.5 rounded-md transition', isCommunity ? 'bg-[#172554] text-white' : 'hover:bg-blue-800 text-blue-100']"
         >
-          커뮤니티
+          {{ labels.community }}
+        </button>
+        <button
+          @click="toggleTheme"
+          class="px-3 py-1.5 rounded-md text-blue-100 hover:bg-blue-800 transition whitespace-nowrap"
+        >
+          {{ themeLabel }}
+        </button>
+        <button
+          @click="toggleLanguage"
+          class="px-3 py-1.5 rounded-md text-blue-100 hover:bg-blue-800 transition whitespace-nowrap"
+        >
+          {{ languageLabel }}
         </button>
       </nav>
 
@@ -41,6 +53,14 @@
 import { computed } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { Utensils } from 'lucide-vue-next'
+import {
+  initUiPreferences,
+  isKorean,
+  languageLabel,
+  themeLabel,
+  toggleLanguage,
+  toggleTheme
+} from '../../composables/useUiPreferences'
 
 const router = useRouter()
 const route = useRoute()
@@ -48,6 +68,21 @@ const route = useRoute()
 const isHome = computed(() => route.path === '/')
 const isCommunity = computed(() => route.path === '/community')
 
+const labels = computed(() => {
+  if (isKorean.value) {
+    return {
+      home: '홈',
+      restaurants: '맛집 목록',
+      community: '커뮤니티'
+    }
+  }
+
+  return {
+    home: 'Home',
+    restaurants: 'Restaurants',
+    community: 'Community'
+  }
+})
 const goHome = () => router.push('/')
 const goCommunity = () => router.push('/community')
 </script>
