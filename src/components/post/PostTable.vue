@@ -10,7 +10,7 @@
             <th class="px-4 py-3 text-center font-semibold text-slate-700 w-16">{{ uiText.views }}</th>
             <th class="px-4 py-3 text-center font-semibold text-slate-700 w-16">{{ uiText.likes }}</th>
             <th class="px-4 py-3 text-center font-semibold text-slate-700 w-16">{{ uiText.comments }}</th>
-            <th class="px-4 py-3 text-center font-semibold text-slate-700 w-20">{{ uiText.date }}</th>
+            <th class="px-4 py-3 text-center font-semibold text-slate-700 w-20 whitespace-nowrap">{{ uiText.date }}</th>
             <th class="px-4 py-3 text-center font-semibold text-slate-700 w-16">{{ uiText.action }}</th>
           </tr>
         </thead>
@@ -77,7 +77,7 @@
             </td>
 
             <!-- Date -->
-            <td class="px-4 py-3 text-center text-slate-500">{{ post.createdAt }}</td>
+            <td class="px-4 py-3 text-center text-slate-500 whitespace-nowrap">{{ post.createdAt }}</td>
 
             <!-- Actions -->
             <td class="px-4 py-3 text-center">

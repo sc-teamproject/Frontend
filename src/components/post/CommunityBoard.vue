@@ -215,10 +215,35 @@ const filteredPosts = computed(() => {
   })
 })
 
-const totalPosts = computed(() => filteredPosts.value.length)
-const todayPosts = computed(() => 0)
-const weekPosts = computed(() => 0)
-const totalComments = computed(() => filteredPosts.value.reduce((sum, post) => sum + (post.commentCount || 0), 0))
+const getDateKey = (value) => {
+  if (!value) return ''
+  const date = new Date(value)
+  if (Number.isNaN(date.getTime())) return ''
+  return date.toISOString().slice(0, 10)
+}
+
+const getTodayKey = () => new Date().toISOString().slice(0, 10)
+
+const getWeekStartKey = () => {
+  const date = new Date()
+  date.setHours(0, 0, 0, 0)
+  date.setDate(date.getDate() - 6)
+  return date.toISOString().slice(0, 10)
+}
+
+const totalPosts = computed(() => posts.value.length)
+const todayPosts = computed(() => {
+  const todayKey = getTodayKey()
+  return posts.value.filter((post) => getDateKey(post.createdAt) === todayKey).length
+})
+const weekPosts = computed(() => {
+  const weekStartKey = getWeekStartKey()
+  return posts.value.filter((post) => {
+    const postDateKey = getDateKey(post.createdAt)
+    return postDateKey >= weekStartKey && postDateKey <= getTodayKey()
+  }).length
+})
+const totalComments = computed(() => posts.value.reduce((sum, post) => sum + (post.commentCount || 0), 0))
 
 const uiText = computed(() => {
   if (isKorean.value) {
@@ -279,7 +304,7 @@ const mapPostToViewModel = (post, fallback = {}) => {
   return {
     id: normalized.id,
     title: normalized.title || fallbackTitle,
-    category: isKorean.value ? '기타' : 'Other',
+    category: normalized.category || localMeta.category || fallback.category || (isKorean.value ? '기타' : 'Other'),
     restaurantName: normalized.restaurant_name || normalized.restaurantName || localMeta.restaurantName || fallback.restaurantName || '',
     content: normalized.content || fallbackContent,
     author: normalized.nickname || (isKorean.value ? '익명' : 'Anonymous'),
@@ -352,6 +377,7 @@ const addPost = async (newPost) => {
 
     if (createdPost.id) {
       upsertPostMeta(createdPost.id, {
+        category: newPost.category,
         restaurantName: newPost.restaurantName,
         likeCount: Number(newPost.likeCount) || 0,
         imageUrl: newPost.imagePreview || ''
