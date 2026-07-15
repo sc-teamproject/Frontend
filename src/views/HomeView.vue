@@ -1,7 +1,7 @@
 <template>
   <div class="w-full max-w-[1800px] mx-auto px-4 lg:px-6 py-4 flex-grow flex flex-col gap-4">
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 flex-grow">
-      <RestaurantList @select-restaurant="handleSelectRestaurant" />
+      <RestaurantList @select-restaurant="handleSelectRestaurant" @write-post="handleWritePost" />
 
       <section class="lg:col-span-2 flex flex-col gap-4">
         <RestaurantDetail :current-details="selectedRestaurant" />
@@ -19,10 +19,13 @@
 
 <script setup>
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 import RestaurantList from '../components/restaurant/RestaurantList.vue'
 import RestaurantDetail from '../components/restaurant/RestaurantDetail.vue'
 import RestaurantMap from '../components/restaurant/RestaurantMap.vue'
 import ChatBot from '../components/chat/ChatBot.vue'
+
+const router = useRouter()
 
 const selectedRestaurant = ref({
   title: '양동통닭',
@@ -39,6 +42,17 @@ const selectedRestaurant = ref({
 
 const handleSelectRestaurant = (restaurant) => {
   selectedRestaurant.value = restaurant
+}
+
+const handleWritePost = (restaurant) => {
+  const restaurantName = restaurant?.title || ''
+  router.push({
+    name: 'Community',
+    query: {
+      openForm: '1',
+      restaurantName
+    }
+  })
 }
 </script>
 

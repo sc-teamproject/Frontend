@@ -5,8 +5,10 @@
         <thead class="bg-slate-50 border-b border-slate-200">
           <tr>
             <th class="px-4 py-3 text-left font-semibold text-slate-700">{{ uiText.category }}</th>
+            <th class="px-4 py-3 text-left font-semibold text-slate-700">{{ uiText.restaurant }}</th>
             <th class="px-4 py-3 text-left font-semibold text-slate-700">{{ uiText.title }}</th>
             <th class="px-4 py-3 text-center font-semibold text-slate-700 w-16">{{ uiText.views }}</th>
+            <th class="px-4 py-3 text-center font-semibold text-slate-700 w-16">{{ uiText.likes }}</th>
             <th class="px-4 py-3 text-center font-semibold text-slate-700 w-16">{{ uiText.comments }}</th>
             <th class="px-4 py-3 text-center font-semibold text-slate-700 w-20">{{ uiText.date }}</th>
             <th class="px-4 py-3 text-center font-semibold text-slate-700 w-16">{{ uiText.action }}</th>
@@ -37,6 +39,11 @@
             </td>
 
             <!-- Title -->
+            <td class="px-4 py-3 text-slate-700 truncate max-w-[180px]">
+              {{ post.restaurantName || '-' }}
+            </td>
+
+            <!-- Title -->
             <td class="px-4 py-3">
               <button
                 @click="$emit('open-detail', post)"
@@ -48,6 +55,18 @@
 
             <!-- Views -->
             <td class="px-4 py-3 text-center text-slate-600">{{ post.views }}</td>
+
+            <!-- Likes -->
+            <td class="px-4 py-3 text-center">
+              <div class="flex items-center justify-center gap-0.5">
+                <Star
+                  v-for="star in [1, 2, 3, 4, 5]"
+                  :key="`${post.id}-like-${star}`"
+                  class="h-3.5 w-3.5"
+                  :class="star <= (post.likeCount || 0) ? 'fill-yellow-400 text-yellow-400' : 'text-slate-300'"
+                />
+              </div>
+            </td>
 
             <!-- Comments -->
             <td class="px-4 py-3 text-center">
@@ -84,7 +103,7 @@
 
 <script setup>
 import { computed } from 'vue'
-import { MessageSquare } from 'lucide-vue-next'
+import { MessageSquare, Star } from 'lucide-vue-next'
 import { isKorean } from '../../composables/useUiPreferences'
 
 defineProps({
@@ -100,8 +119,10 @@ const uiText = computed(() => {
   if (isKorean.value) {
     return {
       category: '카테고리',
+      restaurant: '식당',
       title: '제목',
       views: '조회수',
+      likes: '좋아요',
       comments: '댓글',
       date: '작성일',
       action: '액션',
@@ -115,8 +136,10 @@ const uiText = computed(() => {
 
   return {
     category: 'Category',
+    restaurant: 'Restaurant',
     title: 'Title',
     views: 'Views',
+    likes: 'Likes',
     comments: 'Comments',
     date: 'Date',
     action: 'Action',

@@ -21,6 +21,24 @@ export const incrementViewCount = async (id) => {
 }
 
 export const createPost = async (payload) => {
+  if (payload?.imageFile instanceof File) {
+    const form = new FormData()
+
+    Object.entries(payload).forEach(([key, value]) => {
+      if (value === undefined || value === null || key === 'imageFile') return
+      form.append(key, value)
+    })
+
+    form.append('image', payload.imageFile)
+
+    const { data } = await api.post('/posts', form, {
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+    })
+    return data
+  }
+
   const { data } = await api.post('/posts', payload)
   return data
 }

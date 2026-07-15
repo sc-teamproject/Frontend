@@ -93,6 +93,13 @@
               {{ uiText.detailButton }}
             </button>
             <button
+              @click.stop="openCommunityWrite(item)"
+              class="flex-1 bg-white hover:bg-slate-100 border border-slate-300 text-slate-700 text-xs font-medium py-1.5 rounded transition flex items-center justify-center gap-1"
+            >
+              <PenSquare class="w-3 h-3 text-emerald-600" />
+              {{ uiText.writeButton }}
+            </button>
+            <button
               @click.stop="calculateRoute(item)"
               class="flex-1 bg-white hover:bg-slate-100 border border-slate-300 text-slate-700 text-xs font-medium py-1.5 rounded transition flex items-center justify-center gap-1"
             >
@@ -122,11 +129,12 @@ import {
   Star,
   Navigation2,
   SearchCode,
-  Search
+  Search,
+  PenSquare
 } from 'lucide-vue-next'
 import { isKorean } from '../../composables/useUiPreferences'
 
-const emit = defineEmits(['select-restaurant'])
+const emit = defineEmits(['select-restaurant', 'write-post'])
 
 const selectedId = ref('132880')
 const searchQuery = ref('')
@@ -143,6 +151,7 @@ const uiText = computed(() => {
       loading: '데이터 로드 중...',
       empty: '검색 조건에 맞는 광주 맛집이 없습니다.',
       detailButton: '상세보기',
+      writeButton: '글쓰기',
       routeButton: '길찾기',
       categoryLabels: {
         전체: '전체',
@@ -171,6 +180,7 @@ const uiText = computed(() => {
     loading: 'Loading data...',
     empty: 'No restaurants match your search.',
     detailButton: 'Details',
+    writeButton: 'Write',
     routeButton: 'Directions',
     categoryLabels: {
       전체: 'All',
@@ -307,6 +317,10 @@ const calculateRoute = (item) => {
     : `${item.addr1} ${item.addr2 || ''}`.trim()
   const url = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(destination)}`
   window.open(url, '_blank', 'noopener,noreferrer')
+}
+
+const openCommunityWrite = (item) => {
+  emit('write-post', item)
 }
 
 onMounted(() => {
