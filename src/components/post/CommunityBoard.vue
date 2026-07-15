@@ -80,13 +80,45 @@
     </Transition>
 
     <!-- Posts Table -->
-    <PostTable :posts="filteredPosts" @open-detail="openPostDetail" @delete="deletePost" />
+    <PostTable :posts="posts" @open-detail="openPostDetail" @delete="deletePost" />
 
     <div
-      v-if="appliedKeyword && filteredPosts.length === 0"
+      v-if="appliedKeyword && posts.length === 0"
       class="rounded-lg border border-slate-200 bg-slate-50 p-4 text-center text-sm text-slate-500"
     >
       {{ uiText.noSearchResult }}
+    </div>
+
+    <!-- Pagination -->
+    <div v-if="totalPages > 1" class="flex items-center justify-center gap-2 pt-2">
+      <button
+        type="button"
+        class="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-40"
+        :disabled="currentPage === 1"
+        @click="changePage(currentPage - 1)"
+      >
+        {{ uiText.prevPage }}
+      </button>
+
+      <button
+        v-for="page in totalPages"
+        :key="page"
+        type="button"
+        class="min-w-10 rounded-lg border px-3 py-2 text-sm font-semibold transition"
+        :class="page === currentPage ? 'border-[#1e3a8a] bg-[#1e3a8a] text-white' : 'border-slate-300 bg-white text-slate-700 hover:bg-slate-50'"
+        @click="changePage(page)"
+      >
+        {{ page }}
+      </button>
+
+      <button
+        type="button"
+        class="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-40"
+        :disabled="currentPage === totalPages"
+        @click="changePage(currentPage + 1)"
+      >
+        {{ uiText.nextPage }}
+      </button>
     </div>
 
     <!-- Detail Modal -->
@@ -175,6 +207,9 @@ const searchInput = ref('')
 const appliedKeyword = ref('')
 const prefillRestaurantName = ref('')
 const localPostMeta = ref(loadStoredPostMeta())
+const currentPage = ref(1)
+const pageSize = 20
+const totalCount = ref(0)
 
 const getPostMeta = (postId) => {
   if (!postId) return {}
@@ -203,18 +238,6 @@ const removePostMeta = (postId) => {
   saveStoredPostMeta(localPostMeta.value)
 }
 
-const filteredPosts = computed(() => {
-  const keyword = appliedKeyword.value.trim().toLowerCase()
-  if (!keyword) return posts.value
-
-  return posts.value.filter((post) => {
-    const title = (post.title || '').toLowerCase()
-    const content = (post.content || '').toLowerCase()
-    const restaurant = (post.restaurantName || '').toLowerCase()
-    return title.includes(keyword) || content.includes(keyword) || restaurant.includes(keyword)
-  })
-})
-
 const getDateKey = (value) => {
   if (!value) return ''
   const date = new Date(value)
@@ -231,7 +254,8 @@ const getWeekStartKey = () => {
   return date.toISOString().slice(0, 10)
 }
 
-const totalPosts = computed(() => posts.value.length)
+const totalPages = computed(() => Math.max(1, Math.ceil(totalCount.value / pageSize)))
+const totalPosts = computed(() => totalCount.value)
 const todayPosts = computed(() => {
   const todayKey = getTodayKey()
   return posts.value.filter((post) => getDateKey(post.createdAt) === todayKey).length
@@ -262,7 +286,9 @@ const uiText = computed(() => {
       searchPlaceholder: '제목/내용/식당명으로 검색',
       searchButton: '검색',
       resetButton: '초기화',
-      noSearchResult: '검색 결과가 없습니다.'
+      noSearchResult: '검색 결과가 없습니다.',
+      prevPage: '이전',
+      nextPage: '다음'
     }
   }
 
@@ -281,7 +307,9 @@ const uiText = computed(() => {
     searchPlaceholder: 'Search by title/content/restaurant',
     searchButton: 'Search',
     resetButton: 'Reset',
-    noSearchResult: 'No matching posts found.'
+    noSearchResult: 'No matching posts found.',
+    prevPage: 'Prev',
+    nextPage: 'Next'
   }
 })
 
@@ -317,10 +345,12 @@ const mapPostToViewModel = (post, fallback = {}) => {
   }
 }
 
-const loadPosts = async (keyword = '') => {
+const loadPosts = async (page = currentPage.value, keyword = appliedKeyword.value) => {
   loading.value = true
   try {
-    const data = await getPosts(1, 20, keyword)
+    currentPage.value = page
+    const data = await getPosts(page, pageSize, keyword)
+    totalCount.value = data.total || 0
     posts.value = (data.items || []).map((post) => mapPostToViewModel(post))
   } catch (error) {
     console.error('Failed to load posts', error)
@@ -331,13 +361,18 @@ const loadPosts = async (keyword = '') => {
 
 const handleSearch = async () => {
   appliedKeyword.value = searchInput.value.trim()
-  await loadPosts(appliedKeyword.value)
+  await loadPosts(1, appliedKeyword.value)
 }
 
 const resetSearch = async () => {
   searchInput.value = ''
   appliedKeyword.value = ''
-  await loadPosts('')
+  await loadPosts(1, '')
+}
+
+const changePage = async (page) => {
+  if (page < 1 || page > totalPages.value || page === currentPage.value) return
+  await loadPosts(page, appliedKeyword.value)
 }
 
 const applyWriteQuery = async () => {
@@ -382,10 +417,9 @@ const addPost = async (newPost) => {
         likeCount: Number(newPost.likeCount) || 0,
         imageUrl: newPost.imagePreview || ''
       })
-      posts.value = [createdPost, ...posts.value.filter((post) => post.id !== createdPost.id)]
-    } else {
-      await loadPosts(appliedKeyword.value)
     }
+
+    await loadPosts(1, appliedKeyword.value)
 
     showForm.value = false
   } catch (error) {
@@ -399,7 +433,7 @@ const deletePost = async (postId) => {
   try {
     await deletePostApi(postId, prompt(isKorean.value ? '삭제를 위해 비밀번호를 입력하세요' : 'Enter the password to delete') || '1234')
     removePostMeta(postId)
-    await loadPosts(appliedKeyword.value)
+    await loadPosts(currentPage.value, appliedKeyword.value)
   } catch (error) {
     console.error('Failed to delete post', error)
     alert(isKorean.value ? '게시글 삭제에 실패했습니다.' : 'Failed to delete the post.')
@@ -460,7 +494,7 @@ const handleCommentDeleted = (commentId) => {
 }
 
 onMounted(() => {
-  loadPosts()
+  loadPosts(1)
   applyWriteQuery()
 })
 

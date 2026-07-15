@@ -13,7 +13,7 @@ const api = axios.create({
   timeout: 10000,
 })
 
-export const getPosts = async (page = 1, size = 10, keyword = '') => {
+export const getPosts = async (page = 1, size = 20, keyword = '') => {
   const { data } = await api.get('/posts', { params: { page, size, keyword } })
   return data
 }
