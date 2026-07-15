@@ -1,16 +1,31 @@
 <template>
-  <div class="bg-white rounded-xl shadow-sm border border-slate-200 flex flex-col overflow-hidden relative">
+  <div
+    ref="mapCardRef"
+    :class="[
+      'bg-white rounded-xl shadow-sm border border-slate-200 flex flex-col overflow-hidden relative transition-all duration-200',
+      isMapExpanded ? 'w-full h-full rounded-none border-0' : ''
+    ]"
+  >
     <div class="bg-slate-50 border-b border-slate-100 px-4 py-2.5 flex items-center justify-between">
       <div class="flex items-center gap-2">
         <MapPin class="text-rose-500 w-5 h-5" />
         <span class="font-bold text-sm">Google 지도 스타일 연동</span>
       </div>
-      <div v-if="gpsDistance" class="text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-1 rounded">
-        내 위치에서 {{ gpsDistance }}km
+      <div class="flex items-center gap-2">
+        <div v-if="gpsDistance" class="text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-1 rounded">
+          내 위치에서 {{ gpsDistance }}km
+        </div>
+        <button
+          @click="toggleMapExpanded"
+          class="text-xs font-medium px-2 py-1 rounded border border-slate-300 bg-white hover:bg-slate-50 transition"
+          :aria-label="isMapExpanded ? '지도 축소' : '지도 전체 화면 확대'"
+        >
+          {{ isMapExpanded ? '지도 축소' : '전체 화면' }}
+        </button>
       </div>
     </div>
 
-    <div class="flex-grow relative bg-slate-100">
+    <div :class="['relative bg-slate-100', isMapExpanded ? 'h-full min-h-0' : 'h-[700px]']">
       <!-- MAP CONTAINER -->
       <div id="map-container"></div>
 
@@ -30,7 +45,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, watch } from 'vue'
+import { ref, onMounted, onUnmounted, watch, nextTick } from 'vue'
 import { MapPin } from 'lucide-vue-next'
 import L from 'leaflet'
 
@@ -43,10 +58,12 @@ const props = defineProps({
 
 let map = null
 let marker = null
+const mapCardRef = ref(null)
 
 const gpsDistance = ref(null)
 const mapx = ref('126.9125968520')
 const mapy = ref('35.1515409291')
+const isMapExpanded = ref(false)
 
 const getCoordinates = () => {
   const lat = Number(props.selectedRestaurant?.mapy)
@@ -95,7 +112,28 @@ const initMap = () => {
   updateMarker()
 }
 
+const syncFullscreenState = () => {
+  isMapExpanded.value = document.fullscreenElement === mapCardRef.value
+}
+
+const toggleMapExpanded = async () => {
+  if (!mapCardRef.value) return
+
+  if (document.fullscreenElement === mapCardRef.value) {
+    await document.exitFullscreen()
+  } else {
+    await mapCardRef.value.requestFullscreen()
+  }
+
+  await nextTick()
+  if (map) {
+    map.invalidateSize()
+  }
+}
+
 onMounted(() => {
+  document.addEventListener('fullscreenchange', syncFullscreenState)
+
   if (typeof L !== 'undefined') {
     initMap()
   } else {
@@ -103,8 +141,19 @@ onMounted(() => {
   }
 })
 
+onUnmounted(() => {
+  document.removeEventListener('fullscreenchange', syncFullscreenState)
+})
+
 watch(() => props.selectedRestaurant?.contentid, () => {
   updateMarker()
+})
+
+watch(isMapExpanded, async () => {
+  await nextTick()
+  if (map) {
+    map.invalidateSize()
+  }
 })
 </script>
 
@@ -112,6 +161,6 @@ watch(() => props.selectedRestaurant?.contentid, () => {
 #map-container {
   width: 100%;
   height: 100%;
-  min-height: 320px;
+  min-height: 700px;
 }
 </style>

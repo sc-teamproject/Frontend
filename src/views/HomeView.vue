@@ -1,14 +1,16 @@
 <template>
-  <div class="max-w-7xl mx-auto w-full p-4 flex-grow flex flex-col gap-4">
+  <div class="w-full max-w-[1800px] mx-auto px-4 lg:px-6 py-4 flex-grow flex flex-col gap-4">
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 flex-grow">
       <RestaurantList @select-restaurant="handleSelectRestaurant" />
 
       <section class="lg:col-span-2 flex flex-col gap-4">
         <RestaurantDetail :current-details="selectedRestaurant" />
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 flex-grow min-h-[340px]">
+        <div class="grid grid-cols-1 xl:grid-cols-[700px_minmax(0,1fr)] gap-4 flex-grow min-h-[700px]">
           <RestaurantMap :selected-restaurant="selectedRestaurant" />
-          <ChatBot />
+          <div class="xl:max-w-[520px] xl:w-full">
+            <ChatBot />
+          </div>
         </div>
       </section>
     </div>

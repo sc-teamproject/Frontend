@@ -1,19 +1,19 @@
 <template>
   <section class="bg-white rounded-xl shadow-sm border border-slate-200 flex flex-col max-h-[calc(100vh-140px)] min-h-[500px]">
     <!-- Header -->
-    <div class="p-4 border-b border-slate-100 flex items-center justify-between bg-slate-50/50 rounded-t-xl">
-      <h2 class="font-bold text-lg flex items-center gap-2">
+    <div class="p-4 border-b border-slate-100 flex items-center justify-between gap-2 bg-slate-50/50 rounded-t-xl">
+      <h2 class="font-bold text-base lg:text-lg flex items-center gap-2 whitespace-nowrap min-w-0">
         <ListFilter class="text-[#1e3a8a] w-5 h-5" />
         광주 맛집 목록
-        <span class="text-xs font-normal text-slate-500">({{ filteredRestaurants.length }}개)</span>
+        <span class="text-xs font-normal text-slate-500 tabular-nums inline-block w-[6ch] text-right">({{ filteredRestaurants.length }}개)</span>
       </h2>
-      <div class="flex gap-1">
+      <div class="flex flex-nowrap gap-1 justify-end shrink-0">
         <button
           v-for="category in categories"
           :key="category"
           @click="filterCategory = category"
           :class="[
-            'px-2.5 py-1 text-xs rounded-full border',
+            'px-2 py-1 text-xs rounded-full border whitespace-nowrap',
             filterCategory === category
               ? 'bg-[#1e3a8a] text-white border-[#1e3a8a]'
               : 'bg-white text-slate-600 border-slate-200 hover:bg-slate-50'
@@ -58,9 +58,15 @@
             : 'bg-white border-slate-200 hover:bg-slate-50/80'
         ]"
       >
-        <!-- Icon -->
-        <div class="w-12 h-12 rounded-lg bg-slate-100 flex-shrink-0 flex items-center justify-center border border-slate-200">
-          <UtensilsCrossed v-if="item.category === '한식'" class="text-orange-500 w-6 h-6" />
+        <!-- Left Visual (icon or selected thumbnail) -->
+        <div class="w-12 h-12 rounded-lg bg-slate-100 flex-shrink-0 flex items-center justify-center border border-slate-200 overflow-hidden">
+          <img
+            v-if="item.hasRealImage"
+            :src="item.image"
+            alt="식당 썸네일"
+            class="w-full h-full object-cover"
+          />
+          <UtensilsCrossed v-else-if="item.category === '한식'" class="text-orange-500 w-6 h-6" />
           <Cake v-else-if="item.category === '베이커리'" class="text-amber-500 w-6 h-6" />
           <Store v-else class="text-slate-500 w-6 h-6" />
         </div>
@@ -124,31 +130,30 @@ const emit = defineEmits(['select-restaurant'])
 const selectedId = ref('132880')
 const searchQuery = ref('')
 const filterCategory = ref('전체')
-const categories = ['전체', '한식', '일식', '중식', '양식']
+const categories = ['전체', '식당', '카페', '한식', '일식', '중식', '양식']
 const restaurants = ref([])
 const isLoading = ref(true)
 
-const fallbackImages = [
-  'https://images.unsplash.com/photo-1529042410759-befb1204b468?w=500&auto=format&fit=crop&q=60',
-  'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500&auto=format&fit=crop&q=60',
-  'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=500&auto=format&fit=crop&q=60',
-  'https://images.unsplash.com/photo-1547592180-85f173990554?w=500&auto=format&fit=crop&q=60',
-  'https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=500&auto=format&fit=crop&q=60'
-]
-
 // 카테고리 매핑
-const getCategoryName = (cat2) => {
-  const categoryMap = {
-    'A0501': '한식',
-    'A0502': '한식',
-    'A0503': '한식',
-    'A0504': '일식',
-    'A0505': '중식',
-    'A0506': '양식',
-    'A0507': '카페',
-    'A0508': '기타'
+// cat2는 음식점 데이터에서 거의 고정(A0502)이므로 분류 키로 쓰면 전부 같은 값으로 떨어진다.
+// 세부 분류인 cat3를 우선 사용하고, 없을 때 lclsSystm2로 보정한다.
+const getCategoryName = (item) => {
+  const cat3Map = {
+    A05020100: '한식',
+    A05020200: '양식',
+    A05020300: '일식',
+    A05020400: '중식',
+    A05020900: '카페'
   }
-  return categoryMap[cat2] || '기타'
+
+  const lclsSystm2Map = {
+    FD01: '한식',
+    FD02: '중식',
+    FD03: '베이커리',
+    FD05: '카페'
+  }
+
+  return cat3Map[item.cat3] || lclsSystm2Map[item.lclsSystm2] || '기타'
 }
 
 // JSON 데이터 로드
@@ -157,23 +162,33 @@ const loadRestaurants = async () => {
     const response = await fetch('/restaurants.json')
     const data = await response.json()
     
-    // API 데이터를 컴포넌트에 맞게 변환
+    // API 데이터를 컴포넌트에 맞게 변환 (전체 데이터 사용)
     restaurants.value = data.items
-      .map((item, index) => ({
+      .map((item) => {
+        const realImage = item.firstimage || item.firstimage2 || ''
+
+        return {
         contentid: item.contentid,
         title: item.title,
-        category: getCategoryName(item.cat2),
+        category: getCategoryName(item),
         addr1: item.addr1,
         addr2: item.addr2 || '',
         tel: item.tel || '정보 없음',
         mapx: item.mapx,
         mapy: item.mapy,
-        image: item.firstimage || item.firstimage2 || fallbackImages[index % fallbackImages.length],
+        image: realImage,
+        hasRealImage: Boolean(realImage),
         description: `${item.title} - 광주광역시 ${item.addr1?.split(' ')[2] || ''}`,
         cpyrhtDivCd: item.cpyrhtDivCd || 'Google Places',
         createdtime: item.createdtime
-      }))
-      .slice(0, 100) // 성능을 위해 처음 100개만 로드
+      }
+      })
+      .sort((a, b) => {
+        if (a.hasRealImage !== b.hasRealImage) {
+          return a.hasRealImage ? -1 : 1
+        }
+        return a.title.localeCompare(b.title, 'ko-KR')
+      })
 
     if (restaurants.value.length > 0) {
       const firstRestaurant = restaurants.value[0]
@@ -195,16 +210,17 @@ const filteredRestaurants = computed(() => {
       item.title.toLowerCase().includes(searchQuery.value.toLowerCase()) ||
       item.addr1.toLowerCase().includes(searchQuery.value.toLowerCase())
 
+    const isCafeCategory = item.category === '카페' || item.category === '베이커리'
+
     let matchesCategory = true
-    if (filterCategory.value === '한식') {
-      matchesCategory = item.category === '한식'
-    } else if (filterCategory.value === '일식') {
-      matchesCategory = item.category === '일식'
-    } else if (filterCategory.value === '중식') {
-      matchesCategory = item.category === '중식'
-    } else if (filterCategory.value === '양식') {
-      matchesCategory = item.category === '양식'
+    if (filterCategory.value === '식당') {
+      matchesCategory = !isCafeCategory
+    } else if (filterCategory.value === '카페') {
+      matchesCategory = isCafeCategory
+    } else if (filterCategory.value !== '전체') {
+      matchesCategory = item.category === filterCategory.value
     }
+
     return matchesSearch && matchesCategory
   })
 })

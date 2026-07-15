@@ -32,11 +32,13 @@
       <!-- Restaurant Photo -->
       <div class="w-full md:w-56 h-40 bg-slate-100 border border-slate-200 rounded-lg overflow-hidden flex-shrink-0 flex items-center justify-center relative shadow-inner">
         <img
+          v-if="currentDetails.image"
           :src="currentDetails.image"
           @error="onImageError"
           alt="맛집 이미지"
           class="w-full h-full object-cover"
         />
+        <div v-else class="text-slate-500 text-sm font-medium">이미지 없음</div>
         <div class="absolute bottom-2 right-2 bg-black/60 text-white text-[10px] px-1.5 py-0.5 rounded">
           {{ currentDetails.cpyrhtDivCd || 'Google Places Photo' }}
         </div>
@@ -60,7 +62,7 @@ const props = defineProps({
       mapx: '126.9125968520',
       mapy: '35.1515409291',
       description: '가마솥에 바삭하게 튀겨내어 고소한 시장식 후라이드 치킨의 완벽한 표본입니다.',
-      image: 'https://images.unsplash.com/photo-1562967914-608f82629710?w=500&auto=format&fit=crop&q=60'
+      image: ''
     })
   }
 })
@@ -70,7 +72,7 @@ const currentDate = computed(() => {
 })
 
 const onImageError = (event) => {
-  event.target.src = 'https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=500&auto=format&fit=crop&q=60'
+  event.target.style.display = 'none'
 }
 </script>
 
