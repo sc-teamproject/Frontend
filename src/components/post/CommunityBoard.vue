@@ -271,6 +271,11 @@ const mapPostToViewModel = (post, fallback = {}) => {
     ? (normalized.images[0]?.image_url || normalized.images[0]?.imageUrl || normalized.images[0]?.url || normalized.images[0])
     : ''
 
+  const imageCandidate = normalized.image_url || normalized.imageUrl || normalized.image || firstImageFromList || localMeta.imageUrl || fallback.imageUrl || ''
+  const resolvedImageUrl = typeof imageCandidate === 'string' && imageCandidate.startsWith('/uploads')
+    ? imageCandidate
+    : imageCandidate
+
   return {
     id: normalized.id,
     title: normalized.title || fallbackTitle,
@@ -281,7 +286,7 @@ const mapPostToViewModel = (post, fallback = {}) => {
     createdAt: normalized.created_at?.slice(0, 10) || normalized.createdAt?.slice(0, 10) || new Date().toISOString().slice(0, 10),
     views: normalized.view_count || normalized.viewCount || 0,
     likeCount: localMeta.likeCount ?? normalized.like_count ?? normalized.likeCount ?? fallback.likeCount ?? 0,
-    imageUrl: normalized.image_url || normalized.imageUrl || normalized.image || firstImageFromList || localMeta.imageUrl || fallback.imageUrl || '',
+    imageUrl: resolvedImageUrl,
     commentCount: normalized.comment_count || normalized.commentCount || (normalized.comments?.length || 0),
     comments: normalized.comments || []
   }

@@ -163,7 +163,7 @@
         </button>
         <button
           type="submit"
-          :disabled="!formData.title.trim() || !formData.content.trim() || !formData.restaurantName.trim()"
+          :disabled="!formData.title.trim() || !formData.content.trim()"
           class="px-4 py-2 rounded-lg bg-[#1e3a8a] text-white font-medium hover:bg-blue-800 disabled:bg-slate-300 transition text-sm"
         >
           {{ uiText.submit }}
