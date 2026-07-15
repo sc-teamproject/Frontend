@@ -19,7 +19,7 @@
           <div class="md:col-span-9 text-slate-800 font-semibold">{{ uiText.categoryValue?.[currentDetails.category] || currentDetails.category }}</div>
 
           <div class="md:col-span-3 text-slate-400 font-medium">{{ uiText.addressLabel }}</div>
-          <div class="md:col-span-9 text-slate-800">{{ currentDetails.addr1 }} {{ currentDetails.addr2 }}</div>
+          <div class="md:col-span-9 text-slate-800">{{ currentDetails.displayAddr1 || currentDetails.addr1 }} {{ currentDetails.displayAddr2 || currentDetails.addr2 }}</div>
 
           <div class="md:col-span-3 text-slate-400 font-medium">{{ uiText.contactLabel }}</div>
           <div class="md:col-span-9 text-slate-800">{{ currentDetails.tel || uiText.noContact }}</div>
@@ -59,6 +59,8 @@ const props = defineProps({
       category: '한식',
       addr1: '전남광주통합특별시 동구 구성로 174',
       addr2: '(양동시장 근처)',
+      displayAddr1: '전남광주통합특별시 동구 구성로 174',
+      displayAddr2: '(양동시장 근처)',
       tel: '062-364-5410',
       mapx: '126.9125968520',
       mapy: '35.1515409291',
@@ -97,7 +99,7 @@ const uiText = computed(() => {
     addressLabel: 'Address',
     contactLabel: 'Contact',
     descriptionLabel: 'Description',
-    noContact: 'No contact info',
+    noContact: 'No contact information',
     categoryValue: {
       한식: 'Korean',
       양식: 'Western',

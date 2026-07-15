@@ -9,18 +9,18 @@
     <div class="bg-slate-50 border-b border-slate-100 px-4 py-2.5 flex items-center justify-between">
       <div class="flex items-center gap-2">
         <MapPin class="text-rose-500 w-5 h-5" />
-        <span class="font-bold text-sm">Google 지도 스타일 연동</span>
+        <span class="font-bold text-sm">{{ uiText.mapTitle }}</span>
       </div>
       <div class="flex items-center gap-2">
         <div v-if="gpsDistance" class="text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-1 rounded">
-          내 위치에서 {{ gpsDistance }}km
+          {{ uiText.distancePrefix }} {{ gpsDistance }}km
         </div>
         <button
           @click="toggleMapExpanded"
           class="text-xs font-medium px-2 py-1 rounded border border-slate-300 bg-white hover:bg-slate-50 transition"
-          :aria-label="isMapExpanded ? '지도 축소' : '지도 전체 화면 확대'"
+          :aria-label="isMapExpanded ? uiText.collapseMap : uiText.expandMap"
         >
-          {{ isMapExpanded ? '지도 축소' : '전체 화면' }}
+          {{ isMapExpanded ? uiText.collapseMap : uiText.expandMap }}
         </button>
       </div>
     </div>
@@ -33,11 +33,11 @@
       <div class="absolute bottom-3 left-3 z-[1000] bg-white/95 backdrop-blur-sm border border-slate-200 rounded-lg p-2.5 shadow-md max-w-[210px]">
         <p class="text-[11px] font-bold text-slate-700 flex items-center gap-1">
           <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
-          Google Map 연동 완료
+          {{ uiText.mapBadge }}
         </p>
         <p class="text-[9px] text-slate-400 mt-1">
-          경도: {{ mapx }}<br />
-          위도: {{ mapy }}
+          {{ uiText.longitudeLabel }}: {{ mapx }}<br />
+          {{ uiText.latitudeLabel }}: {{ mapy }}
         </p>
       </div>
     </div>
@@ -45,9 +45,10 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted, watch, nextTick } from 'vue'
+import { ref, computed, onMounted, onUnmounted, watch, nextTick } from 'vue'
 import { MapPin } from 'lucide-vue-next'
 import L from 'leaflet'
+import { isKorean } from '../../composables/useUiPreferences'
 
 const props = defineProps({
   selectedRestaurant: {
@@ -64,6 +65,30 @@ const gpsDistance = ref(null)
 const mapx = ref('126.9125968520')
 const mapy = ref('35.1515409291')
 const isMapExpanded = ref(false)
+
+const uiText = computed(() => {
+  if (isKorean.value) {
+    return {
+      mapTitle: 'Google 지도 스타일 연동',
+      mapBadge: 'Google Map 연동 완료',
+      distancePrefix: '내 위치에서',
+      longitudeLabel: '경도',
+      latitudeLabel: '위도',
+      expandMap: '지도 전체 화면 확대',
+      collapseMap: '지도 축소'
+    }
+  }
+
+  return {
+    mapTitle: 'Google Maps Style Integration',
+    mapBadge: 'Google Map connected',
+    distancePrefix: 'From my location',
+    longitudeLabel: 'Longitude',
+    latitudeLabel: 'Latitude',
+    expandMap: 'Expand full screen map',
+    collapseMap: 'Collapse map'
+  }
+})
 
 const getCoordinates = () => {
   const lat = Number(props.selectedRestaurant?.mapy)

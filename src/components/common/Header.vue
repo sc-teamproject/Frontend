@@ -7,7 +7,7 @@
           <Utensils class="w-6 h-6" />
         </div>
         <div>
-          <h1 class="text-xl font-bold tracking-tight">광주 맛집 파인더</h1>
+          <h1 class="text-xl font-bold tracking-tight">{{ uiText.brandTitle }}</h1>
         </div>
       </div>
 
@@ -17,19 +17,19 @@
           @click="goHome"
           :class="['px-3 py-1.5 rounded-md transition', isHome ? 'bg-[#172554] text-white' : 'hover:bg-blue-800 text-blue-100']"
         >
-          {{ labels.home }}
+          {{ uiText.home }}
         </button>
         <button
           @click="goHome"
           :class="['px-3 py-1.5 rounded-md transition', isHome ? 'bg-[#172554] text-white' : 'hover:bg-blue-800 text-blue-100']"
         >
-          {{ labels.restaurants }}
+          {{ uiText.restaurants }}
         </button>
         <button
           @click="goCommunity"
           :class="['px-3 py-1.5 rounded-md transition', isCommunity ? 'bg-[#172554] text-white' : 'hover:bg-blue-800 text-blue-100']"
         >
-          {{ labels.community }}
+          {{ uiText.community }}
         </button>
         <button
           @click="toggleTheme"
@@ -54,7 +54,6 @@ import { computed } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { Utensils } from 'lucide-vue-next'
 import {
-  initUiPreferences,
   isKorean,
   languageLabel,
   themeLabel,
@@ -68,9 +67,10 @@ const route = useRoute()
 const isHome = computed(() => route.path === '/')
 const isCommunity = computed(() => route.path === '/community')
 
-const labels = computed(() => {
+const uiText = computed(() => {
   if (isKorean.value) {
     return {
+      brandTitle: '광주 맛집 파인더',
       home: '홈',
       restaurants: '맛집 목록',
       community: '커뮤니티'
@@ -78,6 +78,7 @@ const labels = computed(() => {
   }
 
   return {
+    brandTitle: 'Gwangju Restaurant Finder',
     home: 'Home',
     restaurants: 'Restaurants',
     community: 'Community'

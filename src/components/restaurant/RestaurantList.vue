@@ -74,7 +74,7 @@
         <!-- Details -->
         <div class="flex-grow min-w-0">
           <h3 class="font-bold text-slate-900 truncate">{{ item.title }}</h3>
-          <p class="text-xs text-slate-500 truncate mt-0.5">{{ item.addr1 }}</p>
+          <p class="text-xs text-slate-500 truncate mt-0.5">{{ item.displayAddr1 }} {{ item.displayAddr2 }}</p>
           <div class="flex items-center gap-3 mt-1.5">
             <span class="text-xs font-semibold px-2 py-0.5 bg-slate-100 rounded text-slate-600">
               {{ uiText.typeLabels[item.category] || item.category }}
@@ -237,12 +237,14 @@ const loadRestaurants = async () => {
           category: getCategoryName(item),
           addr1: item.addr1,
           addr2: item.addr2 || '',
+          displayAddr1: isKorean.value ? item.addr1 : (item.addr1En || item.addr1),
+          displayAddr2: isKorean.value ? (item.addr2 || '') : (item.addr2En || item.addr2 || ''),
           tel: item.tel || '정보 없음',
           mapx: item.mapx,
           mapy: item.mapy,
           image: realImage,
           hasRealImage: Boolean(realImage),
-          description: `${displayTitle} - 광주광역시 ${item.addr1?.split(' ')[2] || ''}`,
+          description: `${displayTitle} - ${isKorean.value ? item.addr1 : (item.addr1En || item.addr1)}`,
           cpyrhtDivCd: item.cpyrhtDivCd || 'Google Places',
           createdtime: item.createdtime
         }
@@ -275,7 +277,9 @@ const filteredRestaurants = computed(() => {
     const matchesSearch =
       item.title.toLowerCase().includes(query) ||
       item.originalTitle.toLowerCase().includes(query) ||
-      item.addr1.toLowerCase().includes(query)
+      item.addr1.toLowerCase().includes(query) ||
+      (item.displayAddr1 || '').toLowerCase().includes(query) ||
+      (item.displayAddr2 || '').toLowerCase().includes(query)
 
     const isCafeCategory = item.category === '카페' || item.category === '베이커리'
 

@@ -30,7 +30,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020100",
-      "titleEn": "Jeil Banjeom"
+      "titleEn": "Jeil Banjeom",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi donggu guseonglo 174",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 광산구 광산로29번길 1",
@@ -58,7 +60,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "Songjeong Tteokgalbi No. 1"
+      "titleEn": "Songjeong Tteokgalbi No. 1",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi gwangsangu gwangsanlo29beongil 1",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 서구 상무연하로 72",
@@ -86,7 +90,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "Geumdayeon Hanjeongsik"
+      "titleEn": "Geumdayeon Hanjeongsik",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu sangmu-yeonhalo 72",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 서구 상무중앙로 101",
@@ -114,7 +120,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "Songhak Hanjeongsik"
+      "titleEn": "Songhak Hanjeongsik",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu sangmujung-anglo 101",
+      "addr2En": "(chipyeongdong)"
     },
     {
       "addr1": "전남광주통합특별시 서구 시청로20번길 10",
@@ -142,7 +150,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jonggajib seolleongtang"
+      "titleEn": "jonggajib seolleongtang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu sicheonglo20beongil 10",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 광산구 손재로 407",
@@ -170,7 +180,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "dae yangkkoligomtang"
+      "titleEn": "dae yangkkoligomtang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi gwangsangu sonjaelo 407",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 남구 봉선로133번길 23",
@@ -198,7 +210,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "namhaegadeun"
+      "titleEn": "namhaegadeun",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi namgu bongseonlo133beongil 23",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 서구 천변우하로 373",
@@ -226,7 +240,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "geumganghan ujeonmunsig yugsigdang"
+      "titleEn": "geumganghan ujeonmunsig yugsigdang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu cheonbyeon-uhalo 373",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 동구 무등로306번길 6-1",
@@ -254,7 +270,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "gyelimdongjanchijib"
+      "titleEn": "gyelimdongjanchijib",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi donggu mudeunglo306beongil 6-1",
+      "addr2En": "(gyelimdong)"
     },
     {
       "addr1": "전남광주통합특별시 서구 송풍로17번길 15 (풍암동, 수정빌라)",
@@ -282,7 +300,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020100",
-      "titleEn": "geumdang"
+      "titleEn": "geumdang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu songpunglo17beongil 15 (pung-amdong, sujeongbilla)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 서구 회재로 841",
@@ -310,7 +330,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "gimgangsim kalgugsu"
+      "titleEn": "gimgangsim kalgugsu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu hoejaelo 841",
+      "addr2En": "(mae-woldong)"
     },
     {
       "addr1": "전남광주통합특별시 남구 회재로1186번길 11-1 (주월동)",
@@ -338,7 +360,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "kkuldanji"
+      "titleEn": "kkuldanji",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi namgu hoejaelo1186beongil 11-1 (ju-woldong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 남구 봉선중길 2, 1층",
@@ -366,7 +390,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "manchankodali bongseonjeom"
+      "titleEn": "manchankodali bongseonjeom",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi namgu bongseonjunggil 2, 1cheung",
+      "addr2En": "(bongseondong)"
     },
     {
       "addr1": "전남광주통합특별시 남구 백서로 69",
@@ -394,7 +420,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020300",
-      "titleEn": "metapo"
+      "titleEn": "metapo",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi namgu baegseolo 69",
+      "addr2En": "(yanglimdong)"
     },
     {
       "addr1": "전남광주통합특별시 남구 군분로 73",
@@ -422,7 +450,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "byeog og"
+      "titleEn": "byeog og",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi namgu gunbunlo 73",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 북구 설죽로404번길 12",
@@ -450,7 +480,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "seoseogjeong"
+      "titleEn": "seoseogjeong",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi buggu seoljuglo404beongil 12",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 서구 상무대로 1094",
@@ -478,7 +510,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "gaemago won"
+      "titleEn": "gaemago won",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu sangmudaelo 1094",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 북구 서방로107번길 88",
@@ -506,7 +540,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "du amgolseolleongtang"
+      "titleEn": "du amgolseolleongtang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi buggu seobanglo107beongil 88",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 동구 충장로안길 26",
@@ -534,7 +570,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jinseutong"
+      "titleEn": "jinseutong",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi donggu chungjanglo-angil 26",
+      "addr2En": "(hwanggeumdong)"
     },
     {
       "addr1": "전남광주통합특별시 남구 백운로 67-2",
@@ -562,7 +600,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "han u kkoch"
+      "titleEn": "han u kkoch",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi namgu baeg-unlo 67-2",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 동구 서석로7번길 6-44",
@@ -590,7 +630,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020400",
-      "titleEn": "peoseuteunepal"
+      "titleEn": "peoseuteunepal",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi donggu seoseoglo7beongil 6-44",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 북구 설죽로471번길 12",
@@ -618,7 +660,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "taenggo agu jjim"
+      "titleEn": "taenggo agu jjim",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi buggu seoljuglo471beongil 12",
+      "addr2En": "(samgagdong)"
     },
     {
       "addr1": "전남광주통합특별시 서구 천변좌하로 192",
@@ -646,7 +690,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "peoniseukape&la unji"
+      "titleEn": "peoniseukape&la unji",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu cheonbyeonjwahalo 192",
+      "addr2En": "(chipyeongdong)"
     },
     {
       "addr1": "전남광주통합특별시 광산구 광산로19번길 20  ",
@@ -674,7 +720,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "songjeonggol"
+      "titleEn": "songjeonggol",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi gwangsangu gwangsanlo19beongil 20",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 광산구 임방울대로 611-25  ",
@@ -702,7 +750,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "sekeondeu won"
+      "titleEn": "sekeondeu won",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi gwangsangu imbang-uldaelo 611-25",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 북구 삼소로 352  ",
@@ -730,7 +780,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "munla ijeu531"
+      "titleEn": "munla ijeu531",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi buggu samsolo 352",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 북구 일곡택지로99번길 33  ",
@@ -758,7 +810,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020300",
-      "titleEn": "chachalum"
+      "titleEn": "chachalum",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi buggu ilgogtaegjilo99beongil 33",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 서구 전평길 66  ",
@@ -786,7 +840,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "mae wolnong won"
+      "titleEn": "mae wolnong won",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu jeonpyeonggil 66",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 광산구 송정로15번길 71  ",
@@ -814,7 +870,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "seo ulgobchang"
+      "titleEn": "seo ulgobchang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi gwangsangu songjeonglo15beongil 71",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 광산구 수완로74번길 30-6  ",
@@ -842,7 +900,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "chodon"
+      "titleEn": "chodon",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi gwangsangu su-wanlo74beongil 30-6",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 광산구 풍영정길 53 강변애 ",
@@ -870,7 +930,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "choeju won yuggaejang bonjeom"
+      "titleEn": "choeju won yuggaejang bonjeom",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi gwangsangu pung-yeongjeonggil 53 gangbyeon-ae",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 광산구 목련로394번길 23-26  ",
@@ -898,7 +960,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020100",
-      "titleEn": "chilbong i jjamppong"
+      "titleEn": "chilbong i jjamppong",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi gwangsangu moglyeonlo394beongil 23-26",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 서구 마륵로 23  ",
@@ -926,7 +990,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "deungchon"
+      "titleEn": "deungchon",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu maleuglo 23",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 서구 마륵로 27  ",
@@ -954,7 +1020,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "cheongsuminmuljang eo"
+      "titleEn": "cheongsuminmuljang eo",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu maleuglo 27",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 동구 동계로 11  ",
@@ -982,7 +1050,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "sansu ssambab dongmyeongjeom"
+      "titleEn": "sansu ssambab dongmyeongjeom",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi donggu donggyelo 11",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 서구 상무자유로 32  ",
@@ -1010,7 +1080,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "seopeulla i"
+      "titleEn": "seopeulla i",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu sangmuja-yulo 32",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 서구 상무대로 718  ",
@@ -1038,7 +1110,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020300",
-      "titleEn": "leusi elbeullu"
+      "titleEn": "leusi elbeullu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu sangmudaelo 718",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 서구 시청서편로8번길 3  ",
@@ -1066,7 +1140,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "nalusbae"
+      "titleEn": "nalusbae",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu sicheongseopyeonlo8beongil 3",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 서구 상무누리로 15  ",
@@ -1094,7 +1170,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020400",
-      "titleEn": "chincheu"
+      "titleEn": "chincheu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu sangmunulilo 15",
+      "addr2En": "2cheung"
     },
     {
       "addr1": "전남광주통합특별시 서구 풍금로 67  ",
@@ -1122,7 +1200,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "cheonji yusamgyetang"
+      "titleEn": "cheonji yusamgyetang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu punggeumlo 67",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 서구 무진대로 937  ",
@@ -1150,7 +1230,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "wangppyeosalang gwangcheonjeom"
+      "titleEn": "wangppyeosalang gwangcheonjeom",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu mujindaelo 937",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 서구 상무민주로 16  ",
@@ -1178,7 +1260,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020200",
-      "titleEn": "hajime"
+      "titleEn": "hajime",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu sangmuminjulo 16",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 서구 천변좌하로 436 (유촌동)",
@@ -1206,7 +1290,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020300",
-      "titleEn": "jyangli 6 6"
+      "titleEn": "jyangli 6 6",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu cheonbyeonjwahalo 436 (yuchondong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 북구 송강로 49  ",
@@ -1234,7 +1320,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "kape eol ssi"
+      "titleEn": "kape eol ssi",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi buggu songganglo 49",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 서구 군분로 228 (농성동)",
@@ -1262,7 +1350,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "nongseonghwalobonjeom"
+      "titleEn": "nongseonghwalobonjeom",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu gunbunlo 228 (nongseongdong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 광산구 임방울대로 347  ",
@@ -1290,7 +1380,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020200",
-      "titleEn": "su wanchobab"
+      "titleEn": "su wanchobab",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi gwangsangu imbang-uldaelo 347",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 광산구 수완로14번길 27  ",
@@ -1318,7 +1410,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "hamane agu jjim su wanbonjeom"
+      "titleEn": "hamane agu jjim su wanbonjeom",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi gwangsangu su-wanlo14beongil 27",
+      "addr2En": "1cheung"
     },
     {
       "addr1": "전남광주통합특별시 동구 지호로124번길 32  ",
@@ -1346,7 +1440,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "bindeuleogseu"
+      "titleEn": "bindeuleogseu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi donggu jiholo124beongil 32",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 동구 동산길 42  ",
@@ -1374,7 +1470,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "kapejijeu"
+      "titleEn": "kapejijeu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi donggu dongsangil 42",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 북구 대천로 143  ",
@@ -1402,7 +1500,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "mi kkumi kku"
+      "titleEn": "mi kkumi kku",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi buggu daecheonlo 143",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 북구 밤실로 163-9  ",
@@ -1430,7 +1530,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "bamsilma eul"
+      "titleEn": "bamsilma eul",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi buggu bamsillo 163-9",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 북구 연양로67번길 5  ",
@@ -1458,7 +1560,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "baegnyeonhan u"
+      "titleEn": "baegnyeonhan u",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi buggu yeon-yanglo67beongil 5",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 북구 밤실로 178  ",
@@ -1486,7 +1590,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "o yasli dolsotbab"
+      "titleEn": "o yasli dolsotbab",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi buggu bamsillo 178",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 북구 일곡마을로 148  ",
@@ -1514,7 +1620,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jaejudang bonjeom"
+      "titleEn": "jaejudang bonjeom",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi buggu ilgogma-eullo 148",
+      "addr2En": "1cheung"
     },
     {
       "addr1": "전남광주통합특별시 서구 천변좌로 14  ",
@@ -1542,7 +1650,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "gaelleoli24"
+      "titleEn": "gaelleoli24",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu cheonbyeonjwalo 14",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 서구 개산길 13-11  ",
@@ -1570,7 +1680,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "ongodang"
+      "titleEn": "ongodang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu gaesangil 13-11",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 북구 저불로31번길 4-1  ",
@@ -1598,7 +1710,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jogbalchanggo"
+      "titleEn": "jogbalchanggo",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi buggu jeobullo31beongil 4-1",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 동구 지호로127번길 9 (지산동)",
@@ -1626,7 +1740,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "paldogangsan"
+      "titleEn": "paldogangsan",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi donggu jiholo127beongil 9 (jisandong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 광산구 신창로166번길 24",
@@ -1654,7 +1770,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "geumsujeo eunsujeo"
+      "titleEn": "geumsujeo eunsujeo",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi gwangsangu sinchanglo166beongil 24",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 남구 효덕로 105",
@@ -1682,7 +1800,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "joseon og"
+      "titleEn": "joseon og",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi namgu hyodeoglo 105",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 서구 내방로161번길 4 1층",
@@ -1710,7 +1830,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "milae yeon"
+      "titleEn": "milae yeon",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu naebanglo161beongil 4 1cheung",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 남구 월산로116번길 22-1",
@@ -1738,7 +1860,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020300",
-      "titleEn": "luchi a"
+      "titleEn": "luchi a",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi namgu wolsanlo116beongil 22-1",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 남구 서문대로556번길 27",
@@ -1766,7 +1890,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020100",
-      "titleEn": "jinseugadeun"
+      "titleEn": "jinseugadeun",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi namgu seomundaelo556beongil 27",
+      "addr2En": "(songhadong)"
     },
     {
       "addr1": "전남광주통합특별시 동구 동계천로 167-7  ",
@@ -1794,7 +1920,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "chaemi won"
+      "titleEn": "chaemi won",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi donggu donggyecheonlo 167-7",
+      "addr2En": "1cheung"
     },
     {
       "addr1": "전남광주통합특별시 서구 풍암1로21번길 3-16 1층",
@@ -1822,7 +1950,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "choeda yeonsyabeusyabeu"
+      "titleEn": "choeda yeonsyabeusyabeu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu pung-am1lo21beongil 3-16 1cheung",
+      "addr2En": "(pung-amdong)"
     },
     {
       "addr1": "전남광주통합특별시 남구 봉선중길 4",
@@ -1850,7 +1980,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "dangsannamujib"
+      "titleEn": "dangsannamujib",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi namgu bongseonjunggil 4",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 동구 문화전당로 43 3층",
@@ -1878,7 +2010,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jangdogdae"
+      "titleEn": "jangdogdae",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi donggu munhwajeondanglo 43 3cheung",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 남구 제중로 42 (양림동)",
@@ -1906,7 +2040,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020300",
-      "titleEn": "mali osyepeu"
+      "titleEn": "mali osyepeu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi namgu jejunglo 42 (yanglimdong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 광산구 송도로85번길 22",
@@ -1934,7 +2070,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "kape gung"
+      "titleEn": "kape gung",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi gwangsangu songdolo85beongil 22",
+      "addr2En": "(dosandong)"
     },
     {
       "addr1": "전남광주통합특별시 동구 중앙로160번길 16-10  ",
@@ -1962,7 +2100,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "hwangsolchon chungjangjeom"
+      "titleEn": "hwangsolchon chungjangjeom",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi donggu jung-anglo160beongil 16-10",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 서구 마륵로 24  ",
@@ -1990,7 +2130,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "maegmundong"
+      "titleEn": "maegmundong",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu maleuglo 24",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 광산구 풍영로229번길 53  ",
@@ -2018,7 +2160,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "haegung"
+      "titleEn": "haegung",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi gwangsangu pung-yeonglo229beongil 53",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 광산구 풍영로 95  ",
@@ -2046,7 +2190,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "yeosuhoesusan"
+      "titleEn": "yeosuhoesusan",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi gwangsangu pung-yeonglo 95",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 광산구 수완로50번길 44-3  ",
@@ -2074,7 +2220,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020200",
-      "titleEn": "solbatsotbab"
+      "titleEn": "solbatsotbab",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi gwangsangu su-wanlo50beongil 44-3",
+      "addr2En": "1cheung"
     },
     {
       "addr1": "전남광주통합특별시 광산구 임방울대로 503  ",
@@ -2102,7 +2250,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "gwanghujang eo"
+      "titleEn": "gwanghujang eo",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi gwangsangu imbang-uldaelo 503",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 광산구 임곡로 523-7 (진곡동)",
@@ -2130,7 +2280,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020100",
-      "titleEn": "namjjogma euldoljjajang"
+      "titleEn": "namjjogma euldoljjajang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi gwangsangu imgoglo 523-7 (jingogdong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 광산구 신창로138번길 31-5  ",
@@ -2158,7 +2310,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "bakal"
+      "titleEn": "bakal",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi gwangsangu sinchanglo138beongil 31-5",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 광산구 비아동원촌길 71  ",
@@ -2186,7 +2340,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "bi a kkochgejang"
+      "titleEn": "bi a kkochgejang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi gwangsangu bi-adong-wonchongil 71",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 광산구 도산로9번길 54 옛날에금잔디 ",
@@ -2214,7 +2370,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "yesnal e geumjandi"
+      "titleEn": "yesnal e geumjandi",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi gwangsangu dosanlo9beongil 54 yesnal-egeumjandi",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 광산구 삼도로 748  ",
@@ -2242,7 +2400,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "beokismunlibeo"
+      "titleEn": "beokismunlibeo",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi gwangsangu samdolo 748",
+      "addr2En": "1cheung,2cheung"
     },
     {
       "addr1": "전남광주통합특별시 서구 눌재로 434  ",
@@ -2270,7 +2430,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "gabaedang"
+      "titleEn": "gabaedang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu nuljaelo 434",
+      "addr2En": "1cheung"
     },
     {
       "addr1": "전남광주통합특별시 서구 풍암순환로 150 (풍암동)",
@@ -2298,7 +2460,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020200",
-      "titleEn": "beoschobab"
+      "titleEn": "beoschobab",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu pung-amsunhwanlo 150 (pung-amdong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 서구 마륵복개로 57  ",
@@ -2326,7 +2490,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "dadohaemulnala"
+      "titleEn": "dadohaemulnala",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu maleugboggaelo 57",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 동구 남문로 614  ",
@@ -2354,7 +2520,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "magdong ihoegwan"
+      "titleEn": "magdong ihoegwan",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi donggu nammunlo 614",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 동구 지호로 137-7  ",
@@ -2382,7 +2550,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "namgajeong"
+      "titleEn": "namgajeong",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi donggu jiholo 137-7",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 서구 마륵복개로 147 (치평동, 아트빌)",
@@ -2410,7 +2580,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "yeonhwasigdang"
+      "titleEn": "yeonhwasigdang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi seogu maleugboggaelo 147 (chipyeongdong, ateubil)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 동구 문화전당로 38 (광산동)",
@@ -2438,7 +2610,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "kapejinjeongseong"
+      "titleEn": "kapejinjeongseong",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi donggu munhwajeondanglo 38 (gwangsandong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 담양읍 마두길 4",
@@ -2466,7 +2640,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "wonjoje ilsuchbulgalbi"
+      "titleEn": "wonjoje ilsuchbulgalbi",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun dam-yang-eub madugil 4",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 도개안길 75  ",
@@ -2494,7 +2670,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "aki olloji"
+      "titleEn": "aki olloji",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun dogae-angil 75",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 한수동로 155  ",
@@ -2522,7 +2700,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "dalbichtteulag"
+      "titleEn": "dalbichtteulag",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun hansudonglo 155",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 가사문학로 619  ",
@@ -2550,7 +2730,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "daega"
+      "titleEn": "daega",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun gasamunhaglo 619",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 가사문학로 1149  ",
@@ -2578,7 +2760,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020300",
-      "titleEn": "opelaha useu"
+      "titleEn": "opelaha useu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun gasamunhaglo 1149",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 의병로 41  ",
@@ -2606,7 +2790,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "byeog odong bonjeom"
+      "titleEn": "byeog odong bonjeom",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun uibyeonglo 41",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 고서면 고읍현길 38-4",
@@ -2634,7 +2820,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jeontongsigdang"
+      "titleEn": "jeontongsigdang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun goseomyeon go-eubhyeongil 38-4",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 월산면 가산길 358",
@@ -2662,7 +2850,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "juglim wongadeun"
+      "titleEn": "juglim wongadeun",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun wolsanmyeon gasangil 358",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 대전면 방축동길 4",
@@ -2690,7 +2880,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "hanjaegolha yanjib"
+      "titleEn": "hanjaegolha yanjib",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun daejeonmyeon bangchugdonggil 4",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 고서면 잣정길 133",
@@ -2718,7 +2910,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "damsojeong"
+      "titleEn": "damsojeong",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun goseomyeon jasjeonggil 133",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 담양읍 죽향대로 1121",
@@ -2746,7 +2940,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "deog ingwan"
+      "titleEn": "deog ingwan",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun dam-yang-eub jughyangdaelo 1121",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 용면 추월산로 1284",
@@ -2774,7 +2970,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jangmigadeun"
+      "titleEn": "jangmigadeun",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun yongmyeon chu-wolsanlo 1284",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 월산면 담장로 143",
@@ -2802,7 +3000,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "namdo yedam"
+      "titleEn": "namdo yedam",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun wolsanmyeon damjanglo 143",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 월산면 도개길 15-56",
@@ -2830,7 +3030,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020300",
-      "titleEn": "yoli on(YORION)"
+      "titleEn": "yoli on(YORION)",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun wolsanmyeon dogaegil 15-56",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 월산면 담장로 67",
@@ -2858,7 +3060,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "kapemilkeulepe"
+      "titleEn": "kapemilkeulepe",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun wolsanmyeon damjanglo 67",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 담양읍 천변5길 20",
@@ -2886,7 +3090,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "ttugbanggugsu"
+      "titleEn": "ttugbanggugsu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun dam-yang-eub cheonbyeon5gil 20",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 금성산성길 271  ",
@@ -2914,7 +3120,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "eotensyeonpeullijeu"
+      "titleEn": "eotensyeonpeullijeu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun geumseongsanseonggil 271",
+      "addr2En": "1cheung"
     },
     {
       "addr1": "전남광주통합특별시 담양군 추령로 375-21  ",
@@ -2942,7 +3150,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "kapehosidam"
+      "titleEn": "kapehosidam",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun chulyeonglo 375-21",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 추월산로 900-9  ",
@@ -2970,7 +3180,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "kkamanggam"
+      "titleEn": "kkamanggam",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun chu-wolsanlo 900-9",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 객사4길 38-11  ",
@@ -2998,7 +3210,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "daesalang unsudaetongbab"
+      "titleEn": "daesalang unsudaetongbab",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun gaegsa4gil 38-11",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 죽향문화로 403  ",
@@ -3026,7 +3240,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "dam yangbambuli"
+      "titleEn": "dam yangbambuli",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun jughyangmunhwalo 403",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 객사2길 11-24  ",
@@ -3054,7 +3270,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020200",
-      "titleEn": "sobajib bonjeom"
+      "titleEn": "sobajib bonjeom",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun gaegsa2gil 11-24",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 금성산성길 282-19  ",
@@ -3082,7 +3300,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "eteugeullaseu"
+      "titleEn": "eteugeullaseu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun geumseongsanseonggil 282-19",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 죽향대로 1302-1  ",
@@ -3110,7 +3330,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "oma ibab"
+      "titleEn": "oma ibab",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun jughyangdaelo 1302-1",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 금성산성길 72  ",
@@ -3138,7 +3360,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020200",
-      "titleEn": "jekeu wadonkkaseu"
+      "titleEn": "jekeu wadonkkaseu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun geumseongsanseonggil 72",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 강의길 73  ",
@@ -3166,7 +3390,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "gang uilichu eotang"
+      "titleEn": "gang uilichu eotang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun gang-uigil 73",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 담양읍 죽향문화로 22",
@@ -3194,7 +3420,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "dam yang apjib"
+      "titleEn": "dam yang apjib",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun dam-yang-eub jughyangmunhwalo 22",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 송강정로 212  ",
@@ -3222,7 +3450,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "ssanggyosuchbulgalbi dam yang bonjeom"
+      "titleEn": "ssanggyosuchbulgalbi dam yang bonjeom",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun songgangjeonglo 212",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 깊은실길 16  ",
@@ -3250,7 +3480,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "myeonggajeong"
+      "titleEn": "myeonggajeong",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun gip-eunsilgil 16",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 면앙정로 368  ",
@@ -3278,7 +3510,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "damhwa"
+      "titleEn": "damhwa",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun myeon-angjeonglo 368",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 추성로 1318  ",
@@ -3306,7 +3540,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "dam yangjegwa"
+      "titleEn": "dam yangjegwa",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun chuseonglo 1318",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 산덕연동길 14  ",
@@ -3334,7 +3570,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "gosanchonjib"
+      "titleEn": "gosanchonjib",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun sandeog-yeondonggil 14",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 원등1길 16-7  ",
@@ -3362,7 +3600,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "goseohoegwan"
+      "titleEn": "goseohoegwan",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun wondeung1gil 16-7",
+      "addr2En": "goseohoegwan"
     },
     {
       "addr1": "전남광주통합특별시 담양군 연산길 89-11  ",
@@ -3390,7 +3630,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "ogdam"
+      "titleEn": "ogdam",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun yeonsangil 89-11",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 사동길 14-25  ",
@@ -3418,7 +3660,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "wonjochangpyeongsijanggugbab"
+      "titleEn": "wonjochangpyeongsijanggugbab",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun sadonggil 14-25",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 객사3길 15  ",
@@ -3446,7 +3690,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jugsundalggugsu"
+      "titleEn": "jugsundalggugsu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun gaegsa3gil 15",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 사동길 12-12  ",
@@ -3474,7 +3720,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "changpyeonggugbab"
+      "titleEn": "changpyeonggugbab",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun sadonggil 12-12",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 객사2길 14  ",
@@ -3502,7 +3750,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "chillingseukape"
+      "titleEn": "chillingseukape",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun gaegsa2gil 14",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 죽향대로 723 담양애꽃 ",
@@ -3530,7 +3780,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "dam yang ae kkoch"
+      "titleEn": "dam yang ae kkoch",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun jughyangdaelo 723 dam-yang-ae-kkoch",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 돌담길 102  ",
@@ -3558,7 +3810,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "seullositi yagchobabsang"
+      "titleEn": "seullositi yagchobabsang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun doldamgil 102",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 담양읍 무정로 48",
@@ -3586,7 +3840,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "cheongjeonsig yugjeomsigdang"
+      "titleEn": "cheongjeonsig yugjeomsigdang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun dam-yang-eub mujeonglo 48",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 창평면 의병로 31",
@@ -3614,7 +3870,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "changpyeongjeontong andubu"
+      "titleEn": "changpyeongjeontong andubu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun changpyeongmyeon uibyeonglo 31",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 추성로 1239  ",
@@ -3642,7 +3900,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "yanggaglikichin"
+      "titleEn": "yanggaglikichin",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun chuseonglo 1239",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 창평면 창평현로 476",
@@ -3670,7 +3930,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "songjughoegwan"
+      "titleEn": "songjughoegwan",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun changpyeongmyeon changpyeonghyeonlo 476",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 담양읍 중앙로 92-1",
@@ -3698,7 +3960,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020400",
-      "titleEn": "beteunamsigdang&mateu"
+      "titleEn": "beteunamsigdang&mateu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun dam-yang-eub jung-anglo 92-1",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 반석길 48-8  ",
@@ -3726,7 +3990,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050200",
-      "titleEn": "myeongga eun"
+      "titleEn": "myeongga eun",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun banseoggil 48-8",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 지침6길 78-9  ",
@@ -3754,7 +4020,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "haengboghan imgeumnim"
+      "titleEn": "haengboghan imgeumnim",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun jichim6gil 78-9",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 천변5길 54-4  ",
@@ -3782,7 +4050,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "hwanggeumsonamu"
+      "titleEn": "hwanggeumsonamu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun cheonbyeon5gil 54-4",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 수북면 한수동로 524",
@@ -3810,7 +4080,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD03",
       "lclsSystm3": "FD030100",
-      "titleEn": "mong e ttu waleu je ppangso"
+      "titleEn": "mong e ttu waleu je ppangso",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun subugmyeon hansudonglo 524",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 담양군 대전면 추성1로 425-9",
@@ -3838,7 +4110,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "opeudeokeopeu"
+      "titleEn": "opeudeokeopeu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi dam-yanggun daejeonmyeon chuseong1lo 425-9",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 나주시 봉황로 110-39 (부덕동)",
@@ -3866,7 +4140,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "wolhadang"
+      "titleEn": "wolhadang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi najusi bonghwanglo 110-39 (budeogdong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 나주시 남평읍 강변1길 76",
@@ -3894,7 +4170,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "libi eleu"
+      "titleEn": "libi eleu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi najusi nampyeong-eub gangbyeon1gil 76",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 나주시 나주천1길 79",
@@ -3922,7 +4200,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "yehyanghanjeongsig"
+      "titleEn": "yehyanghanjeongsig",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi najusi najucheon1gil 79",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 나주시 금성관길 2 (중앙동)",
@@ -3950,7 +4230,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "nampyeonghalmaejib"
+      "titleEn": "nampyeonghalmaejib",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi najusi geumseonggwangil 2 (jung-angdong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 나주시 남평읍 남평2로 50-12",
@@ -3978,7 +4260,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020100",
-      "titleEn": "unamsigdang"
+      "titleEn": "unamsigdang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi najusi nampyeong-eub nampyeong2lo 50-12",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 나주시 왕곡면 나주서부로 389",
@@ -4006,7 +4290,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "wanggoggadeun"
+      "titleEn": "wanggoggadeun",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi najusi wanggogmyeon najuseobulo 389",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 나주시 동촌로 236-42  ",
@@ -4034,7 +4320,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "GGT POT"
+      "titleEn": "GGT POT",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi najusi dongchonlo 236-42",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 나주시 강변1길 36  ",
@@ -4062,7 +4350,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "yudilla iteu"
+      "titleEn": "yudilla iteu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi najusi gangbyeon1gil 36",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 나주시 재신길 24  ",
@@ -4090,7 +4380,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "yuntteul"
+      "titleEn": "yuntteul",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi najusi jaesingil 24",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 나주시 석전2길 20  ",
@@ -4118,7 +4410,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "haemi yeon"
+      "titleEn": "haemi yeon",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi najusi seogjeon2gil 20",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 나주시 황동2길 4-15  ",
@@ -4146,7 +4440,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jinmigugbab"
+      "titleEn": "jinmigugbab",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi najusi hwangdong2gil 4-15",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 나주시 정보화길 50  ",
@@ -4174,7 +4470,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "biseuteo"
+      "titleEn": "biseuteo",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi najusi jeongbohwagil 50",
+      "addr2En": "sangga 1cheung"
     },
     {
       "addr1": "전남광주통합특별시 나주시 지석로 10  ",
@@ -4202,7 +4500,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "bu yeongsig yugsigdangmasdaemas"
+      "titleEn": "bu yeongsig yugsigdangmasdaemas",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi najusi jiseoglo 10",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 나주시 세남로 1330 번영회관 ",
@@ -4230,7 +4530,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "beon yeonghoegwan"
+      "titleEn": "beon yeonghoegwan",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi najusi senamlo 1330 beon-yeonghoegwan",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 나주시 건재로 193  ",
@@ -4258,7 +4560,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "songhyeonbulgogi"
+      "titleEn": "songhyeonbulgogi",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi najusi geonjaelo 193",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 나주시 문화로 216  ",
@@ -4286,7 +4590,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020200",
-      "titleEn": "hyobichobab"
+      "titleEn": "hyobichobab",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi najusi munhwalo 216",
+      "addr2En": "do-wonjuchabilding 1cheung 158ho"
     },
     {
       "addr1": "전남광주통합특별시 나주시 빛가람동 159-5",
@@ -4314,7 +4620,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "seute ike isyeon"
+      "titleEn": "seute ike isyeon",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi najusi bichgalamdong 159-5",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 나주시 상야1길 20  ",
@@ -4342,7 +4650,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020100",
-      "titleEn": "ihwa won"
+      "titleEn": "ihwa won",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi najusi sang-ya1gil 20",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 나주시 황동2길 3-5 (빛가람동)",
@@ -4370,7 +4680,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "yagseonmyeongga"
+      "titleEn": "yagseonmyeongga",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi najusi hwangdong2gil 3-5 (bichgalamdong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 나주시 남평1로 82-10  ",
@@ -4398,7 +4710,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "nampyeonghan uchon"
+      "titleEn": "nampyeonghan uchon",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi najusi nampyeong1lo 82-10",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 화순군 능주면 학포로 1877",
@@ -4426,7 +4740,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "hwangto wachamsuch"
+      "titleEn": "hwangto wachamsuch",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi hwasungun neungjumyeon hagpolo 1877",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 화순군 화순읍 상삼2길 13",
@@ -4454,7 +4770,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "yagsanheug yeomsogadeun"
+      "titleEn": "yagsanheug yeomsogadeun",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi hwasungun hwasun-eub sangsam2gil 13",
+      "addr2En": "1cheung"
     },
     {
       "addr1": "전남광주통합특별시 화순군 도곡면 지강로 260",
@@ -4482,7 +4800,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "dunggeunjibung"
+      "titleEn": "dunggeunjibung",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi hwasungun dogogmyeon jiganglo 260",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 화순군 화순읍 지강로 650",
@@ -4510,7 +4830,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "gujiga"
+      "titleEn": "gujiga",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi hwasungun hwasun-eub jiganglo 650",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 화순군 지강로 514-6 진해가든 ",
@@ -4538,7 +4860,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "yujinjeong"
+      "titleEn": "yujinjeong",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi hwasungun jiganglo 514-6 jinhaegadeun",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 화순군 서양로 79  ",
@@ -4566,7 +4890,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "sapyeongdaseulgisujebi"
+      "titleEn": "sapyeongdaseulgisujebi",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi hwasungun seo-yanglo 79",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 화순군 화순읍 한고을길 8-1",
@@ -4594,7 +4920,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020200",
-      "titleEn": "pote ibeul"
+      "titleEn": "pote ibeul",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi hwasungun hwasun-eub hango-eulgil 8-1",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 화순군 화순읍 큰재전원길 25",
@@ -4622,7 +4950,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "ligo"
+      "titleEn": "ligo",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi hwasungun hwasun-eub keunjaejeon-wongil 25",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 화순군 천태로 1020  ",
@@ -4650,7 +4980,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "gubaeggadeun"
+      "titleEn": "gubaeggadeun",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi hwasungun cheontaelo 1020",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 화순군 지강로 262  ",
@@ -4678,7 +5010,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "beuledeubaeg"
+      "titleEn": "beuledeubaeg",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi hwasungun jiganglo 262",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 화순군 연양1길 28  ",
@@ -4706,7 +5040,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "kape adeomaen"
+      "titleEn": "kape adeomaen",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi hwasungun yeon-yang1gil 28",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 화순군 유천길 48-13  ",
@@ -4734,7 +5070,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "hwasunhada"
+      "titleEn": "hwasunhada",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi hwasungun yucheongil 48-13",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 화순군 부처샘길 1-7  ",
@@ -4762,7 +5100,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "hwasunjib"
+      "titleEn": "hwasunjib",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi hwasungun bucheosaemgil 1-7",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 화순군 신기중앙길 2  ",
@@ -4790,7 +5130,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020300",
-      "titleEn": "poleseuteu96"
+      "titleEn": "poleseuteu96",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi hwasungun singijung-anggil 2",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 화순군 안양산로 72  ",
@@ -4818,7 +5160,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "oke imogjanggadeun"
+      "titleEn": "oke imogjanggadeun",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi hwasungun an-yangsanlo 72",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 화순군 칠충로 11 축산물판매장 ",
@@ -4846,7 +5190,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020100",
-      "titleEn": "bultaneun yonggungjjamppong"
+      "titleEn": "bultaneun yonggungjjamppong",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi hwasungun chilchunglo 11 chugsanmulpanmaejang",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 화순군 도곡면 화남길 9-38",
@@ -4874,7 +5220,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "sanma euldotoli"
+      "titleEn": "sanma euldotoli",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi hwasungun dogogmyeon hwanamgil 9-38",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 화순군 시장길 33 재명상사 ",
@@ -4902,7 +5250,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "yesnaldubu"
+      "titleEn": "yesnaldubu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi hwasungun sijanggil 33 jaemyeongsangsa",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 장성군 행복1길 2  ",
@@ -4930,7 +5280,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "tta tteushanseom ondo"
+      "titleEn": "tta tteushanseom ondo",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi jangseonggun haengbog1gil 2",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 장성군 고산로 17  ",
@@ -4958,7 +5310,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "bultaesanjin wonseong"
+      "titleEn": "bultaesanjin wonseong",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi jangseonggun gosanlo 17",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 장성군 불태3로 138-59  ",
@@ -4986,7 +5340,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "ateuli um"
+      "titleEn": "ateuli um",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi jangseonggun bultae3lo 138-59",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 장성군 노사로 514  ",
@@ -5014,7 +5370,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "ode on"
+      "titleEn": "ode on",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi jangseonggun nosalo 514",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 장성군 구대해길 65-7  ",
@@ -5042,7 +5400,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "ogjeonggadeun"
+      "titleEn": "ogjeonggadeun",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi jangseonggun gudaehaegil 65-7",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 장성군 덕천길 37  ",
@@ -5070,7 +5430,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "kape isda"
+      "titleEn": "kape isda",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi jangseonggun deogcheongil 37",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 장성군 구석길 71  ",
@@ -5098,7 +5460,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "pilgeulim"
+      "titleEn": "pilgeulim",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi jangseonggun guseoggil 71",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 장성군 초동길 1  ",
@@ -5126,7 +5490,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "chodongsundubu"
+      "titleEn": "chodongsundubu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi jangseonggun chodonggil 1",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 장성군 황룡면 구석길 53-2",
@@ -5154,7 +5520,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "cheongja yeon"
+      "titleEn": "cheongja yeon",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi jangseonggun hwanglyongmyeon guseoggil 53-2",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 장성군 남창로 340-22  ",
@@ -5182,7 +5550,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "namchangnong won"
+      "titleEn": "namchangnong won",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi jangseonggun namchanglo 340-22",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 장성군 황룡면 홍길동로 388-10",
@@ -5210,7 +5580,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "sangoljjagi"
+      "titleEn": "sangoljjagi",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi jangseonggun hwanglyongmyeon honggildonglo 388-10",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 장성군 영장로 1800  ",
@@ -5238,7 +5610,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "KAFE52"
+      "titleEn": "KAFE52",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi jangseonggun yeongjanglo 1800",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 장성군 황룡면 강변로 521-1",
@@ -5266,7 +5640,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "hwanglyong usijanggugbabjib"
+      "titleEn": "hwanglyong usijanggugbabjib",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi jangseonggun hwanglyongmyeon gangbyeonlo 521-1",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 장성군 청운길 38  ",
@@ -5294,7 +5670,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "le idibeogseu jangseong"
+      "titleEn": "le idibeogseu jangseong",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi jangseonggun cheong-ungil 38",
+      "addr2En": "1cheung"
     },
     {
       "addr1": "전남광주통합특별시 여수시 소라면 서부로 791",
@@ -5322,7 +5700,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020300",
-      "titleEn": "ma tti yu"
+      "titleEn": "ma tti yu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi solamyeon seobulo 791",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 시청서1길 36",
@@ -5350,7 +5730,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "ojugheonhanjeongsig"
+      "titleEn": "ojugheonhanjeongsig",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi sicheongseo1gil 36",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 충무로 76",
@@ -5378,7 +5760,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "haechonsanjang eosuchbulgu i"
+      "titleEn": "haechonsanjang eosuchbulgu i",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi chungmulo 76",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 충무로 54-7",
@@ -5406,7 +5790,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "[baegnyeongage]mulmangchoseolleongtang"
+      "titleEn": "[baegnyeongage]mulmangchoseolleongtang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi chungmulo 54-7",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 봉산남3길 23-8 (봉산동)",
@@ -5434,7 +5820,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "kkaebigejang"
+      "titleEn": "kkaebigejang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi bongsannam3gil 23-8 (bongsandong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 화백길 6  ",
@@ -5462,7 +5850,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "ma ae"
+      "titleEn": "ma ae",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi hwabaeggil 6",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 구봉2길 5  ",
@@ -5490,7 +5880,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "yagsudalgjib"
+      "titleEn": "yagsudalgjib",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi gubong2gil 5",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 공화남2길 2",
@@ -5518,7 +5910,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020200",
-      "titleEn": "baegcheonseon eoma eul"
+      "titleEn": "baegcheonseon eoma eul",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi gonghwanam2gil 2",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 대경도길 2-2",
@@ -5546,7 +5940,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "gyeongdohoegwan bonjeom"
+      "titleEn": "gyeongdohoegwan bonjeom",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi daegyeongdogil 2-2",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 교동남1길 5-9",
@@ -5574,7 +5970,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "daeseongsigdang"
+      "titleEn": "daeseongsigdang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi gyodongnam1gil 5-9",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 관문1길 13-1",
@@ -5602,7 +6000,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD03",
       "lclsSystm3": "FD030100",
-      "titleEn": "singgeulbeonggeul ppangjib"
+      "titleEn": "singgeulbeonggeul ppangjib",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi gwanmun1gil 13-1",
+      "addr2En": "(gwanmundong)"
     },
     {
       "addr1": "전남광주통합특별시 여수시 여문1로 89",
@@ -5630,7 +6030,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "dadahanjeongsig"
+      "titleEn": "dadahanjeongsig",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi yeomun1lo 89",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 교동남2길 5",
@@ -5658,7 +6060,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "aguhalmi seodaedaegam"
+      "titleEn": "aguhalmi seodaedaegam",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi gyodongnam2gil 5",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 장성1길 19",
@@ -5686,7 +6090,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "ha yanjib nagjijeonmunjeom"
+      "titleEn": "ha yanjib nagjijeonmunjeom",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi jangseong1gil 19",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 이순신광장로 206",
@@ -5714,7 +6120,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "oseonghoegwan"
+      "titleEn": "oseonghoegwan",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi isunsingwangjanglo 206",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 여서1로 116",
@@ -5742,7 +6150,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "usagolseolleongtang"
+      "titleEn": "usagolseolleongtang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi yeoseo1lo 116",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 여객선터미널길 18",
@@ -5770,7 +6180,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "[baegnyeongage]gubaegsigdang"
+      "titleEn": "[baegnyeongage]gubaegsigdang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi yeogaegseonteomineolgil 18",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 선소로 59 (학동)",
@@ -5798,7 +6210,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "gosomeogbang"
+      "titleEn": "gosomeogbang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi seonsolo 59 (hagdong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 중앙5길 5 (중앙동)",
@@ -5826,7 +6240,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020300",
-      "titleEn": "badasigtag"
+      "titleEn": "badasigtag",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi jung-ang5gil 5 (jung-angdong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 교동남1길 5-17",
@@ -5854,7 +6270,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020100",
-      "titleEn": "sunsim won"
+      "titleEn": "sunsim won",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi gyodongnam1gil 5-17",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 이순신광장로 200-3",
@@ -5882,7 +6300,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "samhagjib"
+      "titleEn": "samhagjib",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi isunsingwangjanglo 200-3",
+      "addr2En": "(jonghwadong)"
     },
     {
       "addr1": "전남광주통합특별시 여수시 통제영4길 12 (중앙동)",
@@ -5910,7 +6330,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "tongmandujib"
+      "titleEn": "tongmandujib",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi tongje-yeong4gil 12 (jung-angdong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 돌산읍 마상포길 12",
@@ -5938,7 +6360,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jeongda unsigdang"
+      "titleEn": "jeongda unsigdang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi dolsan-eub masangpogil 12",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 돌산읍 향일암로 378",
@@ -5966,7 +6390,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "yeosubabsanggalchi ya"
+      "titleEn": "yeosubabsanggalchi ya",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi dolsan-eub hyang-il-amlo 378",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 봉산2로 36  ",
@@ -5994,7 +6420,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "kkochdolgejang1beonga"
+      "titleEn": "kkochdolgejang1beonga",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi bongsan2lo 36",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 어항단지로 21  ",
@@ -6022,7 +6450,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jamaesigdang"
+      "titleEn": "jamaesigdang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi eohangdanjilo 21",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 장군산길 71  ",
@@ -6050,7 +6480,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "dongseosigdang"
+      "titleEn": "dongseosigdang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi janggunsangil 71",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 무술목길 142-1  ",
@@ -6078,7 +6510,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "kape lapi kkeu"
+      "titleEn": "kape lapi kkeu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi musulmoggil 142-1",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 문수5길 46  ",
@@ -6106,7 +6540,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "ihwasigdang"
+      "titleEn": "ihwasigdang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi munsu5gil 46",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 봉산남4길 23-32  ",
@@ -6134,7 +6570,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "cheongjeonggejangchon"
+      "titleEn": "cheongjeonggejangchon",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi bongsannam4gil 23-32",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 돌산로 3292-6  ",
@@ -6162,7 +6600,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "pi eup kape"
+      "titleEn": "pi eup kape",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi dolsanlo 3292-6",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 신기남4길 26  ",
@@ -6190,7 +6630,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "haepunggejang"
+      "titleEn": "haepunggejang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi singinam4gil 26",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 통제영3길 6  ",
@@ -6218,7 +6660,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "yesnalgeujib"
+      "titleEn": "yesnalgeujib",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi tongje-yeong3gil 6",
+      "addr2En": "1cheung"
     },
     {
       "addr1": "전남광주통합특별시 여수시 고소3길 70  ",
@@ -6246,7 +6690,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "kape mokahil"
+      "titleEn": "kape mokahil",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi goso3gil 70",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 망양로 201  ",
@@ -6274,7 +6720,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "NCNP"
+      "titleEn": "NCNP",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi mang-yanglo 201",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 진두해안길 68  ",
@@ -6302,7 +6750,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "napollihoesjib"
+      "titleEn": "napollihoesjib",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi jinduhae-angil 68",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 봉산1로 49  ",
@@ -6330,7 +6780,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "namjin inegejanggalchimyeongga"
+      "titleEn": "namjin inegejanggalchimyeongga",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi bongsan1lo 49",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 하멜로 78  ",
@@ -6358,7 +6810,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "nangman24pocha"
+      "titleEn": "nangman24pocha",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi hamello 78",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 고소5길 11  ",
@@ -6386,7 +6840,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "nangmankape"
+      "titleEn": "nangmankape",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi goso5gil 11",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 소호로 253-1  ",
@@ -6414,7 +6870,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "teojinmandu"
+      "titleEn": "teojinmandu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi soholo 253-1",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 통제영5길 8-1  ",
@@ -6442,7 +6900,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "yujeonghaejanggug"
+      "titleEn": "yujeonghaejanggug",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi tongje-yeong5gil 8-1",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 학동6길 1  ",
@@ -6470,7 +6930,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "gangnamjib"
+      "titleEn": "gangnamjib",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi hagdong6gil 1",
+      "addr2En": "1cheung"
     },
     {
       "addr1": "전남광주통합특별시 여수시 웅천4길 12-7  ",
@@ -6498,7 +6960,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "munjanetongjang eo"
+      "titleEn": "munjanetongjang eo",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi ungcheon4gil 12-7",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 돌산읍 돌산로 3112",
@@ -6526,7 +6990,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jinmihoegwan"
+      "titleEn": "jinmihoegwan",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi dolsan-eub dolsanlo 3112",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 어항로 23-1  ",
@@ -6554,7 +7020,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "golmogjib"
+      "titleEn": "golmogjib",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi eohanglo 23-1",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 죽림2길 23-8  ",
@@ -6582,7 +7050,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "juglim geulim"
+      "titleEn": "juglim geulim",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi juglim2gil 23-8",
+      "addr2En": "1cheung"
     },
     {
       "addr1": "전남광주통합특별시 여수시 이순신광장로 177-1  ",
@@ -6610,7 +7080,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020300",
-      "titleEn": "bom177"
+      "titleEn": "bom177",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi isunsingwangjanglo 177-1",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 관문2길 5  ",
@@ -6638,7 +7110,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "nam wonsigdang"
+      "titleEn": "nam wonsigdang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi gwanmun2gil 5",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 웅남3길 21  ",
@@ -6666,7 +7140,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD03",
       "lclsSystm3": "FD030100",
-      "titleEn": "solle il"
+      "titleEn": "solle il",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi ungnam3gil 21",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 시청서5길 7  ",
@@ -6694,7 +7170,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020200",
-      "titleEn": "yeosumasjib bongchobab"
+      "titleEn": "yeosumasjib bongchobab",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi sicheongseo5gil 7",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 학동서1길 12 (학동)",
@@ -6722,7 +7200,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "yeosudwaejigugbab"
+      "titleEn": "yeosudwaejigugbab",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi hagdongseo1gil 12 (hagdong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 무선8길 17 (선원동)",
@@ -6750,7 +7230,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020100",
-      "titleEn": "yeosudaepyo jjamppong"
+      "titleEn": "yeosudaepyo jjamppong",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi museon8gil 17 (seon-wondong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 돌산읍 안굴전길 57",
@@ -6778,7 +7260,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jeong ugulgu i"
+      "titleEn": "jeong ugulgu i",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi dolsan-eub anguljeongil 57",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 문수8길 30  ",
@@ -6806,7 +7290,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jinboghoesenta"
+      "titleEn": "jinboghoesenta",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi munsu8gil 30",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 국포1로 27  ",
@@ -6834,7 +7320,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "kape hanghae"
+      "titleEn": "kape hanghae",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi gugpo1lo 27",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 망마로 25  ",
@@ -6862,7 +7350,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "tongkeunsyabeu"
+      "titleEn": "tongkeunsyabeu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi mangmalo 25",
+      "addr2En": "3cheung"
     },
     {
       "addr1": "전남광주통합특별시 여수시 소호로 223  ",
@@ -6890,7 +7380,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "solgogaehoesjib"
+      "titleEn": "solgogaehoesjib",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi soholo 223",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 남산남1길 27  ",
@@ -6918,7 +7410,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "seonchangga saejogae hamosyabeusyabeu"
+      "titleEn": "seonchangga saejogae hamosyabeusyabeu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi namsannam1gil 27",
+      "addr2En": "1cheung"
     },
     {
       "addr1": "전남광주통합특별시 여수시 소호4길 8  ",
@@ -6946,7 +7440,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "mugdol isigdang"
+      "titleEn": "mugdol isigdang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi soho4gil 8",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 하세동길 7-1  ",
@@ -6974,7 +7470,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "deog yang eunhyegobchang deog yangjeom"
+      "titleEn": "deog yang eunhyegobchang deog yangjeom",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi hasedonggil 7-1",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 시청서2길 51-8 (학동)",
@@ -7002,7 +7500,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "daegamgejang"
+      "titleEn": "daegamgejang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi sicheongseo2gil 51-8 (hagdong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 봉산남3길 13 (봉산동, 연립주택)",
@@ -7030,7 +7530,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "holaeng igejang"
+      "titleEn": "holaeng igejang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi bongsannam3gil 13 (bongsandong, yeonlibjutaeg)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 웅천남6로 21  ",
@@ -7058,7 +7560,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "kodaliha useu"
+      "titleEn": "kodaliha useu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi ungcheonnam6lo 21",
+      "addr2En": "malinata-wo 3cheung 301ho"
     },
     {
       "addr1": "전남광주통합특별시 여수시 돌산로 3617-19  ",
@@ -7086,7 +7590,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "yulamseonhoesenteo saejogae hamosyabeusyabeu"
+      "titleEn": "yulamseonhoesenteo saejogae hamosyabeusyabeu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi dolsanlo 3617-19",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 돌산읍 계동해안길 39-5",
@@ -7114,7 +7620,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "eunhahoesjib"
+      "titleEn": "eunhahoesjib",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi dolsan-eub gyedonghae-angil 39-5",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 돌산읍 진두해안길 68",
@@ -7142,7 +7650,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "egseupohaemul yechan"
+      "titleEn": "egseupohaemul yechan",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi dolsan-eub jinduhae-angil 68",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 남산남1길 34 (남산동)",
@@ -7170,7 +7680,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "dangmeolicheosjib hamosyabeusyabeu"
+      "titleEn": "dangmeolicheosjib hamosyabeusyabeu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi namsannam1gil 34 (namsandong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 하멜로 78 (종화동)",
@@ -7198,7 +7710,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "dolmun eosanghoe"
+      "titleEn": "dolmun eosanghoe",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi hamello 78 (jonghwadong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 신월로 578-1 (신월동)",
@@ -7226,7 +7740,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "gugdongkalgugsu"
+      "titleEn": "gugdongkalgugsu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi sin-wollo 578-1 (sin-woldong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 어항단지로 205  ",
@@ -7254,7 +7770,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "yeosujangteo"
+      "titleEn": "yeosujangteo",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi eohangdanjilo 205",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 남산로 16 (남산동)",
@@ -7282,7 +7800,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "gungjeonhoesjib"
+      "titleEn": "gungjeonhoesjib",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi namsanlo 16 (namsandong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 무술목길 50  ",
@@ -7310,7 +7830,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "mo ipin"
+      "titleEn": "mo ipin",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi musulmoggil 50",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 신월5길 68-1 (신월동)",
@@ -7338,7 +7860,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "seomog"
+      "titleEn": "seomog",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi sin-wol5gil 68-1 (sin-woldong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 고소5길 16 (고소동)",
@@ -7366,7 +7890,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "kape po"
+      "titleEn": "kape po",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi goso5gil 16 (gosodong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 돌산읍 무술목길 114",
@@ -7394,7 +7920,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "kapeha ikeullaeseu"
+      "titleEn": "kapeha ikeullaeseu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi dolsan-eub musulmoggil 114",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 여수시 돌산읍 강남동로 13",
@@ -7422,7 +7950,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "geobugseonhoesjib hamosyabeusyabeu"
+      "titleEn": "geobugseonhoesjib hamosyabeusyabeu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi yeosusi dolsan-eub gangnamdonglo 13",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 해남군 문내면 관광레저로 5",
@@ -7450,7 +7980,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "teu winbeulisji"
+      "titleEn": "teu winbeulisji",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi haenamgun munnaemyeon gwangwanglejeolo 5",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 해남군 계곡면 오류골길 64",
@@ -7478,7 +8010,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "mungadeun"
+      "titleEn": "mungadeun",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi haenamgun gyegogmyeon olyugolgil 64",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 해남군 읍내길 8 피낭시에 ",
@@ -7506,7 +8040,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD03",
       "lclsSystm3": "FD030100",
-      "titleEn": "haenamgoguma ppang pinangsi e"
+      "titleEn": "haenamgoguma ppang pinangsi e",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi haenamgun eubnaegil 8 pinangsi-e",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 해남군 해남읍 읍내길 20-8",
@@ -7534,7 +8070,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "cheon ilsigdang"
+      "titleEn": "cheon ilsigdang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi haenamgun haenam-eub eubnaegil 20-8",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 해남군 해남읍 행운길 7",
@@ -7562,7 +8100,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "yonggunghaemultang"
+      "titleEn": "yonggunghaemultang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi haenamgun haenam-eub haeng-ungil 7",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 해남군 산이면 관광레저로 1673",
@@ -7590,7 +8130,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "sinchangsonsundaegugbab"
+      "titleEn": "sinchangsonsundaegugbab",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi haenamgun san-imyeon gwangwanglejeolo 1673",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 해남군 명문길 19-1  ",
@@ -7618,7 +8160,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "seongnaesigdang"
+      "titleEn": "seongnaesigdang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi haenamgun myeongmungil 19-1",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 해남군 송지면 땅끝마을길 52",
@@ -7646,7 +8190,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "badadongsan"
+      "titleEn": "badadongsan",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi haenamgun songjimyeon ttangkkeutma-eulgil 52",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 해남군 해남읍 남부순환로 5",
@@ -7674,7 +8220,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "mongsobe ikeoli goguma ppang"
+      "titleEn": "mongsobe ikeoli goguma ppang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi haenamgun haenam-eub nambusunhwanlo 5",
+      "addr2En": "jeonghamedikeolsenteo 102ho"
     },
     {
       "addr1": "전남광주통합특별시 해남군 송지면 땅끝마을길 100",
@@ -7702,7 +8250,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "haenamttangkkeutjeonmangdaekape"
+      "titleEn": "haenamttangkkeutjeonmangdaekape",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi haenamgun songjimyeon ttangkkeutma-eulgil 100",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 해남군 송지면 땅끝해안로 1796",
@@ -7730,7 +8280,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "bondonggisasigdang"
+      "titleEn": "bondonggisasigdang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi haenamgun songjimyeon ttangkkeuthae-anlo 1796",
+      "addr2En": "songholi 891 bondonggisasigdang"
     },
     {
       "addr1": "전남광주통합특별시 진도군 진도읍 쌍정2길 22",
@@ -7758,7 +8310,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "salangbang"
+      "titleEn": "salangbang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi jindogun jindo-eub ssangjeong2gil 22",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 진도군 진도읍 남동1길 12-5",
@@ -7786,7 +8340,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "mug eunji"
+      "titleEn": "mug eunji",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi jindogun jindo-eub namdong1gil 12-5",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 진도군 진도읍 남동1길 66",
@@ -7814,7 +8370,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "sinhodeunghoegwan"
+      "titleEn": "sinhodeunghoegwan",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi jindogun jindo-eub namdong1gil 66",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 진도군 진도읍 철마길 3-8",
@@ -7842,7 +8400,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "geunyanggyeong yangsig (geunyang)"
+      "titleEn": "geunyanggyeong yangsig (geunyang)",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi jindogun jindo-eub cheolmagil 3-8",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 진도군 의신면 초평길 64",
@@ -7870,7 +8430,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "yongcheonsigdang"
+      "titleEn": "yongcheonsigdang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi jindogun uisinmyeon chopyeonggil 64",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 진도군 서문길 8-21 진도청년회의소 ",
@@ -7898,7 +8460,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "dalnim inemasjib"
+      "titleEn": "dalnim inemasjib",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi jindogun seomungil 8-21 jindocheongnyeonhoe-uiso",
+      "addr2En": "1cheung"
     },
     {
       "addr1": "전남광주통합특별시 진도군 쌍정2길 15-7  ",
@@ -7926,7 +8490,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "ja yeong ine"
+      "titleEn": "ja yeong ine",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi jindogun ssangjeong2gil 15-7",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 진도군 임회면 헌복동길 14",
@@ -7954,7 +8520,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jag eungaelleoli"
+      "titleEn": "jag eungaelleoli",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi jindogun imhoemyeon heonbogdonggil 14",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 진도군 진도읍 쌍정1길 8-6",
@@ -7982,7 +8550,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jindo alilanghoesenteo"
+      "titleEn": "jindo alilanghoesenteo",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi jindogun jindo-eub ssangjeong1gil 8-6",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 진도군 의신면 초평길 54",
@@ -8010,7 +8580,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "modosanghoe"
+      "titleEn": "modosanghoe",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi jindogun uisinmyeon chopyeonggil 54",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 진도군 진도읍 남동1길 55",
@@ -8038,7 +8610,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "ihwasigdang"
+      "titleEn": "ihwasigdang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi jindogun jindo-eub namdong1gil 55",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 순천시 팔마1길 2 (연향동)",
@@ -8066,7 +8640,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "[baegnyeongage]pungmitongdalg"
+      "titleEn": "[baegnyeongage]pungmitongdalg",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi suncheonsi palma1gil 2 (yeonhyangdong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 순천시 승주읍 승암교길 8",
@@ -8094,7 +8670,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "gilsangsigdang"
+      "titleEn": "gilsangsigdang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi suncheonsi seungju-eub seung-amgyogil 8",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 순천시 순천만길 576",
@@ -8122,7 +8700,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "suncheonmangadeun"
+      "titleEn": "suncheonmangadeun",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi suncheonsi suncheonmangil 576",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 순천시 순천만길 542",
@@ -8150,7 +8730,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "daedaeseonchangjib"
+      "titleEn": "daedaeseonchangjib",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi suncheonsi suncheonmangil 542",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 순천시 순천만길 520",
@@ -8178,7 +8760,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "suncheonman ilbeonga"
+      "titleEn": "suncheonman ilbeonga",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi suncheonsi suncheonmangil 520",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 순천시 역전길 61",
@@ -8206,7 +8790,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "beulu wogseu"
+      "titleEn": "beulu wogseu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi suncheonsi yeogjeongil 61",
+      "addr2En": "(jogogdong)"
     },
     {
       "addr1": "전남광주통합특별시 순천시 금곡길 8 (행동)",
@@ -8234,7 +8820,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "yangji ssambab"
+      "titleEn": "yangji ssambab",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi suncheonsi geumgoggil 8 (haengdong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 순천시 금곡길 11 (행동)",
@@ -8262,7 +8850,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "wonjodonggyeongnagji"
+      "titleEn": "wonjodonggyeongnagji",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi suncheonsi geumgoggil 11 (haengdong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 순천시 순천만길 309 (대룡동)",
@@ -8290,7 +8880,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "do wongyeong"
+      "titleEn": "do wongyeong",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi suncheonsi suncheonmangil 309 (daelyongdong)",
+      "addr2En": "1cheung"
     },
     {
       "addr1": "전남광주통합특별시 순천시 학동길 54 (대룡동)",
@@ -8318,7 +8910,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "daesupgolnong won"
+      "titleEn": "daesupgolnong won",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi suncheonsi hagdonggil 54 (daelyongdong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 순천시 송산2길 22-102  ",
@@ -8346,7 +8940,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "kape eogeu won"
+      "titleEn": "kape eogeu won",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi suncheonsi songsan2gil 22-102",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 순천시 송치안길 88  ",
@@ -8374,7 +8970,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "songchima eul"
+      "titleEn": "songchima eul",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi suncheonsi songchi-angil 88",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 순천시 매안2길 7  ",
@@ -8402,7 +9000,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020200",
-      "titleEn": "sindaechobab"
+      "titleEn": "sindaechobab",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi suncheonsi mae-an2gil 7",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 순천시 상성길 103  ",
@@ -8430,7 +9030,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "cheongpunghan u"
+      "titleEn": "cheongpunghan u",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi suncheonsi sangseonggil 103",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 순천시 대석1길 27 해정 ",
@@ -8458,7 +9060,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020200",
-      "titleEn": "jasan eobo"
+      "titleEn": "jasan eobo",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi suncheonsi daeseog1gil 27 haejeong",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 순천시 해룡면 정채봉길 30",
@@ -8486,7 +9090,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "suncheon sandeuldam eun suncheonbonjeom"
+      "titleEn": "suncheon sandeuldam eun suncheonbonjeom",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi suncheonsi haelyongmyeon jeongchaebonggil 30",
+      "addr2En": "1cheung"
     },
     {
       "addr1": "전남광주통합특별시 순천시 순천만길 496-1  ",
@@ -8514,7 +9120,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "suncheonmanjeonladobabsang"
+      "titleEn": "suncheonmanjeonladobabsang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi suncheonsi suncheonmangil 496-1",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 순천시 상성길 279  ",
@@ -8542,7 +9150,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020300",
-      "titleEn": "baembuseu"
+      "titleEn": "baembuseu",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi suncheonsi sangseonggil 279",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 순천시 하풍동길 21 오션팰리스 ",
@@ -8570,7 +9180,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "namnyeokdeulbabsang"
+      "titleEn": "namnyeokdeulbabsang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi suncheonsi hapungdonggil 21 osyeonpaelliseu",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 순천시 장명4길 8 금빈회관 ",
@@ -8598,7 +9210,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "geumbinhoegwan"
+      "titleEn": "geumbinhoegwan",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi suncheonsi jangmyeong4gil 8 geumbinhoegwan",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 순천시 기적의도서관길 31 고구려초밥 ",
@@ -8626,7 +9240,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020200",
-      "titleEn": "gogulyeochobab geumdangbonjeom"
+      "titleEn": "gogulyeochobab geumdangbonjeom",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi suncheonsi gijeog-uidoseogwangil 31 gogulyeochobab",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 순천시 해룡면 매안로 137",
@@ -8654,7 +9270,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jeong won"
+      "titleEn": "jeong won",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi suncheonsi haelyongmyeon mae-anlo 137",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 순천시 해룡면 와온길 107",
@@ -8682,7 +9300,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "kape wa on"
+      "titleEn": "kape wa on",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi suncheonsi haelyongmyeon wa-ongil 107",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 순천시 팔마1길 4 (연향동)",
@@ -8710,7 +9330,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "nanulteo"
+      "titleEn": "nanulteo",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi suncheonsi palma1gil 4 (yeonhyangdong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 순천시 역전길 57 (조곡동)",
@@ -8738,7 +9360,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020300",
-      "titleEn": "suncheon yangjojang"
+      "titleEn": "suncheon yangjojang",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi suncheonsi yeogjeongil 57 (jogogdong)",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 순천시 낙안면 삼일로 63",
@@ -8766,7 +9390,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "choedaegambeolgyo kkomag"
+      "titleEn": "choedaegambeolgyo kkomag",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi suncheonsi nag-anmyeon sam-illo 63",
+      "addr2En": ""
     },
     {
       "addr1": "전남광주통합특별시 순천시 국가정원1호길 162-11 (풍덕동)",
@@ -8794,7 +9420,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "nonggababsang yeomilag"
+      "titleEn": "nonggababsang yeomilag",
+      "addr1En": "jeonnamgwangjutonghabteugbyeolsi suncheonsi guggajeong-won1hogil 162-11 (pungdeogdong)",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 전동성당길 100 (전동)",
@@ -8822,7 +9450,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "masilangge"
+      "titleEn": "masilangge",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu jeondongseongdanggil 100 (jeondong)",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 공북로 82 (태평동)",
@@ -8850,7 +9480,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "o wonjib"
+      "titleEn": "o wonjib",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu gongbuglo 82 (taepyeongdong)",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 전주객사2길 20",
@@ -8878,7 +9510,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "sam ilgwan"
+      "titleEn": "sam ilgwan",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu jeonjugaegsa2gil 20",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 아중6길 14-6",
@@ -8906,7 +9540,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jeonlado eumsig i yagi"
+      "titleEn": "jeonlado eumsig i yagi",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu ajung6gil 14-6",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 호성2길 7-12 (호성동1가)",
@@ -8934,7 +9570,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "hoseongsundae bonjeom"
+      "titleEn": "hoseongsundae bonjeom",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu hoseong2gil 7-12 (hoseongdong1ga)",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 영경1길 15",
@@ -8962,7 +9600,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jangsubeoseosma eul"
+      "titleEn": "jangsubeoseosma eul",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu yeonggyeong1gil 15",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 안행4길 5",
@@ -8990,7 +9630,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jeonlahoegwan"
+      "titleEn": "jeonlahoegwan",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu anhaeng4gil 5",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 인교9길 71 (우아동1가)",
@@ -9018,7 +9660,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "gichagil yeop omagsal i"
+      "titleEn": "gichagil yeop omagsal i",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu ingyo9gil 71 (u-adong1ga)",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 동부대로 1106 (송천동2가)",
@@ -9046,7 +9690,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "dugeoli usintang bonjeom"
+      "titleEn": "dugeoli usintang bonjeom",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu dongbudaelo 1106 (songcheondong2ga)",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 송천로 1",
@@ -9074,7 +9720,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "gogwi"
+      "titleEn": "gogwi",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu songcheonlo 1",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 백석길 7-11 (전미동1가)",
@@ -9102,7 +9750,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "mulbichjeong won"
+      "titleEn": "mulbichjeong won",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu baegseoggil 7-11 (jeonmidong1ga)",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 화암4길 60 (송천동2가)",
@@ -9130,7 +9780,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "ssipeullaes songcheon ekojeom"
+      "titleEn": "ssipeullaes songcheon ekojeom",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu hwa-am4gil 60 (songcheondong2ga)",
+      "addr2En": "1cheung 102ho"
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 경기전길 135",
@@ -9158,7 +9810,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "betelangkalgugsu"
+      "titleEn": "betelangkalgugsu",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu gyeonggijeongil 135",
+      "addr2En": "(gyodong)"
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 아중1길 24",
@@ -9186,7 +9840,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "ajungli yugjeongol bonjeom"
+      "titleEn": "ajungli yugjeongol bonjeom",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu ajung1gil 24",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 쑥고개로 247 (효자동2가)",
@@ -9214,7 +9870,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "salang oli"
+      "titleEn": "salang oli",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu ssuggogaelo 247 (hyojadong2ga)",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 명주3길 19-2",
@@ -9242,7 +9900,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020100",
-      "titleEn": "jinmibanjeom"
+      "titleEn": "jinmibanjeom",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu myeongju3gil 19-2",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 동부대로 1022",
@@ -9270,7 +9930,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jingajinseolleongtang"
+      "titleEn": "jingajinseolleongtang",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu dongbudaelo 1022",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 송천중앙로 25",
@@ -9298,7 +9960,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jogboseolleongtang"
+      "titleEn": "jogboseolleongtang",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu songcheonjung-anglo 25",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 추천로 43",
@@ -9326,7 +9990,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jeong ingadeun"
+      "titleEn": "jeong ingadeun",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu chucheonlo 43",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 기린대로 121",
@@ -9354,7 +10020,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jamaegalbijeongol"
+      "titleEn": "jamaegalbijeongol",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu gilindaelo 121",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 중화산로 49",
@@ -9382,7 +10050,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "ilsongjeong"
+      "titleEn": "ilsongjeong",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu junghwasanlo 49",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 기린대로 419",
@@ -9410,7 +10080,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "eomganesigoljib24si eolkeunhanppyeohaejanggug"
+      "titleEn": "eomganesigoljib24si eolkeunhanppyeohaejanggug",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu gilindaelo 419",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 석소로 90-9",
@@ -9438,7 +10110,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "sindonjoseonbyeolgwan"
+      "titleEn": "sindonjoseonbyeolgwan",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu seogsolo 90-9",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 동부대로 930 (호성동2가)",
@@ -9466,7 +10140,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "dulumibabsang"
+      "titleEn": "dulumibabsang",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu dongbudaelo 930 (hoseongdong2ga)",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 태진로 132",
@@ -9494,7 +10170,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "gimpansoejeonju ujogtang bonjeom"
+      "titleEn": "gimpansoejeonju ujogtang bonjeom",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu taejinlo 132",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 중동로 104-16 (장동)",
@@ -9522,7 +10200,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020300",
-      "titleEn": "labote"
+      "titleEn": "labote",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu jungdonglo 104-16 (jangdong)",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 장동길 16 (장동)",
@@ -9550,7 +10230,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020400",
-      "titleEn": "cha opeula ya jeonjujeom"
+      "titleEn": "cha opeula ya jeonjujeom",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu jangdonggil 16 (jangdong)",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 효자로 170 (효자동2가)",
@@ -9578,7 +10260,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "cham ye umyeongpumpeulaja docheongjeom"
+      "titleEn": "cham ye umyeongpumpeulaja docheongjeom",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu hyojalo 170 (hyojadong2ga)",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 풍남문2길 99 (전동3가)",
@@ -9606,7 +10290,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020100",
-      "titleEn": "nobelbanjeom"
+      "titleEn": "nobelbanjeom",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu pungnammun2gil 99 (jeondong3ga)",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 쑥고개로 391 (효자동2가)",
@@ -9634,7 +10320,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "dong wonsundaejib"
+      "titleEn": "dong wonsundaejib",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu ssuggogaelo 391 (hyojadong2ga)",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 쑥고개로 217 (삼천동3가)",
@@ -9662,7 +10350,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "songga"
+      "titleEn": "songga",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu ssuggogaelo 217 (samcheondong3ga)",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 메너머3길 32 (중화산동2가)",
@@ -9690,7 +10380,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "chamchi ilbeonga junghwasanbonjeom"
+      "titleEn": "chamchi ilbeonga junghwasanbonjeom",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu meneomeo3gil 32 (junghwasandong2ga)",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 백제대로 528 (금암동)",
@@ -9718,7 +10410,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jeonjubabsangdajabsuso"
+      "titleEn": "jeonjubabsangdajabsuso",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu baegjedaelo 528 (geum-amdong)",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 아중로 219",
@@ -9746,7 +10440,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "solga"
+      "titleEn": "solga",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu ajunglo 219",
+      "addr2En": "(u-adong2ga)"
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 기린대로 425 한국관",
@@ -9774,7 +10470,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "hanguggwan bonjeom"
+      "titleEn": "hanguggwan bonjeom",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu gilindaelo 425 hanguggwan",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 시천로 65 (송천동2가)",
@@ -9802,7 +10500,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "honamgag"
+      "titleEn": "honamgag",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu sicheonlo 65 (songcheondong2ga)",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 기린대로 104 (남노송동)",
@@ -9830,7 +10530,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "han ulbabsang"
+      "titleEn": "han ulbabsang",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu gilindaelo 104 (namnosongdong)",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 홍산북로 21-7 (효자동2가)",
@@ -9858,7 +10560,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jangsunongjang"
+      "titleEn": "jangsunongjang",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu hongsanbuglo 21-7 (hyojadong2ga)",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 전라감영3길 12-3 (중앙동2가)",
@@ -9886,7 +10590,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020100",
-      "titleEn": "jinmibanjeom"
+      "titleEn": "jinmibanjeom",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu jeonlagam-yeong3gil 12-3 (jung-angdong2ga)",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 창포길 49-10 (덕진동1가)",
@@ -9914,7 +10620,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "kape han ol"
+      "titleEn": "kape han ol",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu changpogil 49-10 (deogjindong1ga)",
+      "addr2En": "gugjekeonbensyeonsenteo ogsang"
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 어진길 119",
@@ -9942,7 +10650,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "hangugjib"
+      "titleEn": "hangugjib",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu eojingil 119",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 풍남문2길 39 (전동3가)",
@@ -9970,7 +10680,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jojeomlyenammunpisundae"
+      "titleEn": "jojeomlyenammunpisundae",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu pungnammun2gil 39 (jeondong3ga)",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 기린대로 971 (여의동)",
@@ -9998,7 +10710,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "honammungadeunjeonjubibimbab"
+      "titleEn": "honammungadeunjeonjubibimbab",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu gilindaelo 971 (yeo-uidong)",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 전라감영5길 19-9",
@@ -10026,7 +10740,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "seongmidang"
+      "titleEn": "seongmidang",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu jeonlagam-yeong5gil 19-9",
+      "addr2En": "(jung-angdong3ga)"
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 아중1길 13-1",
@@ -10054,7 +10770,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "bada kkochgetang bonjeom"
+      "titleEn": "bada kkochgetang bonjeom",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu ajung1gil 13-1",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 송천중앙로 33",
@@ -10082,7 +10800,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "gogung jeonjubonjeom"
+      "titleEn": "gogung jeonjubonjeom",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu songcheonjung-anglo 33",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 용소로 72",
@@ -10110,7 +10830,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD03",
       "lclsSystm3": "FD030100",
-      "titleEn": "geulimgeulimke ikeu"
+      "titleEn": "geulimgeulimke ikeu",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu yongsolo 72",
+      "addr2En": "2cheung"
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 은행로 61 (교동)",
@@ -10138,7 +10860,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "anma jog yog kape jeonmang"
+      "titleEn": "anma jog yog kape jeonmang",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu eunhaenglo 61 (gyodong)",
+      "addr2En": "2cheung"
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 상리로 50",
@@ -10166,7 +10890,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "gabgihoegwan bonjeom"
+      "titleEn": "gabgihoegwan bonjeom",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu sanglilo 50",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 천잠로 17",
@@ -10194,7 +10920,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "yug ilsigdang"
+      "titleEn": "yug ilsigdang",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu cheonjamlo 17",
+      "addr2En": "(samcheondong2ga)"
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 신촌2길 26",
@@ -10222,7 +10950,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "gochangsim wonpungcheonjang eo"
+      "titleEn": "gochangsim wonpungcheonjang eo",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu sinchon2gil 26",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 백제대로 276",
@@ -10250,7 +10980,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "yesnalpatjugjib"
+      "titleEn": "yesnalpatjugjib",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu baegjedaelo 276",
+      "addr2En": "(junghwasandong2ga)"
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 백제대로 524",
@@ -10278,7 +11010,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "byeoggyegadeun"
+      "titleEn": "byeoggyegadeun",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu baegjedaelo 524",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 전라감영5길 19-3",
@@ -10306,7 +11040,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "hasug yeong gamasotbibimbab"
+      "titleEn": "hasug yeong gamasotbibimbab",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu jeonlagam-yeong5gil 19-3",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 덕진연못3길 8",
@@ -10334,7 +11070,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "suboghoegwan"
+      "titleEn": "suboghoegwan",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu deogjin-yeonmos3gil 8",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 강변로 62",
@@ -10362,7 +11100,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020100",
-      "titleEn": "nolangtolang"
+      "titleEn": "nolangtolang",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu gangbyeonlo 62",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 원동로 45",
@@ -10390,7 +11130,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "geu nal ui ondo"
+      "titleEn": "geu nal ui ondo",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu wondonglo 45",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 화산천변1길 18-1",
@@ -10418,7 +11160,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020100",
-      "titleEn": "kkansyosae u"
+      "titleEn": "kkansyosae u",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu hwasancheonbyeon1gil 18-1",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 백제대로 128 연와미당",
@@ -10446,7 +11190,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "yeon wamidang"
+      "titleEn": "yeon wamidang",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu baegjedaelo 128 yeon-wamidang",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 신촌4길 19",
@@ -10474,7 +11220,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "hwasanmulgalbi jeonjubonjeom"
+      "titleEn": "hwasanmulgalbi jeonjubonjeom",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu sinchon4gil 19",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 사거리길 49",
@@ -10502,7 +11250,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "mansusigdang bonjeom"
+      "titleEn": "mansusigdang bonjeom",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu sageoligil 49",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 천잠로 341",
@@ -10530,7 +11280,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "babsang wi uihan u"
+      "titleEn": "babsang wi uihan u",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu cheonjamlo 341",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 정언신로 173-1",
@@ -10558,7 +11310,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "wonjojin anheugdwaeji"
+      "titleEn": "wonjojin anheugdwaeji",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu jeong-eonsinlo 173-1",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 기린대로 400-61",
@@ -10586,7 +11340,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "geum ampisundae"
+      "titleEn": "geum ampisundae",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu gilindaelo 400-61",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 전주객사3길 11-8",
@@ -10614,7 +11370,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "ttosun inejib"
+      "titleEn": "ttosun inejib",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu jeonjugaegsa3gil 11-8",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 고사평5길 25",
@@ -10642,7 +11400,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "memilbang asgan"
+      "titleEn": "memilbang asgan",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu gosapyeong5gil 25",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 오목대길 81-8",
@@ -10670,7 +11430,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050200",
-      "titleEn": "oehalmeonisomssi"
+      "titleEn": "oehalmeonisomssi",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu omogdaegil 81-8",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 효자로 331",
@@ -10698,7 +11460,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "cheonghagdongbeoseosjeongol"
+      "titleEn": "cheonghagdongbeoseosjeongol",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu hyojalo 331",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 완산구 마전들로 71 서림빌딩",
@@ -10726,7 +11490,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "mileumil oglyugwan bonjeom"
+      "titleEn": "mileumil oglyugwan bonjeom",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi wansangu majeondeullo 71 seolimbilding",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 조경단로 3-6",
@@ -10754,7 +11520,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "taepyeongjib"
+      "titleEn": "taepyeongjib",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu jogyeongdanlo 3-6",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 만성북1길 7",
@@ -10782,7 +11550,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020300",
-      "titleEn": "obeullig"
+      "titleEn": "obeullig",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu manseongbug1gil 7",
+      "addr2En": "1cheung"
     },
     {
       "addr1": "전북특별자치도 전주시 덕진구 창포길 49-10 (덕진동1가)",
@@ -10810,7 +11580,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "deogjinheon"
+      "titleEn": "deogjinheon",
+      "addr1En": "jeonbugteugbyeoljachido jeonjusi deogjingu changpogil 49-10 (deogjindong1ga)",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 남원시 산내면 천왕봉로 791",
@@ -10838,7 +11610,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "kape peulana"
+      "titleEn": "kape peulana",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi sannaemyeon cheon-wangbonglo 791",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 남원시 모정길 7-4",
@@ -10866,7 +11640,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "mojeong entigkape"
+      "titleEn": "mojeong entigkape",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi mojeonggil 7-4",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 남원시 요천로 1411 부산집",
@@ -10894,7 +11670,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "busanjib"
+      "titleEn": "busanjib",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi yocheonlo 1411 busanjib",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 남원시 인월면 천왕봉로 62-8",
@@ -10922,7 +11700,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "so ssine heungbugol nam wonchu eotang"
+      "titleEn": "so ssine heungbugol nam wonchu eotang",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi in-wolmyeon cheon-wangbonglo 62-8",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 남원시 주천면 원천로 345-33",
@@ -10950,7 +11730,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "ja yeon eul dalm eun salamdeul"
+      "titleEn": "ja yeon eul dalm eun salamdeul",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi jucheonmyeon woncheonlo 345-33",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 남원시 용성로 221-8 (도통동)",
@@ -10978,7 +11760,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "ojangdonghamheungmyeon og suchbulgalbi"
+      "titleEn": "ojangdonghamheungmyeon og suchbulgalbi",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi yongseonglo 221-8 (dotongdong)",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 남원시 동림로 74",
@@ -11006,7 +11790,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "heungbune daecheongmalu"
+      "titleEn": "heungbune daecheongmalu",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi donglimlo 74",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 남원시 옥정1길 64",
@@ -11034,7 +11820,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "kkachijeong"
+      "titleEn": "kkachijeong",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi ogjeong1gil 64",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 남원시 광한서로 32 (천거동)",
@@ -11062,7 +11850,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "kape gwanghanlu"
+      "titleEn": "kape gwanghanlu",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi gwanghanseolo 32 (cheongeodong)",
+      "addr2En": "7dong 2ho"
     },
     {
       "addr1": "전북특별자치도 남원시 서문1길 14",
@@ -11090,7 +11880,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "dulesigdang"
+      "titleEn": "dulesigdang",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi seomun1gil 14",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 남원시 요천로 2264",
@@ -11118,7 +11910,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "sampogadeun"
+      "titleEn": "sampogadeun",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi yocheonlo 2264",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 남원시 함파우길 65-14",
@@ -11146,7 +11940,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "mi ankeopi"
+      "titleEn": "mi ankeopi",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi hampa-ugil 65-14",
+      "addr2En": "1cheung"
     },
     {
       "addr1": "전북특별자치도 남원시 산내면 덕동길 67",
@@ -11174,7 +11970,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "deogsinsanjangminbagsigdang"
+      "titleEn": "deogsinsanjangminbagsigdang",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi sannaemyeon deogdonggil 67",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 남원시 원천로 27-8",
@@ -11202,7 +12000,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "[baegnyeongage]sinchonmae untang"
+      "titleEn": "[baegnyeongage]sinchonmae untang",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi woncheonlo 27-8",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 남원시 삼산길 8-17",
@@ -11230,7 +12030,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "neul,pa in"
+      "titleEn": "neul,pa in",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi samsangil 8-17",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 남원시 숲정이1길 4",
@@ -11258,7 +12060,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "yugmojeong"
+      "titleEn": "yugmojeong",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi supjeong-i1gil 4",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 남원시 용성로 56 명문제과",
@@ -11286,7 +12090,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD03",
       "lclsSystm3": "FD030100",
-      "titleEn": "myeongmunjegwa"
+      "titleEn": "myeongmunjegwa",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi yongseonglo 56 myeongmunjegwa",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 남원시 역재1길 9 서남아구찜,낚지볶음",
@@ -11314,7 +12120,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "seonammanchan"
+      "titleEn": "seonammanchan",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi yeogjae1gil 9 seonam-agu-jjim,nakkjibokk-eum",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 남원시 모정길 21-3 심원첫집",
@@ -11342,7 +12150,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "sim woncheosjib"
+      "titleEn": "sim woncheosjib",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi mojeonggil 21-3 sim-woncheosjib",
+      "addr2En": "1cheung"
     },
     {
       "addr1": "전북특별자치도 남원시 향단로 18 이조숯불냉면",
@@ -11370,7 +12180,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "nam won ijogalbi"
+      "titleEn": "nam won ijogalbi",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi hyangdanlo 18 ijosuchbulnaengmyeon",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 남원시 광한서로 52 (금동)",
@@ -11398,7 +12210,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD02",
       "lclsSystm3": "FD020300",
-      "titleEn": "geulangkkae"
+      "titleEn": "geulangkkae",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi gwanghanseolo 52 (geumdong)",
+      "addr2En": "1cheung"
     },
     {
       "addr1": "전북특별자치도 남원시 옥정5길 11",
@@ -11426,7 +12240,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "mujinjang agubogjeonmunjeom"
+      "titleEn": "mujinjang agubogjeonmunjeom",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi ogjeong5gil 11",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 남원시 양림길 68",
@@ -11454,7 +12270,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "seonbigo eul"
+      "titleEn": "seonbigo eul",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi yanglimgil 68",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 남원시 양림길 14-10",
@@ -11482,7 +12300,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "chun wonhoegwan"
+      "titleEn": "chun wonhoegwan",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi yanglimgil 14-10",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 남원시 양림길 28-7",
@@ -11510,7 +12330,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "nam wondubuma eul"
+      "titleEn": "nam wondubuma eul",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi yanglimgil 28-7",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 남원시 주천면 쑥고개로 840",
@@ -11538,7 +12360,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "deulbul"
+      "titleEn": "deulbul",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi jucheonmyeon ssuggogaelo 840",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 남원시 인월면 인월2길 99",
@@ -11566,7 +12390,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jilisanhan uma eul/chugsanmulmateu"
+      "titleEn": "jilisanhan uma eul/chugsanmulmateu",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi in-wolmyeon in-wol2gil 99",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 남원시 인월면 달오름길 22-5",
@@ -11594,7 +12420,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "jilisan namulbab"
+      "titleEn": "jilisan namulbab",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi in-wolmyeon dal-oleumgil 22-5",
+      "addr2En": ""
     },
     {
       "addr1": "전북특별자치도 남원시 의총로 8",
@@ -11622,7 +12450,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD01",
       "lclsSystm3": "FD010100",
-      "titleEn": "hyeonsigdang"
+      "titleEn": "hyeonsigdang",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi uichonglo 8",
+      "addr2En": "(cheongeodong)"
     },
     {
       "addr1": "전북특별자치도 남원시 운강길 87",
@@ -11650,7 +12480,9 @@
       "lclsSystm1": "FD",
       "lclsSystm2": "FD05",
       "lclsSystm3": "FD050100",
-      "titleEn": "kapemideuseullopeu"
+      "titleEn": "kapemideuseullopeu",
+      "addr1En": "jeonbugteugbyeoljachido nam-wonsi unganggil 87",
+      "addr2En": ""
     }
   ]
 }
