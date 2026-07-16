@@ -87,6 +87,33 @@ const createPinIcon = (emoji, color, size = 34) => L.divIcon({
   popupAnchor: [0, -size + 4]
 })
 
+const buildParkingPopup = (lot) => {
+  const fee = (lot.요금정보 || '').trim()
+  const isFree = fee.includes('무료')
+  const badgeBg = isFree ? '#dcfce7' : '#fef3c7'      // 무료=연녹색, 유료=연호박색
+  const badgeColor = isFree ? '#15803d' : '#b45309'
+  return `
+    <div style="min-width: 190px; padding: 12px 14px;">
+      <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 5px;">
+        <span style="font-size: 14px;">🚘</span>
+        <span style="font-weight: 700; font-size: 13px; color: #1e293b;">${lot.명칭 || '주차장'}</span>
+      </div>
+      <div style="font-size: 11px; color: #64748b; line-height: 1.4; margin-bottom: 8px;">${lot.주소 || ''}</div>
+      <span style="display: inline-block; padding: 2px 10px; border-radius: 9999px; font-size: 11px; font-weight: 600; background: ${badgeBg}; color: ${badgeColor};">${fee || '요금정보 없음'}</span>
+    </div>
+  `
+}
+
+const buildRestaurantPopup = (r) => `
+  <div style="min-width: 190px; padding: 12px 14px;">
+    <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 5px;">
+      <span style="font-size: 14px;">🍽️</span>
+      <span style="font-weight: 700; font-size: 13px; color: #1e293b;">${r?.title || '식당'}</span>
+    </div>
+    <div style="font-size: 11px; color: #64748b; line-height: 1.4;">${r?.addr1 || r?.address || ''}</div>
+  </div>
+`
+
 const restaurantIcon = createPinIcon('🍽️', '#e11d48', 44)  // 로즈레드, 크게
 const parkingIcon = createPinIcon('🚘', '#3b82f6')          // 파랑, 자동차 앞면
 
@@ -157,8 +184,7 @@ const renderParkingMarkers = () => {
   parkingMarkersLayer = L.layerGroup().addTo(map)
   parkingLots.value.forEach((lot) => {
     if (lot.latitude == null || lot.longitude == null) return
-    const popup = `${lot.명칭 || '주차장'}<br />${lot.주소 || ''}<br />${lot.요금정보 || ''}`
-    L.marker([lot.latitude, lot.longitude], {icon: parkingIcon,title: lot.명칭 || '주차장'}).addTo(parkingMarkersLayer).bindPopup(popup)
+    L.marker([lot.latitude, lot.longitude], {icon: parkingIcon,title: lot.명칭 || '주차장'}).addTo(parkingMarkersLayer).bindPopup(buildParkingPopup(lot), { className: 'clean-popup', closeButton: false })
   })
 }
 
@@ -242,7 +268,7 @@ const updateMarker = () => {
     map.removeLayer(marker)
   }
 
-  marker = L.marker(coords, { icon: restaurantIcon, zIndexOffset: 1000 }).addTo(map).bindPopup(props.selectedRestaurant?.title || uiText.value.popupTitle)
+  marker = L.marker(coords, { icon: restaurantIcon, zIndexOffset: 1000 }).addTo(map).bindPopup(buildRestaurantPopup(props.selectedRestaurant), { className: 'clean-popup', closeButton: false })
   map.setView(coords, 15)
 
   setTimeout(() => {
@@ -320,5 +346,20 @@ watch(isMapExpanded, async () => {
   width: 100%;
   height: 100%;
   min-height: 700px;
+}
+</style>
+
+<style>
+.clean-popup .leaflet-popup-content-wrapper {
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  border: 1px solid #e2e8f0;
+}
+.clean-popup .leaflet-popup-content {
+  margin: 0;
+  font-family: inherit;
+}
+.clean-popup .leaflet-popup-tip {
+  border: 1px solid #e2e8f0;
 }
 </style>
