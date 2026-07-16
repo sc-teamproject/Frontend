@@ -12,6 +12,13 @@
         <span class="font-bold text-sm">{{ uiText.mapTitle }}</span>
       </div>
       <div class="flex items-center gap-2">
+        <button
+          v-if="selectedRestaurant?.contentid || selectedRestaurant?.place_id"
+          @click="toggleParkingLayer"
+          class="text-xs font-medium px-2 py-1 rounded border border-amber-300 bg-amber-50 text-amber-700 hover:bg-amber-100 transition"
+        >
+          {{ uiText.parkingButton }}
+        </button>
         <div v-if="gpsDistance" class="text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-1 rounded">
           {{ uiText.distancePrefix }} {{ gpsDistance }}km
         </div>
@@ -48,6 +55,7 @@
 import { ref, computed, onMounted, onUnmounted, watch, nextTick } from 'vue'
 import { MapPin } from 'lucide-vue-next'
 import L from 'leaflet'
+import axios from 'axios'
 import { isKorean } from '../../composables/useUiPreferences'
 
 const props = defineProps({
@@ -58,10 +66,42 @@ const props = defineProps({
 })
 
 let map = null
+
+const createPinIcon = (emoji, color, size = 34) => L.divIcon({
+  className: '',
+  html: `
+    <div style="
+      width: ${size}px; height: ${size}px;
+      background: ${color};
+      border: 2.5px solid #fff;
+      border-radius: 50% 50% 50% 0;
+      transform: rotate(-45deg);
+      box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+      display: flex; align-items: center; justify-content: center;
+    ">
+      <span style="transform: rotate(45deg); font-size: ${Math.round(size * 0.5)}px; line-height: 1;">${emoji}</span>
+    </div>
+  `,
+  iconSize: [size, size],
+  iconAnchor: [size / 2, size],
+  popupAnchor: [0, -size + 4]
+})
+
+const restaurantIcon = createPinIcon('🍽️', '#e11d48', 44)  // 로즈레드, 크게
+const parkingIcon = createPinIcon('🚘', '#3b82f6')          // 파랑, 자동차 앞면
+
 let marker = null
+let parkingMarkersLayer = null
 const mapCardRef = ref(null)
 
 const gpsDistance = ref(null)
+const parkingLots = ref([])
+const isParkingVisible = ref(false)
+
+let allPinsLayer = null
+const allPins = ref([])
+const isAllVisible = ref(false)
+
 const mapx = ref('126.9125968520')
 const mapy = ref('35.1515409291')
 const isMapExpanded = ref(false)
@@ -75,7 +115,8 @@ const uiText = computed(() => {
       longitudeLabel: '경도',
       latitudeLabel: '위도',
       expandMap: '지도 전체 화면 확대',
-      collapseMap: '지도 축소'
+      collapseMap: '지도 축소',
+      parkingButton: '근처 주차장 찾기'
     }
   }
 
@@ -87,6 +128,7 @@ const uiText = computed(() => {
     latitudeLabel: 'Latitude',
     expandMap: 'Expand full screen map',
     collapseMap: 'Collapse map',
+    parkingButton: 'Find nearby parking',
     popupTitle: 'Restaurant'
   }
 })
@@ -102,6 +144,93 @@ const getCoordinates = () => {
   return [35.1515, 126.9125]
 }
 
+const clearParkingMarkers = () => {
+  if (parkingMarkersLayer) {
+    parkingMarkersLayer.clearLayers()
+  }
+}
+
+const renderParkingMarkers = () => {
+  clearParkingMarkers()
+  if (!map || !isParkingVisible.value || parkingLots.value.length === 0) return
+
+  parkingMarkersLayer = L.layerGroup().addTo(map)
+  parkingLots.value.forEach((lot) => {
+    if (lot.latitude == null || lot.longitude == null) return
+    const popup = `${lot.명칭 || '주차장'}<br />${lot.주소 || ''}<br />${lot.요금정보 || ''}`
+    L.marker([lot.latitude, lot.longitude], {icon: parkingIcon,title: lot.명칭 || '주차장'}).addTo(parkingMarkersLayer).bindPopup(popup)
+  })
+}
+
+const fetchParkingLots = async () => {
+  try {
+    const baseUrl = import.meta.env.VITE_API_BASE_URL || '/api'
+    const response = await axios.get(`${baseUrl.replace(/\/$/, '')}/map/pins`)
+    parkingLots.value = response.data?.items || []
+  } catch (error) {
+    console.error('Failed to load parking lots', error)
+    parkingLots.value = []
+  }
+}
+
+const clearAllPinMarkers = () => {
+  if (allPinsLayer) {
+    allPinsLayer.clearLayers()
+  }
+}
+
+const toggleParkingLayer = async () => {
+  isParkingVisible.value = !isParkingVisible.value
+  if (!isParkingVisible.value) {
+    clearParkingMarkers()
+    return
+  }
+  await fetchParkingLots()
+  renderParkingMarkers()   // ← 이 줄 추가
+  if (parkingLots.value.length === 0) {
+    alert(uiText.value.parkingButton + ' 결과가 없습니다.')
+  }
+}
+
+const toggleAllPins = async () => {
+  isAllVisible.value = !isAllVisible.value
+  if (!isAllVisible.value) {
+    clearAllPinMarkers()
+    return
+  }
+  if (allPins.value.length === 0) {
+    try {
+      const baseUrl = import.meta.env.VITE_API_BASE_URL || '/api'
+      const response = await axios.get(`${baseUrl.replace(/\/$/, '')}/map/pins`)
+      allPins.value = response.data?.items || []
+    } catch (error) {
+      console.error('Failed to load pins', error)
+      allPins.value = []
+    }
+  }
+  renderAllPinMarkers()
+}
+
+const renderAllPinMarkers = () => {
+  clearAllPinMarkers()
+  if (!map || !isAllVisible.value || allPins.value.length === 0) return
+
+  allPinsLayer = L.layerGroup().addTo(map)
+  const bounds = []
+
+  allPins.value.forEach((item) => {
+    const lat = Number(item.latitude)
+    const lng = Number(item.longitude)
+    if (!Number.isFinite(lat) || !Number.isFinite(lng)) return
+    bounds.push([lat, lng])
+    L.marker([lat, lng], { title: item.명칭 || item.title })
+      .addTo(allPinsLayer)
+      .bindPopup(`<b>${item.명칭 || item.title || ''}</b><br/>${item.주소 || ''}`)
+  })
+
+  if (bounds.length > 0) map.fitBounds(bounds, { padding: [30, 30] })
+}
+
 const updateMarker = () => {
   if (!map) return
 
@@ -113,7 +242,7 @@ const updateMarker = () => {
     map.removeLayer(marker)
   }
 
-  marker = L.marker(coords).addTo(map).bindPopup(props.selectedRestaurant?.title || uiText.value.popupTitle)
+  marker = L.marker(coords, { icon: restaurantIcon, zIndexOffset: 1000 }).addTo(map).bindPopup(props.selectedRestaurant?.title || uiText.value.popupTitle)
   map.setView(coords, 15)
 
   setTimeout(() => {
@@ -171,8 +300,11 @@ onUnmounted(() => {
   document.removeEventListener('fullscreenchange', syncFullscreenState)
 })
 
-watch(() => props.selectedRestaurant?.contentid, () => {
+watch(() => props.selectedRestaurant?.contentid || props.selectedRestaurant?.place_id, () => {
   updateMarker()
+  isParkingVisible.value = false
+  clearParkingMarkers()
+  parkingLots.value = []
 })
 
 watch(isMapExpanded, async () => {
