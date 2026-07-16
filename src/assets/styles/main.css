@@ -67,6 +67,10 @@ html.dark-theme :is(
   .bg-slate-100,
   .bg-slate-200,
   .bg-slate-300,
+  .bg-blue-50,
+  .bg-purple-50,
+  .bg-emerald-50,
+  .bg-amber-50,
   .bg-white\/95,
   .bg-white\/90,
   .bg-slate-50\/50,
@@ -79,6 +83,10 @@ html.dark-theme :is(
   .border-slate-100,
   .border-slate-200,
   .border-slate-300,
+  .border-blue-100,
+  .border-purple-100,
+  .border-emerald-100,
+  .border-amber-100,
   .border-blue-200,
   .border-blue-300
 ) {
