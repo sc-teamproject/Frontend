@@ -189,9 +189,25 @@ const renderParkingMarkers = () => {
 }
 
 const fetchParkingLots = async () => {
+  const coords = getCoordinates()
+  const lat = Number(coords[0])
+  const lng = Number(coords[1])
+
+  if (!Number.isFinite(lat) || !Number.isFinite(lng)) {
+    parkingLots.value = []
+    return
+  }
+
   try {
     const baseUrl = import.meta.env.VITE_API_BASE_URL || '/api'
-    const response = await axios.get(`${baseUrl.replace(/\/$/, '')}/map/pins`)
+    const response = await axios.get(`${baseUrl.replace(/\/$/, '')}/restaurants/parking`, {
+      params: {
+        lat,
+        lng,
+        limit: 5,
+        radius: 3000
+      }
+    })
     parkingLots.value = response.data?.items || []
   } catch (error) {
     console.error('Failed to load parking lots', error)
@@ -212,7 +228,7 @@ const toggleParkingLayer = async () => {
     return
   }
   await fetchParkingLots()
-  renderParkingMarkers()   // ← 이 줄 추가
+  renderParkingMarkers()
   if (parkingLots.value.length === 0) {
     alert(uiText.value.parkingButton + ' 결과가 없습니다.')
   }
@@ -257,7 +273,7 @@ const renderAllPinMarkers = () => {
   if (bounds.length > 0) map.fitBounds(bounds, { padding: [30, 30] })
 }
 
-const updateMarker = () => {
+const updateMarker = async () => {
   if (!map) return
 
   const coords = getCoordinates()
@@ -270,6 +286,10 @@ const updateMarker = () => {
 
   marker = L.marker(coords, { icon: restaurantIcon, zIndexOffset: 1000 }).addTo(map).bindPopup(buildRestaurantPopup(props.selectedRestaurant), { className: 'clean-popup', closeButton: false })
   map.setView(coords, 15)
+
+  clearParkingMarkers()
+  parkingLots.value = []
+  isParkingVisible.value = false
 
   setTimeout(() => {
     map.invalidateSize()
@@ -326,11 +346,8 @@ onUnmounted(() => {
   document.removeEventListener('fullscreenchange', syncFullscreenState)
 })
 
-watch(() => props.selectedRestaurant?.contentid || props.selectedRestaurant?.place_id, () => {
-  updateMarker()
-  isParkingVisible.value = false
-  clearParkingMarkers()
-  parkingLots.value = []
+watch(() => props.selectedRestaurant?.contentid || props.selectedRestaurant?.place_id, async () => {
+  await updateMarker()
 })
 
 watch(isMapExpanded, async () => {
