@@ -20,12 +20,6 @@
           {{ uiText.home }}
         </button>
         <button
-          @click="goHome"
-          :class="['px-3 py-1.5 rounded-md transition', isHome ? 'bg-[#172554] text-white' : 'hover:bg-blue-800 text-blue-100']"
-        >
-          {{ uiText.restaurants }}
-        </button>
-        <button
           @click="goCommunity"
           :class="['px-3 py-1.5 rounded-md transition', isCommunity ? 'bg-[#172554] text-white' : 'hover:bg-blue-800 text-blue-100']"
         >
@@ -72,7 +66,6 @@ const uiText = computed(() => {
     return {
       brandTitle: '광주 맛집 파인더',
       home: '홈',
-      restaurants: '맛집 목록',
       community: '커뮤니티'
     }
   }
@@ -80,7 +73,6 @@ const uiText = computed(() => {
   return {
     brandTitle: 'Gwangju Restaurant Finder',
     home: 'Home',
-    restaurants: 'Restaurants',
     community: 'Community'
   }
 })
