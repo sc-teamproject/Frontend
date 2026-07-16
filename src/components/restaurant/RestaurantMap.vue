@@ -87,19 +87,41 @@ const createPinIcon = (emoji, color, size = 34) => L.divIcon({
   popupAnchor: [0, -size + 4]
 })
 
+const buildRouteUrl = (lot) => {
+  const lat = Number(lot.latitude)
+  const lng = Number(lot.longitude)
+  const destination = Number.isFinite(lat) && Number.isFinite(lng)
+    ? `${lat},${lng}`
+    : (lot.주소 || '').trim()
+
+  return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(destination)}&travelmode=driving`
+}
+
 const buildParkingPopup = (lot) => {
   const fee = (lot.요금정보 || '').trim()
   const isFree = fee.includes('무료')
   const badgeBg = isFree ? '#dcfce7' : '#fef3c7'      // 무료=연녹색, 유료=연호박색
   const badgeColor = isFree ? '#15803d' : '#b45309'
+  const routeLabel = uiText.value?.routeButton || '길찾기'
+
   return `
-    <div style="min-width: 190px; padding: 12px 14px;">
+    <div style="min-width: 210px; padding: 12px 14px;">
       <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 5px;">
         <span style="font-size: 14px;">🚘</span>
         <span style="font-weight: 700; font-size: 13px; color: #1e293b;">${lot.명칭 || '주차장'}</span>
       </div>
       <div style="font-size: 11px; color: #64748b; line-height: 1.4; margin-bottom: 8px;">${lot.주소 || ''}</div>
       <span style="display: inline-block; padding: 2px 10px; border-radius: 9999px; font-size: 11px; font-weight: 600; background: ${badgeBg}; color: ${badgeColor};">${fee || '요금정보 없음'}</span>
+      <div style="margin-top: 10px;">
+        <a
+          href="${buildRouteUrl(lot)}"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; width: 100%; padding: 7px 10px; border-radius: 8px; background: #2563eb; color: white; font-size: 12px; font-weight: 600; text-decoration: none;"
+        >
+          🧭 ${routeLabel}
+        </a>
+      </div>
     </div>
   `
 }
@@ -143,7 +165,8 @@ const uiText = computed(() => {
       latitudeLabel: '위도',
       expandMap: '지도 전체 화면 확대',
       collapseMap: '지도 축소',
-      parkingButton: '근처 주차장 찾기'
+      parkingButton: '근처 주차장 찾기',
+      routeButton: '길찾기'
     }
   }
 
@@ -156,7 +179,8 @@ const uiText = computed(() => {
     expandMap: 'Expand full screen map',
     collapseMap: 'Collapse map',
     parkingButton: 'Find nearby parking',
-    popupTitle: 'Restaurant'
+    popupTitle: 'Restaurant',
+    routeButton: 'Directions'
   }
 })
 
