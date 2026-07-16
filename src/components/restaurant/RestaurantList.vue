@@ -52,12 +52,38 @@
       <div v-else v-for="item in filteredRestaurants" :key="item.contentid"
         @click="selectRestaurant(item)"
         :class="[
-          'p-3 rounded-lg border transition cursor-pointer flex gap-3',
+          'p-3 rounded-lg border transition cursor-pointer flex gap-3 relative',
           selectedId === item.contentid
             ? 'bg-blue-50/60 border-blue-400 ring-1 ring-blue-300'
             : 'bg-white border-slate-200 hover:bg-slate-50/80'
         ]"
       >
+        <!-- Top-right action buttons: Kakao share + Homepage -->
+        <div class="absolute top-2 right-2 flex items-center gap-2 z-10">
+          <button
+            @click.stop="openGoogleSearch(item)"
+            title="Google Search"
+            class="w-8 h-8 rounded-full bg-white border border-slate-200 shadow-sm flex items-center justify-center hover:bg-slate-50"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4 text-slate-700">
+              <path fill="currentColor" d="M21.7 20.3L16.9 15.5a6.5 6.5 0 10-1.4 1.4l4.8 4.8a1 1 0 001.4-1.4zM6.5 11a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0z"/>
+            </svg>
+          </button>
+
+          <button
+            @click.stop="handleKakaoShare(item)"
+            title="Share via Kakao"
+            class="w-8 h-8 rounded-full flex items-center justify-center shadow-sm"
+            :style="{ background: '#FEE500', border: '1px solid rgba(0,0,0,0.08)' }"
+            aria-label="카카오톡으로 공유"
+          >
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0h8ree1xQ1T2XXleIIs-mJ1WUiSNUdAuva6-253khYA&s=10"
+              alt="Kakao"
+              class="w-5 h-5 object-contain"
+            />
+          </button>
+        </div>
         <!-- Left Visual (icon or selected thumbnail) -->
         <div class="w-12 h-12 rounded-lg bg-slate-100 flex-shrink-0 flex items-center justify-center border border-slate-200 overflow-hidden">
           <img
@@ -304,6 +330,90 @@ const filteredRestaurants = computed(() => {
 const selectRestaurant = (item) => {
   selectedId.value = item.contentid
   emit('select-restaurant', item)
+}
+
+// Open Google search results for the restaurant (homepage button behavior)
+const openGoogleSearch = (item) => {
+  const q = `${item.title} ${item.displayAddr1 || ''}`.trim()
+  const url = `https://www.google.com/search?q=${encodeURIComponent(q)}`
+  window.open(url, '_blank', 'noopener,noreferrer')
+}
+
+// Kakao SDK loader and share handler
+const loadKakaoSdk = () => {
+  return new Promise((resolve, reject) => {
+    if (window.Kakao) return resolve(window.Kakao)
+    const script = document.createElement('script')
+    script.src = 'https://t1.kakaocdn.net/kakao_js_sdk/2.7.4/kakao.min.js'
+    script.crossOrigin = 'anonymous'
+    script.onload = () => resolve(window.Kakao)
+    script.onerror = reject
+    document.head.appendChild(script)
+  })
+}
+
+const ensureKakaoInit = async () => {
+  const { VITE_KAKAO_JAVASCRIPT_KEY } = import.meta.env
+  if (!VITE_KAKAO_JAVASCRIPT_KEY) {
+    console.warn('VITE_KAKAO_JAVASCRIPT_KEY is not set; Kakao integration disabled')
+    return null
+  }
+  try {
+    const Kakao = await loadKakaoSdk()
+    if (!Kakao.isInitialized()) {
+      Kakao.init(VITE_KAKAO_JAVASCRIPT_KEY)
+    }
+    return Kakao
+  } catch (err) {
+    console.error('Failed to load Kakao SDK', err)
+    return null
+  }
+}
+
+const handleKakaoShare = async (item) => {
+  const Kakao = await ensureKakaoInit()
+  if (!Kakao) {
+    alert(isKorean.value ? '카카오 SDK 초기화에 실패했습니다.' : 'Kakao SDK init failed.')
+    return
+  }
+
+  const sendLink = () => {
+    try {
+      const imageUrl = item.image || `${window.location.origin}/logo.png`
+      Kakao.Share.sendDefault({
+        objectType: 'feed',
+        content: {
+          title: item.title,
+          description: item.description || item.displayAddr1 || '',
+          imageUrl,
+          link: {
+            webUrl: window.location.href,
+            mobileWebUrl: window.location.href
+          }
+        },
+        buttons: [
+          {
+            title: isKorean.value ? '상세 보기' : 'View',
+            link: {
+              webUrl: window.location.href,
+              mobileWebUrl: window.location.href
+            }
+          }
+        ]
+      })
+    } catch (err) {
+      console.error('Kakao Link send failed', err)
+        alert(err.message)  // 임시: 원인 확인용
+    }
+  }
+
+  // One-click share: call Kakao Link send directly (no explicit login required)
+  try {
+    sendLink()
+  } catch (err) {
+    console.error('Kakao share error', err)
+    alert(isKorean.value ? '카카오로 공유하는 중 오류가 발생했습니다.' : 'Failed to share via Kakao.')
+  }
 }
 
 const calculateRoute = (item) => {
