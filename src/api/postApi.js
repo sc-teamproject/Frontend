@@ -49,7 +49,22 @@ export const createPost = async (payload) => {
 }
 
 export const updatePost = async (id, payload) => {
-  const { data } = await api.put(`/posts/${id}`, payload)
+  const form = new FormData()
+
+  Object.entries(payload || {}).forEach(([key, value]) => {
+    if (value === undefined || value === null || key === 'imageFile') return
+    form.append(key, value)
+  })
+
+  if (payload?.imageFile instanceof File) {
+    form.append('image', payload.imageFile)
+  }
+
+  const { data } = await api.patch(`/posts/${id}`, form, {
+    headers: {
+      'Content-Type': 'multipart/form-data',
+    },
+  })
   return data
 }
 

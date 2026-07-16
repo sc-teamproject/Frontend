@@ -74,13 +74,18 @@
         @click="showForm = false"
       >
         <div @click.stop class="bg-white rounded-xl shadow-lg border border-slate-200 p-6 max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-          <PostForm :initial-restaurant-name="prefillRestaurantName" @submit="addPost" @close="showForm = false" />
+          <PostForm
+            :initial-restaurant-name="prefillRestaurantName"
+            :initial-post="editingPost"
+            @submit="submitPostForm"
+            @close="closeForm"
+          />
         </div>
       </div>
     </Transition>
 
     <!-- Posts Table -->
-    <PostTable :posts="posts" @open-detail="openPostDetail" @delete="deletePost" />
+    <PostTable :posts="posts" @open-detail="openPostDetail" @edit="editPost" @delete="deletePost" />
 
     <div
       v-if="appliedKeyword && posts.length === 0"
@@ -172,7 +177,7 @@ import { useRoute, useRouter } from 'vue-router'
 import PostForm from './PostForm.vue'
 import PostTable from './PostTable.vue'
 import CommentSection from './CommentSection.vue'
-import { getPosts, createPost, deletePost as deletePostApi, incrementViewCount } from '../../api/postApi'
+import { getPosts, createPost, deletePost as deletePostApi, updatePost as updatePostApi, verifyPostPassword, incrementViewCount } from '../../api/postApi'
 import { isKorean } from '../../composables/useUiPreferences'
 
 const route = useRoute()
@@ -201,6 +206,7 @@ const saveStoredPostMeta = (meta) => {
 
 const showForm = ref(false)
 const selectedPost = ref(null)
+const editingPost = ref(null)
 const posts = ref([])
 const loading = ref(false)
 const searchInput = ref('')
@@ -324,7 +330,7 @@ const mapPostToViewModel = (post, fallback = {}) => {
     ? (normalized.images[0]?.image_url || normalized.images[0]?.imageUrl || normalized.images[0]?.url || normalized.images[0])
     : ''
 
-  const imageCandidate = normalized.image_url || normalized.imageUrl || normalized.image || firstImageFromList || localMeta.imageUrl || fallback.imageUrl || ''
+  const imageCandidate = normalized.image_url || normalized.imageUrl || normalized.image || firstImageFromList || (normalized.images === undefined ? localMeta.imageUrl : '') || (normalized.images === undefined ? fallback.imageUrl : '') || ''
   const resolvedImageUrl = typeof imageCandidate === 'string' && imageCandidate.startsWith('/uploads')
     ? imageCandidate
     : imageCandidate
@@ -338,7 +344,7 @@ const mapPostToViewModel = (post, fallback = {}) => {
     author: normalized.nickname || (isKorean.value ? '익명' : 'Anonymous'),
     createdAt: normalized.created_at?.slice(0, 10) || normalized.createdAt?.slice(0, 10) || new Date().toISOString().slice(0, 10),
     views: normalized.view_count || normalized.viewCount || 0,
-    likeCount: localMeta.likeCount ?? normalized.like_count ?? normalized.likeCount ?? fallback.likeCount ?? 0,
+    likeCount: (localMeta.likeCount ?? normalized.like_count ?? normalized.likeCount ?? fallback.likeCount) || 0,
     imageUrl: resolvedImageUrl,
     commentCount: normalized.comment_count || normalized.commentCount || (normalized.comments?.length || 0),
     comments: normalized.comments || []
@@ -390,6 +396,19 @@ const applyWriteQuery = async () => {
   await router.replace({ query: nextQuery })
 }
 
+const closeForm = () => {
+  showForm.value = false
+  editingPost.value = null
+  prefillRestaurantName.value = ''
+}
+
+const submitPostForm = async (newPost) => {
+  if (newPost.id) {
+    return await handleUpdatePost(newPost)
+  }
+  return await addPost(newPost)
+}
+
 const addPost = async (newPost) => {
   try {
     const created = await createPost({
@@ -428,6 +447,78 @@ const addPost = async (newPost) => {
   }
 }
 
+const editPost = async (post) => {
+  const password = prompt(isKorean.value ? '수정을 위해 비밀번호를 입력하세요' : 'Enter the password to edit')
+  if (!password) return
+
+  try {
+    const verify = await verifyPostPassword(post.id, password)
+    if (!verify?.verified) {
+      alert(isKorean.value ? '비밀번호가 일치하지 않습니다.' : 'Password is incorrect.')
+      return
+    }
+
+    editingPost.value = {
+      ...post,
+      verifiedPassword: password,
+      password: '',
+      imageUrl: post.imageUrl
+    }
+    prefillRestaurantName.value = post.restaurantName || ''
+    showForm.value = true
+  } catch (error) {
+    console.error('Failed to verify post password', error)
+    alert(isKorean.value ? '비밀번호 확인에 실패했습니다.' : 'Failed to verify the password.')
+  }
+}
+
+const handleUpdatePost = async (updatedPost) => {
+  try {
+    const payload = {
+      title: updatedPost.title,
+      content: updatedPost.content,
+      category: updatedPost.category,
+      restaurant_name: updatedPost.restaurantName,
+      like_count: Number(updatedPost.likeCount) || 0,
+      remove_image: updatedPost.removeImage || false,
+      password: updatedPost.password,
+      imageFile: updatedPost.imageFile || null
+    }
+
+    const updated = await updatePostApi(updatedPost.id, payload)
+    const mergedPost = mapPostToViewModel(updated, {
+      title: updatedPost.title,
+      content: updatedPost.content,
+      restaurantName: updatedPost.restaurantName,
+      likeCount: Number(updatedPost.likeCount) || 0
+    })
+
+    if (updated?.id) {
+      upsertPostMeta(updated.id, {
+        category: updated.category || updatedPost.category,
+        restaurantName: updated.restaurant_name || updated.restaurantName,
+        likeCount: (updated.like_count ?? Number(updatedPost.likeCount)) || 0,
+        imageUrl: Array.isArray(updated.images) && updated.images.length > 0
+          ? updated.images[0]?.image_url || updated.images[0]?.imageUrl || ''
+          : ''
+      })
+    }
+
+    const index = posts.value.findIndex((item) => item.id === updatedPost.id)
+    if (index !== -1) {
+      posts.value[index] = mergedPost
+    }
+
+    await loadPosts(currentPage.value, appliedKeyword.value)
+
+    alert(isKorean.value ? '게시글이 수정되었습니다.' : 'Post updated successfully.')
+    closeForm()
+  } catch (error) {
+    console.error('Failed to update post', error)
+    alert(isKorean.value ? '게시글 수정에 실패했습니다.' : 'Failed to update the post.')
+  }
+}
+
 const deletePost = async (postId) => {
   if (!confirm(isKorean.value ? '정말 삭제하시겠습니까?' : 'Are you sure you want to delete it?')) return
   try {
@@ -447,8 +538,7 @@ const openPostDetail = async (post) => {
       title: post.title,
       content: post.content,
       restaurantName: post.restaurantName,
-      likeCount: post.likeCount,
-      imageUrl: post.imageUrl
+      likeCount: post.likeCount
     })
     selectedPost.value = {
       ...post,

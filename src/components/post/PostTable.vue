@@ -71,7 +71,13 @@
             <td class="px-4 py-3 text-center text-slate-500 whitespace-nowrap">{{ post.createdAt }}</td>
 
             <!-- Actions -->
-            <td class="px-4 py-3 text-center">
+            <td class="px-4 py-3 text-center space-x-1">
+              <button
+                @click.stop="$emit('edit', post)"
+                class="text-blue-600 hover:text-blue-800 font-semibold text-[10px] hover:underline"
+              >
+                {{ uiText.edit }}
+              </button>
               <button
                 @click.stop="$emit('delete', post.id)"
                 class="text-rose-600 hover:text-rose-800 font-semibold text-[10px] hover:underline"
@@ -104,7 +110,7 @@ defineProps({
   }
 })
 
-defineEmits(['open-detail', 'delete'])
+defineEmits(['open-detail', 'edit', 'delete'])
 
 const uiText = computed(() => {
   if (isKorean.value) {
@@ -117,6 +123,7 @@ const uiText = computed(() => {
       comments: '댓글',
       date: '작성일',
       action: '액션',
+      edit: '수정',
       delete: '삭제',
       empty: '아직 게시글이 없습니다. 첫 번째 게시글을 작성해보세요!',
       review: '후기',
@@ -134,6 +141,7 @@ const uiText = computed(() => {
     comments: 'Comments',
     date: 'Date',
     action: 'Action',
+    edit: 'Edit',
     delete: 'Delete',
     empty: 'No posts yet. Be the first to write one!',
     review: 'Review',

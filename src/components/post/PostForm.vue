@@ -92,7 +92,7 @@
       </div>
 
       <!-- Password -->
-      <div>
+      <div v-if="!isEditMode">
         <label class="block text-sm font-semibold text-slate-700 mb-1">{{ uiText.passwordLabel }}</label>
         <input
           v-model="formData.password"
@@ -100,6 +100,9 @@
           :placeholder="uiText.passwordPlaceholder"
           class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-sm focus:ring-1 focus:ring-blue-500 focus:outline-none"
         />
+      </div>
+      <div v-else class="text-sm text-slate-500">
+        {{ uiText.editPasswordInfo }}
       </div>
 
       <!-- Likes -->
@@ -182,6 +185,10 @@ const props = defineProps({
   initialRestaurantName: {
     type: String,
     default: ''
+  },
+  initialPost: {
+    type: Object,
+    default: null
   }
 })
 
@@ -190,7 +197,7 @@ const categories = computed(() => (isKorean.value ? ['후기', '팁', '질문', 
 const uiText = computed(() => {
   if (isKorean.value) {
     return {
-      title: '새 게시글 작성',
+      title: props.initialPost ? '게시글 수정' : '새 게시글 작성',
       categoryLabel: '카테고리',
       restaurantLabel: '식당 이름',
       restaurantPlaceholder: '식당 이름을 검색해서 선택하세요',
@@ -210,12 +217,12 @@ const uiText = computed(() => {
       imagePreviewAlt: '업로드 이미지 미리보기',
       removeImage: '이미지 삭제',
       cancel: '취소',
-      submit: '작성하기'
+      submit: props.initialPost ? '수정하기' : '작성하기'
     }
   }
 
   return {
-    title: 'Create New Post',
+    title: props.initialPost ? 'Edit Post' : 'Create New Post',
     categoryLabel: 'Category',
     restaurantLabel: 'Restaurant Name',
     restaurantPlaceholder: 'Search and select a restaurant name',
@@ -229,20 +236,22 @@ const uiText = computed(() => {
     contentPlaceholder: 'Write the post content (up to 1000 characters)',
     passwordLabel: 'Edit/Delete Password',
     passwordPlaceholder: 'Enter a password',
+    editPasswordInfo: 'Password verified. You can update the post fields directly.',
+    editPasswordInfo: 'Password verified. You can update the post fields directly.',
     likesLabel: 'Likes',
     clearLikes: 'Clear',
     imageLabel: 'Image',
     imagePreviewAlt: 'Uploaded image preview',
     removeImage: 'Remove Image',
     cancel: 'Cancel',
-    submit: 'Submit'
+    submit: props.initialPost ? 'Update' : 'Submit'
   }
 })
 
 const formData = ref({
   title: '',
   content: '',
-  category: '후기',
+  category: isKorean.value ? '후기' : 'Review',
   restaurantName: '',
   password: '',
   likeCount: 0
@@ -316,7 +325,25 @@ watch(
   { immediate: true }
 )
 
+watch(
+  () => props.initialPost,
+  (post) => {
+    if (!post) return
+    formData.value.title = post.title || ''
+    formData.value.content = post.content || ''
+    formData.value.category = post.category || (isKorean.value ? '기타' : 'Other')
+    formData.value.restaurantName = post.restaurantName || ''
+    restaurantSearch.value = post.restaurantName || ''
+    formData.value.likeCount = post.likeCount || 0
+    formData.value.password = ''
+    imagePreview.value = post.imageUrl || ''
+    imageFile.value = null
+  },
+  { immediate: true }
+)
+
 const emit = defineEmits(['submit', 'close'])
+const isEditMode = computed(() => !!props.initialPost)
 
 const handleImageChange = (event) => {
   const file = event.target.files?.[0]
@@ -363,10 +390,12 @@ const submitForm = () => {
     content: formData.value.content,
     category: formData.value.category,
     restaurantName: formData.value.restaurantName,
-    password: formData.value.password,
+    password: isEditMode.value ? props.initialPost?.verifiedPassword || '' : formData.value.password,
     likeCount: Math.max(0, Math.min(5, Number(formData.value.likeCount) || 0)),
     imageFile: imageFile.value,
-    imagePreview: imagePreview.value
+    removeImage: isEditMode.value && !imagePreview.value && !imageFile.value,
+    imagePreview: imagePreview.value,
+    id: props.initialPost?.id || null
   })
 
   formData.value = {
