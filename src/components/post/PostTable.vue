@@ -20,23 +20,14 @@
             :key="post.id"
             class="border-b border-slate-100 hover:bg-slate-50/50 transition cursor-pointer"
           >
-            <!-- Category -->
-            <td class="px-4 py-3">
-              <span
-                :class="[
-                  'px-2 py-0.5 rounded-full text-[10px] font-semibold',
-                  post.category === uiText.review
-                    ? 'bg-emerald-100 text-emerald-700'
-                    : post.category === uiText.tip
-                      ? 'bg-blue-100 text-blue-700'
-                      : post.category === uiText.question
-                        ? 'bg-amber-100 text-amber-700'
-                        : 'bg-slate-100 text-slate-700'
-                ]"
-              >
-                {{ post.category }}
-              </span>
-            </td>
+       <!-- Category -->
+      <td class="px-4 py-3">
+       <span
+        :class="['px-2 py-0.5 rounded-full text-[10px] font-semibold', categoryColor(post.category)]"
+        >
+      {{ categoryLabel(post.category) }}
+      </span>
+      </td>
 
             <!-- Title -->
             <td class="px-4 py-3 text-slate-700 truncate max-w-[180px]">
@@ -150,6 +141,27 @@ const uiText = computed(() => {
     question: 'Question'
   }
 })
+
+
+const categoryMeta = {
+  '후기': { ko: '후기', en: 'Review', color: 'bg-emerald-100 text-emerald-700' },
+  '팁':   { ko: '팁',   en: 'Tip',     color: 'bg-blue-100 text-blue-700' },
+  '질문': { ko: '질문', en: 'Question',color: 'bg-amber-100 text-amber-700' },
+  '기타': { ko: '기타', en: 'Etc',     color: 'bg-slate-100 text-slate-700' },
+}
+
+function categoryLabel(raw) {
+  const meta = categoryMeta[raw]
+  if (!meta) return raw
+  return isKorean.value ? meta.ko : meta.en
+}
+
+function categoryColor(raw) {
+  return categoryMeta[raw]?.color || 'bg-slate-100 text-slate-700'
+}
+
+
+
 </script>
 
 <style scoped>
